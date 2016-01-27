@@ -4,7 +4,7 @@ Repository for the **Conflict Urbanism: Aleppo** class at Columbia University, *
 </br> 
 This is the first in a series of multidisciplinary Mellon seminars on the topic of Conflict Urbanism, as part of a multi-university initiative in Architecture, Urbanism and the Humanities. 
 
-For more information, please visit the **Conflict Urbanism: Aleppo** project [here](www.c4sr.columbia.edu/conflict-urbanism-aleppo).
+For more information, please visit the **Conflict Urbanism: Aleppo** project [here](http://www.c4sr.columbia.edu/conflict-urbanism-aleppo).
 
 <hr/>
 **Course No:** ARCHA6890 001 2016 1</br>
