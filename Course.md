@@ -20,6 +20,6 @@ Grga Basic, Associate Research Scholar, CSR</br>
 Michael Howard,Teaching Assistant, GSAPP</br>
 
 <hr/>
-Project Lead: Madeeha Merchant
-Associate Research Scholar 
+Project Lead: Madeeha Merchant</br>
+Associate Research Scholar</br> 
 [Center for Spatial Research](www.c4sr.columbia.edu)
