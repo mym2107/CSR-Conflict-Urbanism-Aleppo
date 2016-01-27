@@ -13,9 +13,9 @@ Level: Easy
 *Setting Up A Conflict Urbanism: Case Study*</br>
 Level: Easy
 
-</hr>
+<hr/>
 Tutorials 3 to 10 will be demonstrated during Weekly Workshops.</br> 
-It is required that you do a **minimum of 3**.
+It is required that you do a *minimum of 3*.
 
 + **Tutorial 3:** 
 *XXX*</br>
@@ -58,13 +58,15 @@ Tutorials 11 and 12 will be demonstrated during Workshop 2. </br>
 On Saturday March 5th, 9-1pm, Studio @[Butler](https://studio.cul.columbia.edu).</br>
 *This workshop is optional*.
 
-**Tutorial 11:** 
++ **Tutorial 11:** 
 *Remote Sensing: LANDSAT Image Analysis*</br>
 Level: Advance
 
-**Tutorial 12:** 
++ **Tutorial 12:** 
 *Machine Learning:*</br>
 Level: Advanced
 
+<hr/>
+
 **Note:**
-Additional Tutorials maybe added during the semester.
+*Additional Tutorials maybe added during the semester.*
