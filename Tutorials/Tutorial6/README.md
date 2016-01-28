@@ -1,5 +1,5 @@
 ######CSR / Conflict Urbanism Aleppo
-##Tutorial 6
+##Tutorial 6: Creating an Interactive Cluster Map 
 Overview: In this tutorial
 
 ### Tools:
