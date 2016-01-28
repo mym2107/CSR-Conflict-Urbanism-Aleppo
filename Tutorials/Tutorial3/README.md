@@ -96,12 +96,12 @@ The `Status Bar` shows you your current position in `Map Coordinates`, along wit
   * syr_admin4_point.shp
 
 * **Plug In: OpenLayers**
-* QGIS allows you to bring data directly from OpenStreetMaps and other satellite data as an underlay. In order to access Imagery within the QGIS Environment, please add the following Plugin.  [OpenLayers](https://plugins.qgis.org/plugins/openlayers_plugin/). To add a plugin, please go to `Menu > Plugins > Manage` and Install Plugins. More documentation on installing and managing plugins can be found [here](http://docs.qgis.org/2.0/ca/docs/training_manual/qgis_plugins/fetching_plugins.html). Once the PlugIn is added it can be accessed through `Menu > Vector > OpenStreetMap`. This is a good way to add an underlay satellite image or OSM data. This tool is also helpful in *Georeferencing Data*.
+QGIS allows you to bring data directly from OpenStreetMaps and other satellite data as an underlay. In order to access Imagery within the QGIS Environment, please add the following Plugin.  [OpenLayers](https://plugins.qgis.org/plugins/openlayers_plugin/). To add a plugin, please go to `Menu > Plugins > Manage` and Install Plugins. More documentation on installing and managing plugins can be found [here](http://docs.qgis.org/2.0/ca/docs/training_manual/qgis_plugins/fetching_plugins.html). Once the PlugIn is added it can be accessed through `Menu > Vector > OpenStreetMap`. This is a good way to add an underlay satellite image or OSM data. This tool is also helpful in *Georeferencing Data*.
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12649824/3031639e-c5ae-11e5-8946-3229aac86df3.png)
 
 * **Plug In: OpenStreetMap**
-* QGIS allows you to bring geometry data directly from OpenStreetMaps into your QGIS Environment. In order to do so, please download the [OpenStreetMap plugin](http://wiki.openstreetmap.org/wiki/QGIS_OSM_Plugin), from the method shown above. You can also go to the [OpenSteetMap](https://www.openstreetmap.org/#map=12/36.1961/37.1692) and download data through the *Export* toolbar. You can import the `filename.osm` directly into QGIS. Note: If your download fails, it is because the area selected is larger than can be processed.
+QGIS allows you to bring geometry data directly from OpenStreetMaps into your QGIS Environment. In order to do so, please download the [OpenStreetMap plugin](http://wiki.openstreetmap.org/wiki/QGIS_OSM_Plugin), from the method shown above. You can also go to the [OpenSteetMap](https://www.openstreetmap.org/#map=12/36.1961/37.1692) and download data through the *Export* toolbar. You can import the `filename.osm` directly into QGIS. Note: If your download fails, it is because the area selected is larger than can be processed.
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12656141/9d8ec780-c5ca-11e5-8c9e-5fbbafda01f2.png)
 
@@ -151,7 +151,7 @@ Next, you will embed the `Map_of_Aleppo.pdf` as an image in the Case Study.
 
 ```html
 <IMG SRC="Map_of_Aleppo.png" ALT="Map of Aleppo" WIDTH=800 HEIGHT=800>
-```html
+```
 
 ### Deliverable: 
 Kindly update you link with the `Map_of_Syria.pdf`as a link and `Map_of_Aleppo.pdf` and an embedded image in the case study.
