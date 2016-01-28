@@ -31,6 +31,9 @@ Overview:
 * Add Shape File to Mapbox Editor
 * Set Icons and Display Information
 * Embed iframe Map
+```html
+<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.o5abolo0/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
+```
 
 ```html
 <!DOCTYPE html>
@@ -47,7 +50,6 @@ Overview:
 </style>
 </head>
 <body>
-
 
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
@@ -101,7 +103,6 @@ L.mapbox.featureLayer()
     });
 });
 </script>
-
 
 </body>
 </html>
