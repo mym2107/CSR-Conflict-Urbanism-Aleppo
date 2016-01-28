@@ -1,20 +1,29 @@
 ######CSR / Conflict Urbanism Aleppo
 ##Tutorial 4: Creating a Basic Interactive Web Map 
 
-Overview: In this tutorial,
+In this tutorial, you will be a making a basic interactive map of Aleppo, Syria through the use of *Open Source* GIS software, [QGIS](http://www.qgis.org/en/site/) and *Open Source* mapping platform for custom designed maps, [Mapbox](https://www.mapbox.com/). You will download *Neighborhood Level Data* and *Informal Settlements Data* from the [CSR](http://www.c4sr.columbia.edu/) Data Repository. You will build the *Neigborhood Level Map* in [Mapbox Studio](https://www.mapbox.com/mapbox-studio/) and the *Informal Settlements Map* in [Mapbox Classic](https://www.mapbox.com/mapbox-studio-classic/#darwin). You will then embed these interactive maps, individually in the case studies and also build a standalone *Web Map*. 
 
-### Tools: 
-* QGIS
-* Mapbox (Browser)
-* HTML / CSS / JS
+### Tools:
+For this tutorial, we will be using the following tools:
+* [QGIS](http://www.qgis.org/en/site/)
+* [Mapbox](https://www.mapbox.com/)
+* HTML, CSS and Javascript 
 
-### Datasets: 
-* Neighborhood.zip
-* Informal.zip
+### Datasets:
+For this tutorial, we will be using the following datasets:
+* Neighborhood.zip, Download [here](/Tutorials/Tutorial4/Data/Neighborhood.zip)
+* Informal.zip, Download [here](/Tutorials/Tutorial4/Data/Informal.zip) 
 
-### Data Access:
-*CSR_Repo: Neighborhood.zip
-*CSR_Repo: Informal.zip
+### Datasets Overview:
+This section provides detailed explanation of each data source. You can skip this section, if you would like to continue with the tutorial. However, it is recommended that you familiarize yourself with these sources, as they will asssist you in your research.
+
+##### Neighborhood Level Data:
+*Neighborhood Level Data* is a dataset prepared by CSR. It uses the *Neighborhood Map* published in the [Aleppo City Profile Report](http://unhabitat.org/city-profile-aleppo-multi-sector-assessment/), pg.24 published by UN-Habitat, in May 2014. We digitized the map based on Google Earth satellite imagery, and added Arabic tranlations for the neighborhood names. In a case, where a neighborhood was divided in parts, we've used roman numerals. A neighborhood map was also developed by [UNITAR/UNOSAT](http://www.unitar.org/unosat/), in early 2015, which slightly varies from the one initially produced by [UN Habitat](http://unhabitat.org/).  
+
+##### Informal Settlements Data:
+*Informal Settlements Data* is a dataset prepared by CSR. It uses the *report* on *Informal Settlements Report* from [Madinatuna: Aleppo City Planning Strategy](http://madinatuna.com/en/informals). This report is the first output of the Informal Settlements sub-component of the Syrian German Programme for Sustainable Urban Development (UDP) in Aleppo, which was supported by GTZ, the German Agency for Technical Cooperation. GTZ has been engaged in Syria since 1994, supporting the “Rehabilitation of the Old City of Aleppo”. In 2007, on request of the Syrian Government, GTZ widened its approach to providing technical advice to the Municipality of Aleppo on formulating a City Development Strategy and dealing with informal settlements. The report identifies **28** Informal Settlements. We identified corresponding entries using our Neighborhood map and coded those Neigborhoods and *Informal*. 
+
+### Creating a Basic Interactive Web Map
 
 ### Steps:
 * Setup Tutorial2 in QGIS
