@@ -80,5 +80,7 @@ clip();
 </html>
 ```
 
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12650193/de35003a-c5af-11e5-9f49-8eec9c7c57a7.png)
+
 ### Deliverable:
 Template with Before/After Interactive Map 
