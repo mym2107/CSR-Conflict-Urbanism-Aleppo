@@ -100,33 +100,44 @@ The status bar shows you your current position in map coordinates, along with th
   * Aleppo_Neighborhood
 
 * QGIS allows you to bring data directly from OpenStreetMaps. In order to access OSM within the QGIS Environment, please add the following Plugin. Menu > Plugins > Manage and Install Plugins. QGIS has a huge repository of Plugins. Please add *Open Layers* Plugin and *OpenStreetMap* Plugin. 
-* **OpenStreetMap** accessible through 'Menu > Vector > OpenStreetMap' allows you to add several base layers, that include Bing satellite imagery, OpenStreetMaps Layer, 
+* **OpenStreetMap** accessible through `Menu > Vector > OpenStreetMap` allows you to add several base layers, that include Bing satellite imagery, OpenStreetMaps Layer and others. 
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12649824/3031639e-c5ae-11e5-8946-3229aac86df3.png)
 
 ##### 03. QGIS: Analyzing and Styling Data
 **Styling Data**
 * **Attributes Table** 
   `Right click - Open Attributes Table`to access attributes table, which maintains the data in each file.
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12649828/3040c7d0-c5ae-11e5-88ae-a5e4fc4b9c1e.png)
+
 * **Properties**
   `Right click - Properties`to access properties tab. 
     * General: Use to review or change layer Projection 
     * Style: Use to Stylize each Layer's Content
     * Label: Use to add a particular field as a label
   
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12649825/30326c44-c5ae-11e5-9abd-225124784c81.png)
 
 ##### 04. QGIS: Setting Up Print Composer
 First, before creating a `Print Composer` check to see you are working in the right projection. Porjections will be discussed further in the coming weeks, but basically map projections are ways of transforming locations on a sphere (the Earth) to locations on a plane (a 2D map). There are many types of projections and each one of them has a specific purpose and a specific area of relevance.
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12649826/303321f2-c5ae-11e5-9151-70c5a92c9aa1.png)
 
 The `Print Composer` is where you will format your map for its final output. Here you will specify the output size, you will add a legend, a scale bar, a north arrow (if needed) and any additional text (titles, sources, explanations and credits). Although the `Print Composer` exists as its own window it will still be linked to the map `Project` we have been working on.
 * First, create a new `Print Composer` in `Project` `New Print Composer`.
 * Give it a name if you want, although this is not necessary.
 * Once you are in the `Print Composer` you need to add a new map. Think of it as if you had a blank piece of paper and you were adding a window onto the map you've been working on. That window is a link to your `Project` and if you change things in the `Project` those changes will still be reflected in the `Print Composer`.
 * To add a new map, click on the button `Add new map` on the left-hand panel and draw a rectangle on the blank page.
-
 * Once you add the map you can adjust its size and position by dragging it from its corners.
 * You might notice that if you change the size of the map it doesn't necessarily update. To avoid this, on the right-hand panel, where it says `Main properties`, click on `Update preview`. Or, you can also click on the drop-down menu where it says `Cache` and change it to `Render` so that it is constantly updating.
-* 
+
 ##### 05. AI: Styling and Editing Map SVG 
 The last step is to export the map as a PDF file. Use the `Export as PDF` button on the top toolbar and save your final map.
 
 ##### 06. WEB: Embed Map in Case Study
+
+```html
+<a href="Map.pdf" target="popup" onclick="window.open('Map1.pdf', 'About', 'width=1200,height=800'); return false;"> <h4> <strong> Map </strong> </h4></a>
+```
 
