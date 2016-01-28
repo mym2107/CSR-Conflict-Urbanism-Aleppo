@@ -66,5 +66,18 @@ var map = L.mapbox.map('map', 'mapbox.streets')
 </html>
 ```
 
+##### Adding Feature Layer for Display
+
+```
+        var featureLayer1 = L.mapbox.featureLayer('c4sr.o59e801k')
+            .on('click', function(e) {
+                if (!markerPopup) {
+                    var content = '<b>' + e.layer.toGeoJSON().properties.NAME + '<br \/>' +
+                        '' + e.layer.toGeoJSON().properties.NAME_A + '<\/b>';
+                    L.popup({}).setLatLng(e.layer.getBounds().getCenter()).setContent(content).openOn(map);
+                }
+            })
+```
+
 ### Deliverable:
 Template with 2 Layer Interactive Map 
