@@ -25,15 +25,32 @@ This section provides detailed explanation of each data source. You can skip thi
 
 ### Creating a Basic Interactive Web Map
 
-### Steps:
-* Setup Tutorial2 in QGIS
-* Add Neighborhood Data
-* Adjust Neighborhood Data
-* Add Informal Data (csv)
-* Perform Feature Join
-* Export Neighborhood file as Shape file
-* Export Informal file as Shape file
+##### Steps:
+  * 01. QGIS: SetUp Neighborhood and Informal Data 
+  * 02. MAPBOX: Sign Up, Installation and Introduction 
+  * 03. MAPBOX_Classic: Design Informal Settlement Map
+  * 04. MAPBOX_Studio: Design Neighborhood Map
+  * 05. WEB: Embed Neighborhood and Informal Maps in Case Study
+  * 06. WEB: Set Up 2 layer Interactive Map through HTML/JS/CSS
+  * 07. WEB: Embed 2 layer Map in Case Study
+
+##### 01. QGIS: SetUp Neighborhood and Informal Data
+**QGIS Project**
+
+##### 02. MAPBOX: Sign Up, Installation and Introduction 
 * Setup Mapbox Account, ID and Key
+*
+##### 03. MAPBOX_Classic: Design Informal Settlement Map
+
+##### 04. MAPBOX_Studio: Design Neighborhood Map
+
+##### 05. WEB: Embed Neighborhood and Informal Maps
+
+##### 06. WEB: Set Up 2 layer Interactive Map 
+
+##### 07. WEB: Embed 2 layer Map in Case Study
+
+
 * Add Informal.shp through MapboxEditor
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12650558/42ce0da6-c5b1-11e5-87f6-efa19e9c2c1e.png) 
 
