@@ -70,8 +70,8 @@ The menu bar provides access to various QGIS features using a standard hierarchi
 **2: Tool Bar**: 
 The toolbar provides access to the menus, plus additional tools and plugins for interacting with the map. `Right-Click` on the toolbar to *Add / Remove* functions.
 
-**3: Map Legend**:
-The map legend area lists all the layers in the project. The checkbox in each legend entry can be used to show or hide the layer. A layer can be selected and dragged up or down in the legend to change the Z-ordering which is the hierarchy in which the layers are displayed on the map.
+**3: Layer Panel**:
+This Panel lists all the layers in the project. The checkbox in each legend entry can be used to show or hide the layer. A layer can be selected and dragged up or down in the legend to change the Z-ordering which is the hierarchy in which the layers are displayed on the map.
 
 **4: Map View**:
 The map displayed in this window will depend on the *vector* and *raster* layers you have chosen to load. The map view can be panned, shifting the focus of the map display to another region, and it can be zoomed in and out. 
@@ -88,13 +88,30 @@ The status bar shows you your current position in map coordinates, along with th
   * .sbn and .sbx - The files that store the spatial index of features.
   * .prj - The file that stores the coordinate system information.
 
-* To add *shapefiles* go to `Menu > Layer > Create New Layer > New Shapefile Layer`and add `filename.shp` 
+* To add *shapefiles* go to `Menu > Layer > Add Vector Layer > New Shapefile Layer`and add `filename.shp` 
 
+* After adding all the *shapefiles*, please organize them in the following order in the Layers Panel . Please note that layers are *hierarchical* and drawn based on their position in the `layers panel`.
+  * syr_admin1.shp
+  * syr_admin2.shp
+  * syr_admin3.shp
+  * syr_admin4_point.shp
+  * syr_admin5.shp
+  * waterways_line_OSM.shp
+  * Aleppo_Neighborhood
 
-
-##### 02. QGIS: Setting Up Project with Data
+* QGIS allows you to bring data directly from OpenStreetMaps. In order to access OSM within the QGIS Environment, please add the following Plugin. Menu > Plugins > Manage and Install Plugins. QGIS has a huge repository of Plugins. Please add *Open Layers* Plugin and *OpenStreetMap* Plugin. 
+* **OpenStreetMap** accessible through 'Menu > Vector > OpenStreetMap' allows you to add several base layers, that include Bing satellite imagery, OpenStreetMaps Layer, 
 
 ##### 03. QGIS: Analyzing and Styling Data
+**Styling Data**
+* **Attributes Table** 
+  `Right click - Open Attributes Table`to access attributes table, which maintains the data in each file.
+* **Properties**
+  `Right click - Properties`to access properties tab. 
+    * General: Use to review or change layer Projection 
+    * Style: Use to Stylize each Layer's Content
+    * Label: Use to add a particular field as a label
+  
 
 ##### 04. QGIS: Setting Up Print Composer
 
