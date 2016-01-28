@@ -11,7 +11,6 @@ For this tutorial, we will be using the following tools:
 ### Datasets:
 For this tutorial, we will be using the following datasets:
 * Aleppo.zip, Download [here](/Tutorials/Tutorial3/Data/Aleppo.zip)
-* Aleppo_Dem.zip, Download [here](/Tutorials/Tutorial3/Data/AleppoDem.zip)
 * Neighborhood.zip, Download [here](/Tutorials/Tutorial3/Data/Neighborhood.zip)
   
 ### Datasets Overview:
@@ -35,9 +34,6 @@ We will be using the following files from HDX:
 * Syria: Waterways
   * WATERWAYS_LINE_OSM.ZIP
   * Oringinally Downloaded [here](https://data.hdx.rwlabs.org/dataset/syrian-arab-republic-water-bodies)
-* Syria: Elevation Model
-  * SYR_ASTER_DEM.TIF.ZIP
-  * Oringinally Downloaded [here](https://data.hdx.rwlabs.org/dataset/syrian-arab-republic-elevation-model)
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12638628/bfa62092-c56c-11e5-8b71-05effc48373c.png)
 HDX provides additional information on each data source including *layers*, *data source* and *contributor*. It often provides data in *multiple formats*. For our purpose, we will download the shape files. If you prefer to work in [ArcGIS](https://www.arcgis.com), you are welcome to download the geo database (.gdb file). 
