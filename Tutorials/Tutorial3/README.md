@@ -39,7 +39,7 @@ We will be using the following files from HDX:
 HDX provides additional information on each data source including *layers*, *data source* and *contributor*. It often provides data in *multiple formats*. For our purpose, we will download the shape files. If you prefer to work in [ArcGIS](https://www.arcgis.com), you are welcome to download the geo database (`.gdb file`). 
 
 ##### Neighborhood Level Data:
-*Neighborhood Level Data* is a dataset prepared by CSR. It uses the Neighborhood Map published in the [Aleppo City Profile Report](http://unhabitat.org/city-profile-aleppo-multi-sector-assessment/), pg.24 published by UN-Habitat, in May 2014. We digitized the map based on Google Earth satellite imagery, and added Arabic tranlations for the neighborhood names. In a case, where a neighborhood was divided in parts, we've used roman numerals. A neighborhood map was also developed by [UNITAR/UNOSAT](http://www.unitar.org/unosat/), in early 2015, which slightly varies from the one initially produced by [UN Habitat](http://unhabitat.org/).  
+*Neighborhood Level Data* is a dataset prepared by CSR. It uses the *Neighborhood Map* published in the [Aleppo City Profile Report](http://unhabitat.org/city-profile-aleppo-multi-sector-assessment/), pg.24 published by UN-Habitat, in May 2014. We digitized the map based on Google Earth satellite imagery, and added Arabic tranlations for the neighborhood names. In a case, where a neighborhood was divided in parts, we've used roman numerals. A neighborhood map was also developed by [UNITAR/UNOSAT](http://www.unitar.org/unosat/), in early 2015, which slightly varies from the one initially produced by [UN Habitat](http://unhabitat.org/).  
 
 ### Creating a Basic Map of Aleppo:
 
@@ -154,4 +154,4 @@ Next, you will embed the `Map_of_Aleppo.pdf` as an image in the Case Study.
 ```
 
 ### Deliverable: 
-Kindly update you link with the `Map_of_Syria.pdf`as a link and `Map_of_Aleppo.pdf` and an embedded image in the case study. Additionally, you can also upload your *svg*, *ai* or *pdf* file to your tutorials folder. 
+Update your Case Study with the `Map_of_Syria.pdf`as a link and `Map_of_Aleppo.pdf` as an embedded image in the case study. Additionally, you can also upload your *svg*, *ai* or *pdf* file to your tutorials folder. 
