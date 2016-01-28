@@ -17,21 +17,27 @@ Overview: In this tutorial,
 *CSR_Repo: Informal.zip
 
 ### Steps:
-*Setup Tutorial2 in QGIS
-*Add Neighborhood Data
-*Adjust Neighborhood Data
-*Add Informal Data (csv)
-*Perform Feature Join
-*Export Neighborhood file as Shape file
-*Export Informal file as Shape file
-*Setup Mapbox Account, ID and Key
-*Add Informal.shp through MapboxEditor
-*Embed Informal Interactive Map in Template
-*Install Mapbox Studio (Mac / Win)
-*Add Neighborhood.shp through MapboxEditor
-*Embed Neighborhood Interactive Map in Template
-*Set Up 2 layer Interactive Map through HTML/JS/CSS
-*Embed Interactive Map in Case Study
+* Setup Tutorial2 in QGIS
+* Add Neighborhood Data
+* Adjust Neighborhood Data
+* Add Informal Data (csv)
+* Perform Feature Join
+* Export Neighborhood file as Shape file
+* Export Informal file as Shape file
+* Setup Mapbox Account, ID and Key
+* Add Informal.shp through MapboxEditor
+* Embed Informal Interactive Map in Template
+```html
+<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.o59e801k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
+```
+* Install Mapbox Studio (Mac / Win)
+* Add Neighborhood.shp through MapboxEditor
+* Embed Neighborhood Interactive Map in Template
+```html
+<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.o59e801k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
+```
+* Set Up 2 layer Interactive Map through HTML/JS/CSS
+* Embed Interactive Map in Case Study
 
 ```html
 <!DOCTYPE html>
