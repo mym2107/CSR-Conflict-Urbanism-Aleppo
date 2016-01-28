@@ -36,10 +36,10 @@ We will be using the following files from HDX:
   * Oringinally Downloaded [here](https://data.hdx.rwlabs.org/dataset/syrian-arab-republic-water-bodies)
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12638628/bfa62092-c56c-11e5-8b71-05effc48373c.png)
-HDX provides additional information on each data source including *layers*, *data source* and *contributor*. It often provides data in *multiple formats*. For our purpose, we will download the shape files. If you prefer to work in [ArcGIS](https://www.arcgis.com), you are welcome to download the geo database (.gdb file). 
+HDX provides additional information on each data source including *layers*, *data source* and *contributor*. It often provides data in *multiple formats*. For our purpose, we will download the shape files. If you prefer to work in [ArcGIS](https://www.arcgis.com), you are welcome to download the geo database (`.gdb file`). 
 
 ##### Neighborhood Level Data:
-*Neighborhood Level Data* is a dataset prepared by CSR. It uses the Neighborhood Map published in the [Aleppo City Profile Report](http://unhabitat.org/city-profile-aleppo-multi-sector-assessment/), pg.24 published by UN-Habitat in May 2014. We digitized the map based on Google Earth satellite imagery, and added Arabic tranlations for the neighborhood names. In a case, where a neighborhood was divided in parts, we've used roman numerals. A neighborhood map was also developed by [UNITAR/UNOSAT](http://www.unitar.org/unosat/), in early 2015, which slightly varies from the one initially produced by [UN Habitat](http://unhabitat.org/).  
+*Neighborhood Level Data* is a dataset prepared by CSR. It uses the Neighborhood Map published in the [Aleppo City Profile Report](http://unhabitat.org/city-profile-aleppo-multi-sector-assessment/), pg.24 published by UN-Habitat, in May 2014. We digitized the map based on Google Earth satellite imagery, and added Arabic tranlations for the neighborhood names. In a case, where a neighborhood was divided in parts, we've used roman numerals. A neighborhood map was also developed by [UNITAR/UNOSAT](http://www.unitar.org/unosat/), in early 2015, which slightly varies from the one initially produced by [UN Habitat](http://unhabitat.org/).  
 
 ### Creating a Basic Map of Aleppo:
 
@@ -56,28 +56,28 @@ QGIS is a user friendly Open Source Geographic Information System (GIS) licensed
 Please Download QGIS [here](https://www.qgis.org/en/site/forusers/download.html). You can access documentation [here](http://www.qgis.org/en/docs/index.html).
 
 **Introduction**:
-When QGIS starts, you are presented with the GUI as shown in the figure below. 
+When **QGIS** starts, you are presented with the GUI as shown in the figure below. 
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12638635/cfd7830c-c56c-11e5-9eea-ab1ff987107d.png)
 
 **1: Menu Bar**: 
-The menu bar provides access to various QGIS features using a standard hierarchical menu.
+The `Menu Bar` provides access to various QGIS features using a standard hierarchical menu.
 
 **2: Tool Bar**: 
-The toolbar provides access to the menus, plus additional tools and plugins for interacting with the map. `Right-Click` on the toolbar to *Add / Remove* functions.
+The `Toolbar` provides access to the menus, plus additional tools and plugins for interacting with the map. `Right-Click` on the toolbar to *Add / Remove* functions.
 
 **3: Layer Panel**:
-This Panel lists all the layers in the project. The checkbox in each legend entry can be used to show or hide the layer. A layer can be selected and dragged up or down in the legend to change the Z-ordering which is the hierarchy in which the layers are displayed on the map.
+The `Layer Panel` lists all the layers in the project. The `checkbox` in each legend entry can be used to show or hide the layer. A `layer` can be selected and dragged up or down in the legend to change the Z-ordering which is the hierarchy in which the layers are visualized in the map view.
 
 **4: Map View**:
-The map displayed in this window will depend on the *vector* and *raster* layers you have chosen to load. The map view can be panned, shifting the focus of the map display to another region, and it can be zoomed in and out. 
+The `Map View` displayed in this window will depend on the *vector* and *raster* layers you have chosen to load. The map view can be panned, shifting the focus of the map display to another region, and it can be zoomed in and out. 
 
 **5: Status Bar**:
-The status bar shows you your current position in map coordinates, along with the scale of the map and the project projection. 
+The `Status Bar` shows you your current position in `map coordinates`, along with the `scale` and the `roject projection`. 
 
 ##### 02. QGIS: Setting Up Project with Data
 **Adding Files**: 
-* A shapefile is actually made up of 5 or 6 individual files with different extensions.
+* A *shapefile* is actually made up of 5 or 6 individual files with different extensions.
   * .shp - The main file that stores the feature geometry (required)
   * .shx - The index file that stores the index of the feature geometry (required)
   * .dbf - The dBASE table that stores the attribute information of features (required)
