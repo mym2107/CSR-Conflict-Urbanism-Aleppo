@@ -73,7 +73,7 @@ The `Layer Panel` lists all the layers in the project. The `checkbox` in each le
 The `Map View` displayed in this window will depend on the *vector* and *raster* layers you have chosen to load. The map view can be panned, shifting the focus of the map display to another region, and it can be zoomed in and out. 
 
 **5: Status Bar**:
-The `Status Bar` shows you your current position in `Map Coordinates`, along with the `Scale` and the [`Project Projection`](https://docs.qgis.org/2.2/en/docs/user_manual/working_with_projections/working_with_projections.html). 
+The `Status Bar` shows you your current position in `Map Coordinates`, along with the `Scale` and the `Project Projection`. You can read more about *Projections* [here](https://docs.qgis.org/2.2/en/docs/user_manual/working_with_projections/working_with_projections.html). 
 
 ##### 02. QGIS: Setting Up Project with Data
 **Adding Files**: 
@@ -95,19 +95,21 @@ The `Status Bar` shows you your current position in `Map Coordinates`, along wit
   * syr_admin1.shp
   * syr_admin4_point.shp
 
-* QGIS allows you to bring data directly from OpenStreetMaps both as an underlay and as geometry. In order to access OSM within the QGIS Environment, please add the following Plugin [**OpenLayers**](https://plugins.qgis.org/plugins/openlayers_plugin/). To add a plugin, please go to `Menu > Plugins > Manage` and Install Plugins. More documentation on installing and managing plugins can be found [here](http://docs.qgis.org/2.0/ca/docs/training_manual/qgis_plugins/fetching_plugins.html). 
-
-
-<hr/>
-
-
-
- 
-* *OpenStreetMap* Plugin. 
-
-* **OpenStreetMap** accessible through `Menu > Vector > OpenStreetMap` allows you to add several base layers, that include Bing satellite imagery, OpenStreetMaps Layer and others. 
+* **Plug In: OpenLayers**
+* QGIS allows you to bring data directly from OpenStreetMaps and other satellite data as an underlay. In order to access Imagery within the QGIS Environment, please add the following Plugin.  [**OpenLayers**](https://plugins.qgis.org/plugins/openlayers_plugin/). To add a plugin, please go to `Menu > Plugins > Manage` and Install Plugins. More documentation on installing and managing plugins can be found [here](http://docs.qgis.org/2.0/ca/docs/training_manual/qgis_plugins/fetching_plugins.html). Once the PlugIn is added it can be accessed through `Menu > Vector > OpenStreetMap`. This is a good way to add an underlay satellite image or OSM data. This tool is also helpful in *Georeferencing Data*.
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12649824/3031639e-c5ae-11e5-8946-3229aac86df3.png)
+
+* **Plug In: OpenStreetMap**
+* QGIS allows you to bring geometry data directly from OpenStreetMaps into your QGIS Environment. In order to do so, please download the [OpenStreetMap plugin](http://wiki.openstreetmap.org/wiki/QGIS_OSM_Plugin), from the method shown above. You can also go to the [OpenSteetMap](https://www.openstreetmap.org/#map=12/36.1961/37.1692) and download data through the *Export* toolbar. You can import the `filename.osm` directly into QGIS. Note: If your download fails, it is because the area selected is larger than can be processed.
+
+![Add Layer](xxx)
+
+![Add Layer](xxx)
+You can set Aleppo to the extent required in the map window. In options select: `From Map Canvas` and add a *filename* for `output`. Depending on the `tags` in the region, you will be getting point, line and polygon data as *separate layers*. Select all for now as you can switch off and remove unwanted layers later.
+
+![Add Layer](xxx)
+
 
 ##### 03. QGIS: Analyzing and Styling Data
 **Styling Data**
