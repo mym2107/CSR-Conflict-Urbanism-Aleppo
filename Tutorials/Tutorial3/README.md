@@ -25,6 +25,23 @@ Note: In order to note the availability of Country Level Data, it is recommended
 
 **Humanitarian Data Exchange**, [HDX](https://data.hdx.rwlabs.org) is a good place for open data as it presents a *consolidated repository* of data collected through multiple sources. The goal of the Humanitarian Data Exchange (HDX) is to make humanitarian data easy to find and use for analysis. If you are interested in exploring datasets from multiple Humanitarian Agencies, it is recommended that you register yourself on the HDX website. You can select regions and organisations of interest and explore the vast collection of datasets. 
 
-![Add Layer](...)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12638623/b49177e2-c56c-11e5-9dca-7885710c4bc9.png)
+Note: The Country Overview provides visualization of key datasets along with a list of browsable sources. As of Jan 2016, there are 174 datasets for Syria. 
 
+We will be using the following files from HDX:
+* Syria: Administrative Boundaries
+  * SYR_UNCS-OCHA_20130519_SHP_UTF8.ZIP
+  * Oringinally Downloaded [here](https://data.hdx.rwlabs.org/dataset/syrian-arab-republic-administrative-boundaries-populated-places)
+* Syria: Waterways
+  * WATERWAYS_LINE_OSM.ZIP
+  * Oringinally Downloaded [here](https://data.hdx.rwlabs.org/dataset/syrian-arab-republic-water-bodies)
+* Syria: Elevation Model
+  * SYR_ASTER_DEM.TIF.ZIP
+  * Oringinally Downloaded [here](https://data.hdx.rwlabs.org/dataset/syrian-arab-republic-elevation-model)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12638628/bfa62092-c56c-11e5-8b71-05effc48373c.png)
+HDX provides additional information on each data source including *layers*, *data source* and *contributor*. It often provides data in *multiple formats*. For our purpose, we will download the shape files. If you prefer to work in [ArcGIS](https://www.arcgis.com), you are welcome to download the geo database (.gdb file). 
+
+##### Neighborhood Level Data:
+*Neighborhood Level Data* is a dataset prepared by CSR. It uses the Neighborhood Map published in the [Aleppo City Profile Report](http://unhabitat.org/city-profile-aleppo-multi-sector-assessment/), pg.24 published by UN-Habitat in May 2014. We digitized the map based on Google Earth satellite imagery, and added Arabic transliterations for the English neighborhood names. In a case, where a neighborhood was divided in parts by roads, we used roman numerals to their different parts. A neighborhood map was also developed by [UNITAR/UNOSAT](http://www.unitar.org/unosat/), in early 2015.  
 
