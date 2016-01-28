@@ -37,21 +37,17 @@ This section provides detailed explanation of each data source. You can skip thi
 ##### 01. QGIS: SetUp Neighborhood and Informal Data
 **QGIS Project**
  * Open the `Neighborhood.shp` and `Informal.shp` file in QGIS, through `Layer > Add Layer > Add Vector Layer`
- * Look at the `attributes table` to see the available fields. Delete Uncessary fields to save space on mapbox.
- 
+ * Look at the `attributes table` to see the available fields. Delete Uncessary fields to save space on mapbox
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12660491/f84ffeca-c5e1-11e5-9c0e-5ffd9d16e9b7.png)
-
 *`Neighborhood.shp` provides a list of 133 Neighborhoods
   * Id
   * Name
   * Name_A
-
 *`Informal.shp` provides a list of 15 Neighborhoods
   * Id
   * Name
   * Name_A
   * Informal
-  
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12660490/f84d4c7a-c5e1-11e5-9d73-4e730c500205.png)
 
 Export these as `shape files`, after setting Coordinate Reference System CRS 
