@@ -52,11 +52,9 @@ This section provides detailed explanation of each data source. You can skip thi
   * Name_A
   * Informal
   
-       
  ![Add Layer]()
  * Export these as `shape files`, after setting Coordinate Reference System CRS 
  * Mapbox only allows *WGS 84/ Pseudo Mercator ([EPSG:3857](https://epsg.io/3857))*
-
 
 ##### 02. MAPBOX: Sign Up, Installation and Introduction 
 * Setup Mapbox Account, ID and Key
