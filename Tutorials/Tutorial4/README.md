@@ -40,16 +40,18 @@ This section provides detailed explanation of each data source. You can skip thi
  * Look at the `attributes table` to see the available fields. Delete Uncessary fields to save space on mapbox.
  
 ![Add Layer]()
-* Layer `Attributes`:
-    *`Neighborhood.shp` provides a list of 133 Neighborhoods
-       * Id
-       * Name
-       * Name_A
-    *`Informal.shp` provides a list of 15 Neighborhoods
-       * Id
-       * Name
-       * Name_A
-       * Informal
+
+Layer `Attributes`
+*`Neighborhood.shp` provides a list of 133 Neighborhoods
+ * Id
+ * Name
+ * Name_A
+       
+*`Informal.shp` provides a list of 15 Neighborhoods
+ * Id
+ * Name
+ * Name_A
+ * Informal
        
  ![Add Layer]()
  * Export these as `shape files`, after setting Coordinate Reference System CRS 
