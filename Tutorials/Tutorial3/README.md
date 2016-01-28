@@ -21,7 +21,6 @@ This section provides detailed explanation of each datasource. You can skip this
 ##### Country Level Data:
 *Country Level Data* is provided by [Humanitarian Response](https://www.humanitarianresponse.info/en/applications/data) which a respository maintained by UN OCHA to support humanitarian operations globally. The **Common Operational Datasets (CODs)** are critical datasets that are used to support the work of humanitarian actors across multiple sectors. They are considered a de facto standard for the humanitarian community and should represent the best-available datasets for each theme. The **Fundamental Operational Datasets (FODs)** are datasets that are relevent to a humanitarian operation, but are more specific to a particular sector or otherwise do not fit into one of the seven COD themes.
 
-Add Image1
-![Add Layer](https://drive.google.com/open?id=0B9okXY0wGDKjaGJrZDljeVVmdDg)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12637883/b46b94ce-c566-11e5-815b-a84ea83369fa.png)
 
 
