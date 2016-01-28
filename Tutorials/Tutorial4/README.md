@@ -16,8 +16,6 @@ Overview: In this tutorial,
 *CSR_Repo: Neighborhood.zip
 *CSR_Repo: Informal.zip
 
-
-
 ### Steps:
 * Setup Tutorial2 in QGIS
 * Add Neighborhood Data
@@ -28,7 +26,7 @@ Overview: In this tutorial,
 * Export Informal file as Shape file
 * Setup Mapbox Account, ID and Key
 * Add Informal.shp through MapboxEditor
-![Add Layer](xxx) 
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12650558/42ce0da6-c5b1-11e5-87f6-efa19e9c2c1e.png) 
 
 * Embed Informal Interactive Map in Template
 ```html
