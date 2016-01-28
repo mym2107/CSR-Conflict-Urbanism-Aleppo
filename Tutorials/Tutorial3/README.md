@@ -73,7 +73,7 @@ The `Layer Panel` lists all the layers in the project. The `checkbox` in each le
 The `Map View` displayed in this window will depend on the *vector* and *raster* layers you have chosen to load. The map view can be panned, shifting the focus of the map display to another region, and it can be zoomed in and out. 
 
 **5: Status Bar**:
-The `Status Bar` shows you your current position in `map coordinates`, along with the `scale` and the `roject projection`. 
+The `Status Bar` shows you your current position in `Map Coordinates`, along with the `Scale` and the [`Project Projection`](https://docs.qgis.org/2.2/en/docs/user_manual/working_with_projections/working_with_projections.html). 
 
 ##### 02. QGIS: Setting Up Project with Data
 **Adding Files**: 
@@ -86,16 +86,25 @@ The `Status Bar` shows you your current position in `map coordinates`, along wit
 
 * To add *shapefiles* go to `Menu > Layer > Add Vector Layer > New Shapefile Layer`and add `filename.shp` 
 
-* After adding all the *shapefiles*, please organize them in the following order in the Layers Panel . Please note that layers are *hierarchical* and drawn based on their position in the `layers panel`.
-  * syr_admin1.shp
-  * syr_admin2.shp
-  * syr_admin3.shp
-  * syr_admin4_point.shp
-  * syr_admin5.shp
-  * waterways_line_OSM.shp
+* After adding all the *shapefiles*, please organize them in the following order in the Layers Panel. Please note that layers are *hierarchical* and drawn based on their position in the `layers panel`. 
   * Aleppo_Neighborhood
+  * Waterways_line_OSM.shp
+  * syr_admin4_point.shp
+  * syr_admin3.shp
+  * syr_admin2.shp
+  * syr_admin1.shp
+  * syr_admin4_point.shp
 
-* QGIS allows you to bring data directly from OpenStreetMaps. In order to access OSM within the QGIS Environment, please add the following Plugin. Menu > Plugins > Manage and Install Plugins. QGIS has a huge repository of Plugins. Please add *Open Layers* Plugin and *OpenStreetMap* Plugin. 
+* QGIS allows you to bring data directly from OpenStreetMaps both as an underlay and as geometry. In order to access OSM within the QGIS Environment, please add the following Plugin [**OpenLayers**](https://plugins.qgis.org/plugins/openlayers_plugin/). To add a plugin, please go to `Menu > Plugins > Manage` and Install Plugins. More documentation on installing and managing plugins can be found [here](http://docs.qgis.org/2.0/ca/docs/training_manual/qgis_plugins/fetching_plugins.html). 
+
+
+<hr/>
+
+
+
+ 
+* *OpenStreetMap* Plugin. 
+
 * **OpenStreetMap** accessible through `Menu > Vector > OpenStreetMap` allows you to add several base layers, that include Bing satellite imagery, OpenStreetMaps Layer and others. 
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12649824/3031639e-c5ae-11e5-8946-3229aac86df3.png)
