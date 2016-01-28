@@ -1,5 +1,5 @@
 ######CSR / Conflict Urbanism Aleppo
-##Tutorial 8
+##Tutorial 8: Creating a Story Based Interactive Map
 Overview: 
 
 ### Tools:
@@ -21,6 +21,9 @@ Overview:
 * Set Up Interactive Map
 * Set Up Story for Interactive Map
 * Embed Interactive Map in Case Study
+
+##### Set Up Interactive Map:
+
 
 *Optional:*
 * Export Shp file 
