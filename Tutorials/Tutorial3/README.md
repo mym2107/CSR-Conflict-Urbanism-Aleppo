@@ -96,27 +96,25 @@ The `Status Bar` shows you your current position in `Map Coordinates`, along wit
   * syr_admin4_point.shp
 
 * **Plug In: OpenLayers**
-* QGIS allows you to bring data directly from OpenStreetMaps and other satellite data as an underlay. In order to access Imagery within the QGIS Environment, please add the following Plugin.  [**OpenLayers**](https://plugins.qgis.org/plugins/openlayers_plugin/). To add a plugin, please go to `Menu > Plugins > Manage` and Install Plugins. More documentation on installing and managing plugins can be found [here](http://docs.qgis.org/2.0/ca/docs/training_manual/qgis_plugins/fetching_plugins.html). Once the PlugIn is added it can be accessed through `Menu > Vector > OpenStreetMap`. This is a good way to add an underlay satellite image or OSM data. This tool is also helpful in *Georeferencing Data*.
+* QGIS allows you to bring data directly from OpenStreetMaps and other satellite data as an underlay. In order to access Imagery within the QGIS Environment, please add the following Plugin.  [OpenLayers](https://plugins.qgis.org/plugins/openlayers_plugin/). To add a plugin, please go to `Menu > Plugins > Manage` and Install Plugins. More documentation on installing and managing plugins can be found [here](http://docs.qgis.org/2.0/ca/docs/training_manual/qgis_plugins/fetching_plugins.html). Once the PlugIn is added it can be accessed through `Menu > Vector > OpenStreetMap`. This is a good way to add an underlay satellite image or OSM data. This tool is also helpful in *Georeferencing Data*.
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12649824/3031639e-c5ae-11e5-8946-3229aac86df3.png)
 
 * **Plug In: OpenStreetMap**
 * QGIS allows you to bring geometry data directly from OpenStreetMaps into your QGIS Environment. In order to do so, please download the [OpenStreetMap plugin](http://wiki.openstreetmap.org/wiki/QGIS_OSM_Plugin), from the method shown above. You can also go to the [OpenSteetMap](https://www.openstreetmap.org/#map=12/36.1961/37.1692) and download data through the *Export* toolbar. You can import the `filename.osm` directly into QGIS. Note: If your download fails, it is because the area selected is larger than can be processed.
 
-![Add Layer](xxx)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12656141/9d8ec780-c5ca-11e5-8c9e-5fbbafda01f2.png)
 
-![Add Layer](xxx)
 You can set Aleppo to the extent required in the map window. In options select: `From Map Canvas` and add a *filename* for `output`. Depending on the `tags` in the region, you will be getting point, line and polygon data as *separate layers*. Select all for now as you can switch off and remove unwanted layers later.
-
-![Add Layer](xxx)
-
 
 ##### 03. QGIS: Analyzing and Styling Data
 **Styling Data**
 * **Attributes Table** 
   `Right click - Open Attributes Table`to access attributes table, which maintains the data in each file.
 
+Layer Projection Stuff
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12649828/3040c7d0-c5ae-11e5-88ae-a5e4fc4b9c1e.png)
+
 
 * **Properties**
   `Right click - Properties`to access properties tab. 
@@ -142,9 +140,18 @@ The `Print Composer` is where you will format your map for its final output. Her
 ##### 05. AI: Styling and Editing Map SVG 
 The last step is to export the map as a PDF file. Use the `Export as PDF` button on the top toolbar and save your final map.
 
+
 ##### 06. WEB: Embed Map in Case Study
+You will now embed the `Map_of_Syria.pdf` as a link in the Case Study. The map opens in a separate window, for which the dimensions are passed within the argument. 
 
 ```html
-<a href="Map.pdf" target="popup" onclick="window.open('Map1.pdf', 'About', 'width=1200,height=800'); return false;"> <h4> <strong> Map </strong> </h4></a>
+<a href="Map_of_Syria.pdf" target="popup" onclick="window.open('Map1.pdf', 'About', 'width=1200,height=800'); return false;"> <h4> Map Of Syria </h4></a>
 ```
+Next, you will embed the `Map_of_Aleppo.pdf` as an image in the Case Study.  
 
+```html
+<IMG SRC="Map_of_Aleppo.png" ALT="Map of Aleppo" WIDTH=800 HEIGHT=800>
+```html
+
+### Deliverable: 
+Kindly update you link with the `Map_of_Syria.pdf`as a link and `Map_of_Aleppo.pdf` and an embedded image in the case study.
