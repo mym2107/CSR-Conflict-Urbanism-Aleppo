@@ -14,13 +14,12 @@ For this tutorial, we will be using the following datasets:
 * Aleppo_Dem.zip, Download [here](/Tutorials/Tutorial3/Data/AleppoDem.zip)
 * Neighborhood.zip, Download [here](/Tutorials/Tutorial3/Data/Neighborhood.zip)
   
-
 ### Datasets Overview:
 This section provides detailed explanation of each data source. You can skip this section, if you would like to continue with the tutorial. However, it is recommended that you familiarize yourself with these sources, as they will asssist you in your research.
 
 ##### Country Level Data:
-*Country Level Data* used to be provided by [Humanitarian Response](https://www.humanitarianresponse.info/en/applications/data); a respository maintained by UN OCHA to support humanitarian operations globally. The **Common Operational Datasets (CODs)** are critical datasets that are used to support the work of humanitarian actors across multiple sectors. They are considered a de facto standard for the humanitarian community and should represent the best-available datasets for each theme. The **Fundamental Operational Datasets (FODs)** are datasets that are relevent to a humanitarian operation, but are more specific to a particular sector or otherwise do not fit into one of the seven COD themes.
-</br>
+*Country Level Data* used to be provided by [Humanitarian Response](https://www.humanitarianresponse.info/en/applications/data); a respository maintained by UN OCHA to support humanitarian operations globally. The **Common Operational Datasets (CODs)** are critical datasets that are used to support the work of humanitarian actors across multiple sectors. They are considered a de facto standard for the humanitarian community and should represent the best-available datasets for each theme. The **Fundamental Operational Datasets (FODs)** are datasets that are relevent to a humanitarian operation, but are more specific to a particular sector or otherwise do not fit into one of the seven COD themes.</br>
+
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12637883/b46b94ce-c566-11e5-815b-a84ea83369fa.png)
 Note: In order to note the availability of Country Level Data, it is recommended to get an overview from the Humanitarian Response website. You can follow the links for each individual download. Alternatively, you can shift to HDX website. 
 
