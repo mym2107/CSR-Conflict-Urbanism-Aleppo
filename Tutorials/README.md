@@ -43,17 +43,16 @@ Level: Medium
 
 + **[Tutorial 9](/Tutorials/Tutorial9/README.md):** 
 *Creating an Interactive Categorized Cluster Map*</br>
-Level: Hard
-
-+ **[Tutorial 10](/Tutorials/Tutorial10/README.md):** 
-*Creating an Interactive Grid of Images*</br>
-Level: Hard
-
+Level: Medium
 
 <hr/>
 Tutorials 11 and 12 will be demonstrated during Workshop 2. </br> 
 On Saturday March 5th, 9-1pm, Studio @[Butler](https://studio.cul.columbia.edu).</br>
 *This workshop is optional*.
+
++ **[Tutorial 10](/Tutorials/Tutorial10/README.md):** 
+*Creating an Interactive Grid of Images*</br>
+Level: Advance
 
 + **[Tutorial 11](/Tutorials/Tutorial11/README.md):** 
 *Remote Sensing: Using LANDSAT NDVI Analysis to detect Urban Change Patterns*</br>
