@@ -23,6 +23,8 @@ This section provides detailed explanation of each data source. You can skip thi
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12637883/b46b94ce-c566-11e5-815b-a84ea83369fa.png)
 Note: In order to note the availability of Country Level Data, it is recommended to get an overview from the Humanitarian Response website. You can follow the links for each individual download. Alternatively, you can shift to HDX website. 
 
-**Humanitarian Data Exchange** [HDX](https://data.hdx.rwlabs.org) is a good place for open data as it presents a *consolidated repository* of data collected through multiple sources. The goal of the Humanitarian Data Exchange (HDX) is to make humanitarian data easy to find and use for analysis. If you are interested in exploring datasets from multiple Humanitarian Agencies, it is recommended that you register yourself on the HDX website. You can select regions and organisations of interest and explore the vast collection of datasets. 
+**Humanitarian Data Exchange**, [HDX](https://data.hdx.rwlabs.org) is a good place for open data as it presents a *consolidated repository* of data collected through multiple sources. The goal of the Humanitarian Data Exchange (HDX) is to make humanitarian data easy to find and use for analysis. If you are interested in exploring datasets from multiple Humanitarian Agencies, it is recommended that you register yourself on the HDX website. You can select regions and organisations of interest and explore the vast collection of datasets. 
 
-Image2
+![Add Layer](...)
+
+
