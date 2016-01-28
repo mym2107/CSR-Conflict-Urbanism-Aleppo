@@ -45,4 +45,37 @@ HDX provides additional information on each data source including *layers*, *dat
 ##### Neighborhood Level Data:
 *Neighborhood Level Data* is a dataset prepared by CSR. It uses the Neighborhood Map published in the [Aleppo City Profile Report](http://unhabitat.org/city-profile-aleppo-multi-sector-assessment/), pg.24 published by UN-Habitat in May 2014. We digitized the map based on Google Earth satellite imagery, and added Arabic tranlations for the neighborhood names. In a case, where a neighborhood was divided in parts, we've used roman numerals. A neighborhood map was also developed by [UNITAR/UNOSAT](http://www.unitar.org/unosat/), in early 2015, which slightly varies from the one initially produced by [UN Habitat](http://unhabitat.org/).  
 
+### Creating a Basic Map of Aleppo:
+
+##### Steps:
+  * 01. QGIS: Installation and Introduction
+  * 02. QGIS: Setting Up Project with Data
+  * 03. QGIS: Analyzing and Styling Data
+  * 04. QGIS: Setting Up Print Composer
+  * 05. AI: Styling and Editing Map SVG
+
+##### 01. QGIS: Installation and Introduction
+**Installtion**: 
+QGIS is a user friendly Open Source Geographic Information System (GIS) licensed under the GNU General Public License. It is an official project of the Open Source Geospatial Foundation (OSGeo). It runs on Linux, Unix, Mac OSX, Windows and Android and supports numerous vector, raster, and database formats and functionalities. 
+Please Download QGIS [here](https://www.qgis.org/en/site/forusers/download.html). You can access documentation [here](http://www.qgis.org/en/docs/index.html).
+
+**Introduction**:
+When QGIS starts, you are presented with the GUI as shown in the figure below. 
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12638635/cfd7830c-c56c-11e5-9eea-ab1ff987107d.png)
+
+**1: Menu Bar**: The menu bar provides access to various QGIS features using a standard hierarchical menu.
+**1: Menu Bar**:
+**1: Menu Bar**:
+**1: Menu Bar**:
+
+##### 02. QGIS: Setting Up Project with Data
+
+##### 03. QGIS: Analyzing and Styling Data
+
+##### 04. QGIS: Setting Up Print Composer
+
+##### 05. AI: Styling and Editing Map SVG 
+
+##### 06. WEB: Embed Map in Case Study
 
