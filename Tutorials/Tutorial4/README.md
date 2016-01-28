@@ -38,15 +38,15 @@ This section provides detailed explanation of each data source. You can skip thi
 **QGIS Project**
  * Open the `Neighborhood.shp` and `Informal.shp` file in QGIS, through `Layer > Add Layer > Add Vector Layer`
  * Look at the `attributes table` to see the available fields. Delete Uncessary fields to save space on mapbox
- * 
+
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12660491/f84ffeca-c5e1-11e5-9c0e-5ffd9d16e9b7.png)
 
-*`Neighborhood.shp` provides a list of 133 Neighborhoods
+*`Neighborhood.shp`:133 Neighborhoods
   * Id
   * Name
   * Name_A
   
-*`Informal.shp` provides a list of 15 Neighborhoods
+*`Informal.shp`:15 Neighborhoods
   * Id
   * Name
   * Name_A
