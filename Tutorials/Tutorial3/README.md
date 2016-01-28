@@ -64,10 +64,33 @@ When QGIS starts, you are presented with the GUI as shown in the figure below.
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12638635/cfd7830c-c56c-11e5-9eea-ab1ff987107d.png)
 
-**1: Menu Bar**: The menu bar provides access to various QGIS features using a standard hierarchical menu.
-**1: Menu Bar**:
-**1: Menu Bar**:
-**1: Menu Bar**:
+**1: Menu Bar**: 
+The menu bar provides access to various QGIS features using a standard hierarchical menu.
+
+**2: Tool Bar**: 
+The toolbar provides access to the menus, plus additional tools and plugins for interacting with the map. `Right-Click` on the toolbar to *Add / Remove* functions.
+
+**3: Map Legend**:
+The map legend area lists all the layers in the project. The checkbox in each legend entry can be used to show or hide the layer. A layer can be selected and dragged up or down in the legend to change the Z-ordering which is the hierarchy in which the layers are displayed on the map.
+
+**4: Map View**:
+The map displayed in this window will depend on the *vector* and *raster* layers you have chosen to load. The map view can be panned, shifting the focus of the map display to another region, and it can be zoomed in and out. 
+
+**5: Status Bar**:
+The status bar shows you your current position in map coordinates, along with the scale of the map and the project projection. 
+
+##### 02. QGIS: Setting Up Project with Data
+**Adding Files**: 
+* A shapefile is actually made up of 5 or 6 individual files with different extensions.
+  * .shp - The main file that stores the feature geometry (required)
+  * .shx - The index file that stores the index of the feature geometry (required)
+  * .dbf - The dBASE table that stores the attribute information of features (required)
+  * .sbn and .sbx - The files that store the spatial index of features.
+  * .prj - The file that stores the coordinate system information.
+
+* To add *shapefiles* go to `Menu > Layer > Create New Layer > New Shapefile Layer`and add `filename.shp` 
+
+
 
 ##### 02. QGIS: Setting Up Project with Data
 
