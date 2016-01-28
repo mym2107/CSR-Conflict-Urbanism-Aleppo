@@ -42,14 +42,16 @@ This section provides detailed explanation of each data source. You can skip thi
 ![Add Layer]()
 
 *`Neighborhood.shp` provides a list of 133 Neighborhoods
-Id
-Name
-Name_A
-       
+  * Id
+  * Name
+  * Name_A
+
 *`Informal.shp` provides a list of 15 Neighborhoods
-Id
-Name
-informal
+  * Id
+  * Name
+  * Name_A
+  * Informal
+  
        
  ![Add Layer]()
  * Export these as `shape files`, after setting Coordinate Reference System CRS 
