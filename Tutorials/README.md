@@ -18,40 +18,37 @@ Tutorials 3 to 10 will be demonstrated during Weekly Workshops.</br>
 It is required that you do a *minimum of 3*.
 
 + **Tutorial 3:** 
-*XXX*</br>
+*Creating a Static Map*</br>
 Level: Easy
 
 + **Tutorial 4:** 
-*XXX*</br>
+*Creating a Basic Interactive Web Map*</br>
 Level: Easy
 
 + **Tutorial 5:** 
-*XXX*</br>
+*Creating an Interactive Historical Map*</br>
 Level: Easy
 
 + **Tutorial 6:** 
-*XXX*</br>
+*Creating an Interactive Cluster Map*</br>
 Level: Medium
 
 + **Tutorial 7:** 
-*XXX*</br>
+*Creating a Interactive Satellite Imagery Map*</br>
 Level: Medium
 
 + **Tutorial 8:** 
-*XXX*</br>
+*Creating a Story Based Interactive Map*</br>
 Level: Medium
 
 + **Tutorial 9:** 
-*XXX*</br>
-Level: Medium
-
-+ **Tutorial 3:** 
-*XXX*</br>
+*Creating an Interactive Categorized Cluster Map*</br>
 Level: Hard
 
 + **Tutorial 10:** 
-*XXX*</br>
+*Creating an Interactive Grid of Images*</br>
 Level: Hard
+
 
 <hr/>
 Tutorials 11 and 12 will be demonstrated during Workshop 2. </br> 
@@ -59,11 +56,11 @@ On Saturday March 5th, 9-1pm, Studio @[Butler](https://studio.cul.columbia.edu).
 *This workshop is optional*.
 
 + **Tutorial 11:** 
-*Remote Sensing: LANDSAT Image Analysis*</br>
+*Remote Sensing: Using LANDSAT NDVI Analysis to detect Urban Change Patterns*</br>
 Level: Advance
 
 + **Tutorial 12:** 
-*Machine Learning:*</br>
+*Image Analysis: Using Machine Learning to detect Rubble Patterns*</br>
 Level: Advanced
 
 <hr/>
