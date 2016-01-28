@@ -1,5 +1,5 @@
 ######CSR / Conflict Urbanism Aleppo
-##Tutorial 7
+##Tutorial 7: Creating a Interactive Before / After Satellite Imagery Map
 Overview: In this tutorial
 
 ### Tools:
