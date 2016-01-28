@@ -154,4 +154,4 @@ Next, you will embed the `Map_of_Aleppo.pdf` as an image in the Case Study.
 ```
 
 ### Deliverable: 
-Kindly update you link with the `Map_of_Syria.pdf`as a link and `Map_of_Aleppo.pdf` and an embedded image in the case study.
+Kindly update you link with the `Map_of_Syria.pdf`as a link and `Map_of_Aleppo.pdf` and an embedded image in the case study. Additionally, you can also upload your *svg*, *ai* or *pdf* file to your tutorials folder. 
