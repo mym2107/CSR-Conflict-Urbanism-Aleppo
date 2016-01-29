@@ -99,9 +99,13 @@ There are also some common `map IDs`, that you can use:
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12650558/42ce0da6-c5b1-11e5-87f6-efa19e9c2c1e.png) 
 
 * Embed Informal Interactive Map in Template
-**i-frame**
-* Mapbox Editor generates an embed code for you to add your maps to your website or blog. The embed code uses an <iframe> to display your map. This HTML element allows you to put a webpage into another webpage, insulating all the code that makes your map work from the code on your website.
 
+**i-frame**
+* Mapbox Editor generates an embed code for you to add your maps to your website or blog. The embed code uses an `iframe` to display your map. This HTML element allows you to put a webpage into another webpage, insulating all the code that makes your map work from the code on your website.
+
+```html
+<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.o59e801k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
+```
 
 * Install Mapbox Studio (Mac / Win)
 * Add Neighborhood.shp through MapboxEditor
@@ -137,7 +141,7 @@ var map = L.mapbox.map('map', 'mapbox.streets')
 
 ##### Adding Feature Layer for Display
 
-```
+```javascript
         var featureLayer1 = L.mapbox.featureLayer('c4sr.o59e801k')
             .on('click', function(e) {
                 if (!markerPopup) {
