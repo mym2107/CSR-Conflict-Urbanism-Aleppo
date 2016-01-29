@@ -174,6 +174,15 @@ Note: This is now saved in your projects on mapbox. Regardless of environment, y
 
 ##### 05. WEB: Embed Neighborhood and Informal Maps
 
++ Embed: iframe code to embed in any other site
+```html
+<iframe width='100%' 
+height='500px' 
+frameBorder='0' 
+src='https://a.tiles.mapbox.com/v4/c4sr.p10e979a/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'>
+</iframe>
+```
+
 ##### 06. WEB: Set Up 2 layer Interactive Map 
 **Basic Map Layout**
 
