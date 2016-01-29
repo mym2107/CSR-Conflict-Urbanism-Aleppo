@@ -155,12 +155,15 @@ This is where you add a `Name` and `Description` to you project.
 * `Tab: Save` *:<br>
 After *saving* the project, mapbox provides the following:
 + Map ID: `c4sr.p10e979a`
-+ Share: Weblink for your Map <br>
-*https://a.tiles.mapbox.com/v4/c4sr.p10e979a/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A#12/36.2351/37.2201*
-+ Embed: iframe code to embed in any other site
-*<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.p10e979a/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>*
 
-**THIS**
++ Share: Weblink for your Map <br>
+`https://a.tiles.mapbox.com/v4/c4sr.p10e979a/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A#12/36.2351/37.2201`
+
++ Embed: iframe code to embed in any other site
+```html
+<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.p10e979a/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
+```
+
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12677125/c50449c6-c664-11e5-88d1-9274b0c6d601.png)
 
 Note: This is now saved in your projects on mapbox. Regardless of environment, you can always locate this project and re-edit it. It's Map ID would remain the same. So if you have a webmap live, it will be automatically updated. 
