@@ -58,7 +58,20 @@ Export these as `shape files`, after setting Coordinate Reference System CRS
 Mapbox only allows *WGS 84/ Pseudo Mercator ([EPSG:3857](https://epsg.io/3857))*
 
 ##### 02. MAPBOX: Sign Up, Installation and Introduction 
+**Mapbox**
+Mapbox is an open source mapping platform. Below we will look at the 3 different working environments it offers and some basic terminology.
+![Add Layer]
 
+[Mapbox Editor](https://www.mapbox.com/editor/#style) is an online interface where you can choose a Mapbox classic style as a basemap, drag and drop features, and share your project. Editor requires no coding skills and can be easily integrated into a web template. You can import GeoJSON, CSV, KML, or GPX files into Mapbox Editor. You can also export data in GeoJSON or KML format.
+![Add Layer]
+
+[Mapbox Studio Classic](https://www.mapbox.com/help/define-mapbox-studio-classic/) is a desktop application for designing world maps. It allows you to design maps by using [vector tiles](https://www.mapbox.com/help/define-vector-tiles/) and [CartoCSS](https://www.mapbox.com/help/define-cartocss/). Mapbox Studio Classic allows you to upload your map directly to your Mapbox account and then use your map style with our Developer tools. You can also use the map that you design in Mapbox Studio Classic as a baselayer in Mapbox Editor. You can import shapefiles, KML, GeoJSON, GPX, CSV, TIF, and VRT files into Mapbox Studio Classic. You can export Mapbox Studio Classic sources as MBTiles.
+![Add Layer]
+
+[Mapbox Studio](https://www.mapbox.com/mapbox-studio/)o is an online application for designing world maps. It allows you to design maps with vector tiles and Mapbox GL. You can use your map style on the web with Mapbox GL JS and in your mobile apps with the iOS SDK. You can import MBTiles, KML, GPX, GeoJSON, Shapefiles (zipped), CSV, and GeoTIFF files into Mapbox Studio to create vector tiles for styling.
+![Add Layer]
+
+Key Terms
 **API Key**
 To use any of Mapbox’s tools, APIs, or SDKs, you’ll need a Mapbox access token. Mapbox uses access tokens to associate requests to API resources with your account. There are two types of access tokens:
 **Public access tokens** — use a public access token in websites or applications where they can be easily rotated, like scripts on a web page.
@@ -73,7 +86,7 @@ Any time you create a project with *Mapbox Editor*, upload a style with *Mapbox 
 ```
 Your map ID will always start with your Mapbox username followed by your map’s unique handle: `username.handle`
 ```
-There are three different types of map IDs:
+There are three different types of `map IDs`:
 * [Projects](https://www.mapbox.com/studio/classic/projects/) — projects are made with Mapbox Editor. Share your map from Mapbox Editor or use your project map ID with Mapbox APIs or SDKs.
 * [Styles](https://www.mapbox.com/studio/classic/styles/) — styles are custom maps and styled data made with Mapbox Studio Classic. Use your style map ID with Mapbox APIs or import it into Mapbox Editor.
 * [Data](https://www.mapbox.com/studio/data) — You can upload data or sources on Mapbox.com and from Mapbox Studio Classic. Add your data map ID as a custom source in Mapbox Studio Classic or update it with the Mapbox Upload API.
@@ -91,6 +104,12 @@ There are also some common `map IDs`, that you can use:
 ##### 05. WEB: Embed Neighborhood and Informal Maps
 
 ##### 06. WEB: Set Up 2 layer Interactive Map 
+**Baselayer**
+A `baselayer` often refers to the map style that you designed in [Mapbox Studio Classic](https://www.mapbox.com/help/define-mapbox-studio-classic/) or the [Mapbox classic styles](https://www.mapbox.com/maps/). The baselayer provides geographic context and serves as a starting point for your map.
+
+**Layers**
+`Layers` are used in GL styles to add styling rules to specific subsets of data. Layers contain both a reference to the data for which they’re defining a style as well as the styling rules to be applied.
+
 
 ##### 07. WEB: Embed 2 layer Map in Case Study
 
