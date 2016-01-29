@@ -127,7 +127,7 @@ A `baselayer` often refers to the map style that you designed in [Mapbox Studio 
 
 Once you have initiated a mapbox account, note down your mapbox access token. You can use the `Tutorial_4_1.html` file or copy/paste the below code in [sublime](http://www.sublimetext.com/) as HTML. 
 
-! [Add Layer}()
+! [Add Layer}(https://cloud.githubusercontent.com/assets/16892784/12675624/95c49cfc-c659-11e5-9771-26975860a408.png)
 
 In order to make a map of Syria, you need to do the following:
 * Add your mapbox access token: Ln:35
@@ -190,7 +190,7 @@ var map = L.mapbox.map('map', 'mapbox.satellite')
 
 You can save the file as Tut4_1.html and open it in Chrome. This is how it should appear:
 
-! [Add Layer]()
+! [Add Layer](https://cloud.githubusercontent.com/assets/16892784/12675623/95ad91ce-c659-11e5-99b1-d37b9c78199a.png)
 
 ##### 07. WEB: Embed 2 layer Map in Case Study
 
