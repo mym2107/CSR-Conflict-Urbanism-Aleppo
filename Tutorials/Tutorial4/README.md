@@ -60,27 +60,31 @@ Mapbox only allows *WGS 84/ Pseudo Mercator ([EPSG:3857](https://epsg.io/3857))*
 ##### 02. MAPBOX: Sign Up, Installation and Introduction 
 [**Mapbox**](www.mapbox.com) <br>
 Mapbox is an open source mapping platform. Below we will look at the 3 different working environments it offers and some basic terminology.<br>
+
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12666482/6302c9f0-c60f-11e5-8e8f-d3c11283d3ae.png)
 
 [Mapbox Editor](https://www.mapbox.com/editor/#style) <br>
 is an online interface where you can choose a Mapbox classic style as a basemap, drag and drop features, and share your project. Editor requires no coding skills and can be easily integrated into a web template. You can import GeoJSON, CSV, KML, or GPX files into Mapbox Editor. You can also export data in GeoJSON or KML format.
 <br>
+
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12666484/66c7e368-c60f-11e5-8cd9-47022b4494b0.png)
 
 [Mapbox Studio Classic](https://www.mapbox.com/help/define-mapbox-studio-classic/) <br>
 is a desktop application for designing world maps. It allows you to design maps by using [vector tiles](https://www.mapbox.com/help/define-vector-tiles/) and [CartoCSS](https://www.mapbox.com/help/define-cartocss/). Mapbox Studio Classic allows you to upload your map directly to your Mapbox account and then use your map style with our Developer tools. You can also use the map that you design in Mapbox Studio Classic as a baselayer in Mapbox Editor. You can import shapefiles, KML, GeoJSON, GPX, CSV, TIF, and VRT files into Mapbox Studio Classic. You can export Mapbox Studio Classic sources as MBTiles.
 <br>
+
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12666485/66cc8bac-c60f-11e5-8588-1290bf068b36.png)
 
 [Mapbox Studio](https://www.mapbox.com/mapbox-studio/) <br>
 is an online application for designing world maps. It allows you to design maps with vector tiles and Mapbox GL. You can use your map style on the web with Mapbox GL JS and in your mobile apps with the iOS SDK. You can import MBTiles, KML, GPX, GeoJSON, Shapefiles (zipped), CSV, and GeoTIFF files into Mapbox Studio to create vector tiles for styling.
 <br>
+
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12666481/63022e14-c60f-11e5-8792-2f651a648615.png)
 
 Key Terms
 * **API Key** <br>
-To use any of Mapbox’s tools, APIs, or SDKs, you’ll need a Mapbox access token. Mapbox uses access tokens to associate requests to API resources with your account. There are two types of access tokens:
-**Public access tokens** — use a public access token in websites or applications where they can be easily rotated, like scripts on a web page.
+To use any of Mapbox’s tools, APIs, or SDKs, you’ll need a Mapbox access token. Mapbox uses access tokens to associate requests to API resources with your account. There are two types of access tokens:<br>
+**Public access tokens** — use a public access token in websites or applications where they can be easily rotated, like scripts on a web page.<br>
 **Secret access tokens** — only use a secret access token in places where it’s difficult to rotate, like mobile apps which require an approval process. You should also use secret tokens when you need to set specific token parameters, like when using the Uploads API.
 <br>
 
