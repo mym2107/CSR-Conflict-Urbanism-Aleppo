@@ -62,17 +62,20 @@ Mapbox only allows *WGS 84/ Pseudo Mercator ([EPSG:3857](https://epsg.io/3857))*
 Mapbox is an open source mapping platform. Below we will look at the 3 different working environments it offers and some basic terminology.
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12666482/6302c9f0-c60f-11e5-8e8f-d3c11283d3ae.png)
 
-[Mapbox Editor](https://www.mapbox.com/editor/#style) is an online interface where you can choose a Mapbox classic style as a basemap, drag and drop features, and share your project. Editor requires no coding skills and can be easily integrated into a web template. You can import GeoJSON, CSV, KML, or GPX files into Mapbox Editor. You can also export data in GeoJSON or KML format.
+[Mapbox Editor](https://www.mapbox.com/editor/#style) 
+is an online interface where you can choose a Mapbox classic style as a basemap, drag and drop features, and share your project. Editor requires no coding skills and can be easily integrated into a web template. You can import GeoJSON, CSV, KML, or GPX files into Mapbox Editor. You can also export data in GeoJSON or KML format.
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12666484/66c7e368-c60f-11e5-8cd9-47022b4494b0.png)
 
-[Mapbox Studio Classic](https://www.mapbox.com/help/define-mapbox-studio-classic/) is a desktop application for designing world maps. It allows you to design maps by using [vector tiles](https://www.mapbox.com/help/define-vector-tiles/) and [CartoCSS](https://www.mapbox.com/help/define-cartocss/). Mapbox Studio Classic allows you to upload your map directly to your Mapbox account and then use your map style with our Developer tools. You can also use the map that you design in Mapbox Studio Classic as a baselayer in Mapbox Editor. You can import shapefiles, KML, GeoJSON, GPX, CSV, TIF, and VRT files into Mapbox Studio Classic. You can export Mapbox Studio Classic sources as MBTiles.
+[Mapbox Studio Classic](https://www.mapbox.com/help/define-mapbox-studio-classic/) 
+is a desktop application for designing world maps. It allows you to design maps by using [vector tiles](https://www.mapbox.com/help/define-vector-tiles/) and [CartoCSS](https://www.mapbox.com/help/define-cartocss/). Mapbox Studio Classic allows you to upload your map directly to your Mapbox account and then use your map style with our Developer tools. You can also use the map that you design in Mapbox Studio Classic as a baselayer in Mapbox Editor. You can import shapefiles, KML, GeoJSON, GPX, CSV, TIF, and VRT files into Mapbox Studio Classic. You can export Mapbox Studio Classic sources as MBTiles.
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12666485/66cc8bac-c60f-11e5-8588-1290bf068b36.png)
 
-[Mapbox Studio](https://www.mapbox.com/mapbox-studio/)o is an online application for designing world maps. It allows you to design maps with vector tiles and Mapbox GL. You can use your map style on the web with Mapbox GL JS and in your mobile apps with the iOS SDK. You can import MBTiles, KML, GPX, GeoJSON, Shapefiles (zipped), CSV, and GeoTIFF files into Mapbox Studio to create vector tiles for styling.
+[Mapbox Studio](https://www.mapbox.com/mapbox-studio/) 
+is an online application for designing world maps. It allows you to design maps with vector tiles and Mapbox GL. You can use your map style on the web with Mapbox GL JS and in your mobile apps with the iOS SDK. You can import MBTiles, KML, GPX, GeoJSON, Shapefiles (zipped), CSV, and GeoTIFF files into Mapbox Studio to create vector tiles for styling.
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12666481/63022e14-c60f-11e5-8792-2f651a648615.png)
 
 Key Terms
-**API Key**
+* **API Key**
 To use any of Mapbox’s tools, APIs, or SDKs, you’ll need a Mapbox access token. Mapbox uses access tokens to associate requests to API resources with your account. There are two types of access tokens:
 **Public access tokens** — use a public access token in websites or applications where they can be easily rotated, like scripts on a web page.
 **Secret access tokens** — only use a secret access token in places where it’s difficult to rotate, like mobile apps which require an approval process. You should also use secret tokens when you need to set specific token parameters, like when using the Uploads API.
@@ -81,7 +84,7 @@ For the purpose of this tutorial, you will have have a `Public API Key`
 ```
 c4sr API Key: https://api.mapbox.com/v4/mapbox.emerald/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A
 ```
-**Map ID**
+* **Map ID**
 Any time you create a project with *Mapbox Editor*, upload a style with *Mapbox Studio Classic*, or upload data to your account on *Mapbox.com*, it will receive a `map ID`. The `map ID` allows you to reference that specific project, style, or data with a *Mapbox API* or SDK. This means you can create a custom map style in *Mapbox Studio Classic* and then use that map with your Mapbox.js project or upload a dataset and add it as a custom source in Mapbox Studio Classic.
 ```
 Your map ID will always start with your Mapbox username followed by your map’s unique handle: `username.handle`
@@ -97,6 +100,13 @@ There are also some common `map IDs`, that you can use:
 * *mapbox.high-contrast*: Stamen Design high Contrast Map
 * *mapbox.landsat-live*: LANDSAT Imagery
 
+* **Baselayer**
+A `baselayer` often refers to the map style that you designed in [Mapbox Studio Classic](https://www.mapbox.com/help/define-mapbox-studio-classic/) or the [Mapbox classic styles](https://www.mapbox.com/maps/). The baselayer provides geographic context and serves as a starting point for your map.
+
+* **Layers**
+`Layers` are used in GL styles to add styling rules to specific subsets of data. Layers contain both a reference to the data for which they’re defining a style as well as the styling rules to be applied.
+
+
 ##### 03. MAPBOX_Classic: Design Informal Settlement Map
 
 ##### 04. MAPBOX_Studio: Design Neighborhood Map
@@ -104,49 +114,39 @@ There are also some common `map IDs`, that you can use:
 ##### 05. WEB: Embed Neighborhood and Informal Maps
 
 ##### 06. WEB: Set Up 2 layer Interactive Map 
-**Baselayer**
-A `baselayer` often refers to the map style that you designed in [Mapbox Studio Classic](https://www.mapbox.com/help/define-mapbox-studio-classic/) or the [Mapbox classic styles](https://www.mapbox.com/maps/). The baselayer provides geographic context and serves as a starting point for your map.
+**Basic Map Layout**
 
-**Layers**
-`Layers` are used in GL styles to add styling rules to specific subsets of data. Layers contain both a reference to the data for which they’re defining a style as well as the styling rules to be applied.
+Once you have initiated a mapbox account, note down your mapbox access token. You can use the `Tutorial_4_1.html` file or copy/paste the below code in [sublime](http://www.sublimetext.com/) as HTML. In order to make a map of Syria, you need to do the following:
+* Add your mapbox access token
+* Note Long, Lat of Syria
+* Test desired Zoom Level
 
-
-##### 07. WEB: Embed 2 layer Map in Case Study
-
-
-* Add Informal.shp through MapboxEditor
-![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12650558/42ce0da6-c5b1-11e5-87f6-efa19e9c2c1e.png) 
-
-* Embed Informal Interactive Map in Template
-
-**i-frame**
-* Mapbox Editor generates an embed code for you to add your maps to your website or blog. The embed code uses an `iframe` to display your map. This HTML element allows you to put a webpage into another webpage, insulating all the code that makes your map work from the code on your website.
-
-```html
-<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.o59e801k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
+All these are to be changed in the following section, between the script tags:
+```javascript
+L.mapbox.accessToken = '<your access token here>';
+var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([40, -74.50], 9);
 ```
-
-* Install Mapbox Studio (Mac / Win)
-* Add Neighborhood.shp through MapboxEditor
-* Embed Neighborhood Interactive Map in Template
-
-* Set Up 2 layer Interactive Map through HTML/JS/CSS
-* Embed Interactive Map in Case Study
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset=utf-8 />
 <title>A simple map</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
 <script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
 </style>
+
 </head>
+
 <body>
 <div id='map'></div>
 <script>
@@ -157,6 +157,21 @@ var map = L.mapbox.map('map', 'mapbox.streets')
 </body>
 </html>
 ```
+
+##### 07. WEB: Embed 2 layer Map in Case Study
+
+
+* Add Informal.shp through MapboxEditor
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12650558/42ce0da6-c5b1-11e5-87f6-efa19e9c2c1e.png) 
+
+**i-frame**
+* Mapbox Editor generates an embed code for you to add your maps to your website or blog. The embed code uses an `iframe` to display your map. This HTML element allows you to put a webpage into another webpage, insulating all the code that makes your map work from the code on your website.
+
+```html
+<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.o59e801k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
+```
+
+
 
 ##### Adding Feature Layer for Display
 
