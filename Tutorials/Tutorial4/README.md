@@ -152,12 +152,14 @@ This is where you add a `Name` and `Description` to you project.
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12677126/c5055474-c664-11e5-9c5f-73a807a9666a.png)
 
-* `Tab: Save` *:<br>
-After *saving* the project, mapbox provides the following:
+* `Tab: Save` :<br>
+After saving the project, mapbox provides the following:
 + Map ID: `c4sr.p10e979a`
 
 + Share: Weblink for your Map <br>
-`https://a.tiles.mapbox.com/v4/c4sr.p10e979a/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A#12/36.2351/37.2201`
+```
+https://a.tiles.mapbox.com/v4/c4sr.p10e979a/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A#12/36.2351/37.220
+```
 
 + Embed: iframe code to embed in any other site
 ```html
