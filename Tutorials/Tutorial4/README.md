@@ -171,6 +171,9 @@ https://a.tiles.mapbox.com/v4/c4sr.p10e979a/page.html?access_token=pk.eyJ1IjoiYz
 Note: This is now saved in your projects on mapbox. Regardless of environment, you can always locate this project and re-edit it. It's Map ID would remain the same. So if you have a webmap live, it will be automatically updated. 
 
 ##### 04. MAPBOX_Studio: Design Neighborhood Map
+It is important to note here why there are multiple versions of mapbox and understand which one you should use. First mapbox, like many other open source development platforms is constatntly under development. Mapbox Studio is built to replace mapbox classic which was we were using, when the platform was built. Their even earlier version `Tilemill` is still around and can be used, but we recommend using the three mapbox versions currently up. 
+
+However, there's a considerable difference between Mapbox Editor and Mapbox Studio. Mapbox Editor let's you create simple interactive maps and add them to a browser, without much knowledge of code. It's a simple graphical interface. On the other hand Mapbox Classic/Studio, let's you work through multiple layers to create advanced maps. But to develop those as interactive maps on the web requires more knowledge of html, javascript and css. I recommened using the Editor when you have limited amount of data. In the editor, you have to individually style components, as opposed to Classic and Studio. Editor is also the way to go, if you don't want to go deeper in code. 
 
 ##### 05. WEB: Embed Neighborhood and Informal Maps
 
@@ -264,18 +267,12 @@ You can save the file as Tut4_1.html and open it in Chrome. This is how it shoul
 
 ##### 07. WEB: Embed 2 layer Map in Case Study
 
-
-* Add Informal.shp through MapboxEditor
-![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12650558/42ce0da6-c5b1-11e5-87f6-efa19e9c2c1e.png) 
-
 **i-frame**
 * Mapbox Editor generates an embed code for you to add your maps to your website or blog. The embed code uses an `iframe` to display your map. This HTML element allows you to put a webpage into another webpage, insulating all the code that makes your map work from the code on your website.
 
 ```html
 <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.o59e801k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
 ```
-
-
 
 ##### Adding Feature Layer for Display
 
