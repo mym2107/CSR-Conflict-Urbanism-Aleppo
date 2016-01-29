@@ -84,11 +84,13 @@ is an online application for designing world maps. It allows you to design maps 
 Key Terms
 * **API Key** <br>
 To use any of Mapbox’s tools, APIs, or SDKs, you’ll need a Mapbox access token. Mapbox uses access tokens to associate requests to API resources with your account. There are two types of access tokens:<br>
-**Public access tokens** — use a public access token in websites or applications where they can be easily rotated, like scripts on a web page.<br>
-**Secret access tokens** — only use a secret access token in places where it’s difficult to rotate, like mobile apps which require an approval process. You should also use secret tokens when you need to set specific token parameters, like when using the Uploads API.
+**Public access tokens**: <br>
+use a public access token in websites or applications where they can be easily rotated, like scripts on a web page.<br>
+**Secret access tokens**: <br>
+only use a secret access token in places where it’s difficult to rotate, like mobile apps which require an approval process. You should also use secret tokens when you need to set specific token parameters, like when using the Uploads API.
 <br>
 
-For the purpose of this tutorial, you will have have a `Public API Key`
+<p>For the purpose of this tutorial, you will have have a `Public API Key`</p>
 ```
 c4sr API Key: https://api.mapbox.com/v4/mapbox.emerald/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A
 ```
@@ -106,7 +108,6 @@ There are also some common `map IDs`, that you can use:
 * *mapbox.streets*: Street Layer, OpenStreetMaps
 * *mapbox.satellite*: Satellite Layer, Digital Globe
 * *mapbox.high-contrast*: Stamen Design high Contrast Map
-* *mapbox.landsat-live*: LANDSAT Imagery
 
 * **Baselayer** <br>
 A `baselayer` often refers to the map style that you designed in [Mapbox Studio Classic](https://www.mapbox.com/help/define-mapbox-studio-classic/) or the [Mapbox classic styles](https://www.mapbox.com/maps/). The baselayer provides geographic context and serves as a starting point for your map.
@@ -124,12 +125,19 @@ A `baselayer` often refers to the map style that you designed in [Mapbox Studio 
 ##### 06. WEB: Set Up 2 layer Interactive Map 
 **Basic Map Layout**
 
-Once you have initiated a mapbox account, note down your mapbox access token. You can use the `Tutorial_4_1.html` file or copy/paste the below code in [sublime](http://www.sublimetext.com/) as HTML. In order to make a map of Syria, you need to do the following:
-* Add your mapbox access token
-* Note Long, Lat of Syria
-* Test desired Zoom Level
+Once you have initiated a mapbox account, note down your mapbox access token. You can use the `Tutorial_4_1.html` file or copy/paste the below code in [sublime](http://www.sublimetext.com/) as HTML. 
 
-All these are to be changed in the following section, between the script tags:
+! [Add Layer}()
+
+In order to make a map of Syria, you need to do the following:
+* Add your mapbox access token: Ln:35
+`C4SR: pk.eyJ1Ijoic2lkbCIsImEiOiJkOGM1ZDc0ZTc5NGY0ZGM4MmNkNWIyMmIzNDBkMmZkNiJ9.Qn36nbIqgMc4V0KEhb4iEw`
+* Note Long, Lat of Syria: Ln:37
+`Lat:  36.198, Long = 37.1518;`
+* Test desired Zoom Level: Ln:37
+`Zoom Level 13 seems to work well. You can adjust this as per your requirement.`
+
+All these are to be changed in the following section, between the `script` tags:
 ```javascript
 L.mapbox.accessToken = '<your access token here>';
 var map = L.mapbox.map('map', 'mapbox.streets')
@@ -137,34 +145,52 @@ var map = L.mapbox.map('map', 'mapbox.streets')
 ```
 
 ```html
+<!--Tutorial: Setting a Base Map
+	Conflict Urbanism: Aleppo
+    Center for Spatial Research
+================================================================= -->
+
 <!DOCTYPE html>
 <html>
 <head>
-
 <meta charset=utf-8 />
-<title>A simple map</title>
+
+<!-- Set your Project Name here -->
+<title>Tutorial4_1</title>
+
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
+<!-- In order to set up the webmap, you need to link to mapbox.js and mapbox.css -->
 <script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
 
+<!-- Style your map with changing the options below -->
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
 </style>
-
 </head>
 
 <body>
+<!-- Add the map to a div -->
 <div id='map'></div>
+
 <script>
-L.mapbox.accessToken = '<your access token here>';
-var map = L.mapbox.map('map', 'mapbox.streets')
-    .setView([40, -74.50], 9);
+// Add your access token here: 
+L.mapbox.accessToken = 'pk.eyJ1Ijoic2lkbCIsImEiOiJkOGM1ZDc0ZTc5NGY0ZGM4MmNkNWIyMmIzNDBkMmZkNiJ9.Qn36nbIqgMc4V0KEhb4iEw';
+// Add the layer you would like to use as your base layer. In this case we are using mapbox.satellite
+var map = L.mapbox.map('map', 'mapbox.satellite')
+// .setView([Lat, Long], Zoom)
+    .setView([36.198, 37.1518], 13);
 </script>
+
 </body>
 </html>
 ```
+
+You can save the file as Tut4_1.html and open it in Chrome. This is how it should appear:
+
+! [Add Layer]()
 
 ##### 07. WEB: Embed 2 layer Map in Case Study
 
