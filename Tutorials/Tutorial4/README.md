@@ -158,7 +158,6 @@ After saving the project, mapbox provides the following:
 + Map ID: `c4sr.p10e979a`
 
 + Share:  
-> https://a.tiles.mapbox.com/v4/c4sr.p10e979a/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A#12/36.2351/37.220
 ```
 https://a.tiles.mapbox.com/v4/c4sr.p10e979a/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A#12/36.2351/37.220
 ```
@@ -174,6 +173,15 @@ Note: This is now saved in your projects on mapbox. Regardless of environment, y
 ##### 04. MAPBOX_Studio: Design Neighborhood Map
 
 ##### 05. WEB: Embed Neighborhood and Informal Maps
+
++ Embed: iframe code to embed in any other site
+```html
+<iframe width='100%' 
+height='500px' 
+frameBorder='0' 
+src='https://a.tiles.mapbox.com/v4/c4sr.p10e979a/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'>
+</iframe>
+```
 
 + Embed: iframe code to embed in any other site
 ```html
