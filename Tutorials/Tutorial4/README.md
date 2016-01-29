@@ -136,31 +136,34 @@ This is where you can **import** data and stylize your data. Bring in the `infor
 + You can draw additional *polygons*, drop *markers* or add *lines*.
 + We will not edit the `text` 
 + For each polygon, set the following Stroke Settings:<br>
-	+ Transparency: 1
-	+ Thickness: 1 
-	+ Color: #000000
+	+ Transparency: `1`
+	+ Thickness: `1`
+	+ Color: `#000000`
 + For each polygon, set the following Fill Settings:<br>
-	+ Transparency: 0.4
-	+ Color: #6c6c6c
+	+ Transparency: `0.4`
+	+ Color: `#6c6c6c`
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12677129/c5082898-c664-11e5-8181-7816ddc6a6d3.png)
 
 * `Tab: Project`:<br>
 This is where you add a `Name` and `Description` to you project.
-	+ Name: Informal
-	+ Description: Informal Settlements in Aleppo, 2009
+	+ Name: `Informal`
+	+ Description: `Informal Settlements in Aleppo, 2009`
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12677126/c5055474-c664-11e5-9c5f-73a807a9666a.png)
 
 * `Save: Project`:<br>
 After *saving* the project, mapbox provides the following:
+<br>
 	+ Map ID: 
 	```c4sr.p10e979a````
+<br>
 	+ Share: Weblink for your Map
-	````https://a.tiles.mapbox.com/v4/c4sr.p10e979a/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A#12/36.2351/37.2201````<br>
+	````https://a.tiles.mapbox.com/v4/c4sr.p10e979a/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A#12/36.2351/37.2201````
+<br>
 	+ Embed: iframe code to embed in any other site
-	````<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.p10e979a/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>````<br>
-
+	````<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.p10e979a/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>````
+<br>
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12677125/c50449c6-c664-11e5-88d1-9274b0c6d601.png)
 
 Note: This is now saved in your projects on mapbox. Regardless of environment, you can always locate this project and re-edit it. It's Map ID would remain the same. So if you have a webmap live, it will be automatically updated. 
