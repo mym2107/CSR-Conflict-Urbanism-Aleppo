@@ -122,16 +122,15 @@ Once you sign into mapbox, goto `New Mapbox Editor Project` to start designing y
 * `Tab: Style`: <br>
 By *Default* always select this as `transparent`. You can select a different layer, if you always want to have your *data* rendered with that particular style. We leave it *transparent* as their are easier ways to switch these in code. Next, click on the `data` tab.
 
-![Add Layer](xx)
+![Add Layer](xx)t4-10
 
 * `Tab: Data`:<br>
 This is where you can **import** data and stylize your data. Bring in the `informal_map.geojson` file. It takes a few minutes to download the data, but if it takes too long, choose to work with mapbox studio instead. Once you bring in the file, it should appear seen below. If you don't see anything or a straightline, there might be an error with the projection setting. 
+	+ Click on `import` and select `informal_map.geojson`
+	+ `Import features` shows the data that mapbox reads and how it can be preset. 
+	+ Select `NAME` for popup title and `NAME_A` for popup description.
 
-+ Click on `import` and select `informal_map.geojson`
-+ `Import features` shows the data that mapbox reads and how it can be preset. 
-+ Select `NAME` for popup title and `NAME_A` for popup description.
-
-![Add Layer]()
+![Add Layer]()T4-11
 
 + For each `polygon` in the map area, you can edit the *text*, *Stroke* and *Fill*. 
 + You can draw additional *polygons*, drop *markers* or add *lines*.
@@ -144,25 +143,25 @@ This is where you can **import** data and stylize your data. Bring in the `infor
 	+ Transparency: 0.4
 	+ Color: #6c6c6c
 
-![Add Layer]()
+![Add Layer]()T4-12
 
 * `Tab: Project`:<br>
 This is where you add a `Name` and `Description` to you project.
 	+ Name: Informal
 	+ Description: Informal Settlements in Aleppo, 2009
 
-![Add Layer]()
+![Add Layer]()T4-13
 
 * `Save: Project`:<br>
 After *saving* the project, mapbox provides the following:
 	+ Map ID: 
 	```c4sr.p10e979a````
 	+ Share: Weblink for your Map
-	````https://a.tiles.mapbox.com/v4/c4sr.p10e979a/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A#12/36.2351/37.2201````
+	````https://a.tiles.mapbox.com/v4/c4sr.p10e979a/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A#12/36.2351/37.2201````<br>
 	+ Embed: iframe code to embed in any other site
-	````<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.p10e979a/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>````
+	````<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.p10e979a/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>````<br>
 
-![Add Layer]()
+![Add Layer]()T4-14
 
 Note: This is now saved in your projects on mapbox. Regardless of environment, you can always locate this project and re-edit it. It's Map ID would remain the same. 
 
