@@ -58,7 +58,6 @@ Export these as `shape files`, after setting Coordinate Reference System CRS
 Mapbox only allows *WGS 84/ Pseudo Mercator ([EPSG:3857](https://epsg.io/3857))*
 
 ##### 02. MAPBOX: Sign Up, Installation and Introduction 
-* Setup Mapbox Account, ID and Key
 
 **API Key**
 To use any of Mapbox’s tools, APIs, or SDKs, you’ll need a Mapbox access token. Mapbox uses access tokens to associate requests to API resources with your account. There are two types of access tokens:
@@ -101,18 +100,13 @@ There are also some common `map IDs`, that you can use:
 
 * Embed Informal Interactive Map in Template
 **i-frame**
-Mapbox Editor generates an embed code for you to add your maps to your website or blog. The embed code uses an <iframe> to display your map. This HTML element allows you to put a webpage into another webpage, insulating all the code that makes your map work from the code on your website.
+* Mapbox Editor generates an embed code for you to add your maps to your website or blog. The embed code uses an <iframe> to display your map. This HTML element allows you to put a webpage into another webpage, insulating all the code that makes your map work from the code on your website.
 
-```html
-<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.o59e801k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
-```
 
 * Install Mapbox Studio (Mac / Win)
 * Add Neighborhood.shp through MapboxEditor
 * Embed Neighborhood Interactive Map in Template
-```html
-<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.o59e801k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
-```
+
 * Set Up 2 layer Interactive Map through HTML/JS/CSS
 * Embed Interactive Map in Case Study
 
