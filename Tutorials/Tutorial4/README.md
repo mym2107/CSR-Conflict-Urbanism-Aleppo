@@ -59,7 +59,32 @@ Mapbox only allows *WGS 84/ Pseudo Mercator ([EPSG:3857](https://epsg.io/3857))*
 
 ##### 02. MAPBOX: Sign Up, Installation and Introduction 
 * Setup Mapbox Account, ID and Key
-*
+
+**API Key**
+To use any of Mapbox’s tools, APIs, or SDKs, you’ll need a Mapbox access token. Mapbox uses access tokens to associate requests to API resources with your account. There are two types of access tokens:
+**Public access tokens** — use a public access token in websites or applications where they can be easily rotated, like scripts on a web page.
+**Secret access tokens** — only use a secret access token in places where it’s difficult to rotate, like mobile apps which require an approval process. You should also use secret tokens when you need to set specific token parameters, like when using the Uploads API.
+
+For the purpose of this tutorial, you will have have a `Public API Key`
+```
+c4sr API Key: https://api.mapbox.com/v4/mapbox.emerald/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A
+```
+**Map ID**
+Any time you create a project with *Mapbox Editor*, upload a style with *Mapbox Studio Classic*, or upload data to your account on *Mapbox.com*, it will receive a `map ID`. The `map ID` allows you to reference that specific project, style, or data with a *Mapbox API* or SDK. This means you can create a custom map style in *Mapbox Studio Classic* and then use that map with your Mapbox.js project or upload a dataset and add it as a custom source in Mapbox Studio Classic.
+```
+Your map ID will always start with your Mapbox username followed by your map’s unique handle: `username.handle`
+```
+There are three different types of map IDs:
+* [Projects](https://www.mapbox.com/studio/classic/projects/) — projects are made with Mapbox Editor. Share your map from Mapbox Editor or use your project map ID with Mapbox APIs or SDKs.
+* [Styles](https://www.mapbox.com/studio/classic/styles/) — styles are custom maps and styled data made with Mapbox Studio Classic. Use your style map ID with Mapbox APIs or import it into Mapbox Editor.
+* [Data](https://www.mapbox.com/studio/data) — You can upload data or sources on Mapbox.com and from Mapbox Studio Classic. Add your data map ID as a custom source in Mapbox Studio Classic or update it with the Mapbox Upload API.
+
+There are also some common `map IDs`, that you can use:
+* *mapbox.streets*: Street Layer, OpenStreetMaps
+* *mapbox.satellite*: Satellite Layer, Digital Globe
+* *mapbox.high-contrast*: Stamen Design high Contrast Map
+* *mapbox.landsat-live*: LANDSAT Imagery
+
 ##### 03. MAPBOX_Classic: Design Informal Settlement Map
 
 ##### 04. MAPBOX_Studio: Design Neighborhood Map
@@ -75,9 +100,13 @@ Mapbox only allows *WGS 84/ Pseudo Mercator ([EPSG:3857](https://epsg.io/3857))*
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12650558/42ce0da6-c5b1-11e5-87f6-efa19e9c2c1e.png) 
 
 * Embed Informal Interactive Map in Template
+**i-frame**
+Mapbox Editor generates an embed code for you to add your maps to your website or blog. The embed code uses an <iframe> to display your map. This HTML element allows you to put a webpage into another webpage, insulating all the code that makes your map work from the code on your website.
+
 ```html
 <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.o59e801k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
 ```
+
 * Install Mapbox Studio (Mac / Win)
 * Add Neighborhood.shp through MapboxEditor
 * Embed Neighborhood Interactive Map in Template
