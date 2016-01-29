@@ -52,10 +52,10 @@ This section provides detailed explanation of each data source. You can skip thi
   * Name_A
   * Informal
   
-![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12660490/f84d4c7a-c5e1-11e5-9d73-4e730c500205.png)
+![Add Layer](changeImage)
 
-Export these as `shape files`, after setting Coordinate Reference System CRS 
-Mapbox only allows *WGS 84/ Pseudo Mercator ([EPSG:3857](https://epsg.io/3857))*
+Export these as `geojson`, after setting Coordinate Reference System CRS 
+Mapbox only allows *WGS 84/ Pseudo Mercator ([EPSG:3857](https://epsg.io/3857))* but you do not need to change from the default: *WGS 84 EPSG:4326* On upload, mapbox automatically configures the file to Mercator.
 
 ##### 02. MAPBOX: Sign Up, Installation and Introduction 
 [**Mapbox**](www.mapbox.com) <br>
@@ -116,7 +116,55 @@ A `baselayer` often refers to the map style that you designed in [Mapbox Studio 
 `Layers` are used in GL styles to add styling rules to specific subsets of data. Layers contain both a reference to the data for which they’re defining a style as well as the styling rules to be applied.
 
 
-##### 03. MAPBOX_Classic: Design Informal Settlement Map
+##### 03. MAPBOX_Editor: Design Informal Settlement Map
+
+Once you sign into mapbox, goto `New Mapbox Editor Project` to start designing your map:
+* `Tab: Style`: <br>
+By *Default* always select this as `transparent`. You can select a different layer, if you always want to have your *data* rendered with that particular style. We leave it *transparent* as their are easier ways to switch these in code. Next, click on the `data` tab.
+
+![Add Layer](xx)
+
+* `Tab: Data`:<br>
+This is where you can **import** data and stylize your data. Bring in the `informal_map.geojson` file. It takes a few minutes to download the data, but if it takes too long, choose to work with mapbox studio instead. Once you bring in the file, it should appear seen below. If you don't see anything or a straightline, there might be an error with the projection setting. 
+
++ Click on `import` and select `informal_map.geojson`
++ `Import features` shows the data that mapbox reads and how it can be preset. 
++ Select `NAME` for popup title and `NAME_A` for popup description.
+
+![Add Layer]()
+
++ For each `polygon` in the map area, you can edit the *text*, *Stroke* and *Fill*. 
++ You can draw additional *polygons*, drop *markers* or add *lines*.
++ We will not edit the `text` 
++ For each polygon, set the following Stroke Settings:<br>
+	+ Transparency: 1
+	+ Thickness: 1 
+	+ Color: #000000
++ For each polygon, set the following Fill Settings:<br>
+	+ Transparency: 0.4
+	+ Color: #6c6c6c
+
+![Add Layer]()
+
+* `Tab: Project`:<br>
+This is where you add a `Name` and `Description` to you project.
+	+ Name: Informal
+	+ Description: Informal Settlements in Aleppo, 2009
+
+![Add Layer]()
+
+* `Save: Project`:<br>
+After *saving* the project, mapbox provides the following:
+	+ Map ID: 
+	```c4sr.p10e979a````
+	+ Share: Weblink for your Map
+	````https://a.tiles.mapbox.com/v4/c4sr.p10e979a/page.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A#12/36.2351/37.2201````
+	+ Embed: iframe code to embed in any other site
+	````<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.p10e979a/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>````
+
+![Add Layer]()
+
+Note: This is now saved in your projects on mapbox. Regardless of environment, you can always locate this project and re-edit it. It's Map ID would remain the same. 
 
 ##### 04. MAPBOX_Studio: Design Neighborhood Map
 
