@@ -28,8 +28,8 @@ This section provides detailed explanation of each data source. You can skip thi
 ##### Steps:
   * 01. QGIS: SetUp Neighborhood and Informal Data 
   * 02. MAPBOX: Sign Up, Installation and Introduction 
-  * 03. MAPBOX_Classic: Design Informal Settlement Map
-  * 04. MAPBOX_Studio: Design Neighborhood Map
+  * 03. MAPBOX_Editor: Design Map of Informal Neighborhoods
+  * 04. MAPBOX_Studio: Design Map of Neighborhoods
   * 05. WEB: Embed Neighborhood and Informal Maps in Case Study
   * 06. WEB: Set Up 2 layer Interactive Map through HTML/JS/CSS
   * 07. WEB: Embed 2 layer Map in Case Study
@@ -52,7 +52,7 @@ This section provides detailed explanation of each data source. You can skip thi
   * Name_A
   * Informal
   
-![Add Layer](changeImage)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12677127/c506caac-c664-11e5-8b6d-e1eeeb115e3d.png)
 
 Export these as `geojson`, after setting Coordinate Reference System CRS 
 Mapbox only allows *WGS 84/ Pseudo Mercator ([EPSG:3857](https://epsg.io/3857))* but you do not need to change from the default: *WGS 84 EPSG:4326* On upload, mapbox automatically configures the file to Mercator.
@@ -116,13 +116,13 @@ A `baselayer` often refers to the map style that you designed in [Mapbox Studio 
 `Layers` are used in GL styles to add styling rules to specific subsets of data. Layers contain both a reference to the data for which they’re defining a style as well as the styling rules to be applied.
 
 
-##### 03. MAPBOX_Editor: Design Informal Settlement Map
+##### 03. MAPBOX_Editor: Design Map of Informal Neighborhoods
 
 Once you sign into mapbox, goto `New Mapbox Editor Project` to start designing your map:
 * `Tab: Style`: <br>
 By *Default* always select this as `transparent`. You can select a different layer, if you always want to have your *data* rendered with that particular style. We leave it *transparent* as their are easier ways to switch these in code. Next, click on the `data` tab.
 
-![Add Layer](xx)t4-10
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12677124/c5015766-c664-11e5-9dae-bfca632726e8.png)
 
 * `Tab: Data`:<br>
 This is where you can **import** data and stylize your data. Bring in the `informal_map.geojson` file. It takes a few minutes to download the data, but if it takes too long, choose to work with mapbox studio instead. Once you bring in the file, it should appear seen below. If you don't see anything or a straightline, there might be an error with the projection setting. 
@@ -130,7 +130,7 @@ This is where you can **import** data and stylize your data. Bring in the `infor
 	+ `Import features` shows the data that mapbox reads and how it can be preset. 
 	+ Select `NAME` for popup title and `NAME_A` for popup description.
 
-![Add Layer]()T4-11
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12677128/c5077088-c664-11e5-9171-ee0e01cac009.png)
 
 + For each `polygon` in the map area, you can edit the *text*, *Stroke* and *Fill*. 
 + You can draw additional *polygons*, drop *markers* or add *lines*.
@@ -143,14 +143,14 @@ This is where you can **import** data and stylize your data. Bring in the `infor
 	+ Transparency: 0.4
 	+ Color: #6c6c6c
 
-![Add Layer]()T4-12
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12677129/c5082898-c664-11e5-8181-7816ddc6a6d3.png)
 
 * `Tab: Project`:<br>
 This is where you add a `Name` and `Description` to you project.
 	+ Name: Informal
 	+ Description: Informal Settlements in Aleppo, 2009
 
-![Add Layer]()T4-13
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12677126/c5055474-c664-11e5-9c5f-73a807a9666a.png)
 
 * `Save: Project`:<br>
 After *saving* the project, mapbox provides the following:
@@ -161,9 +161,9 @@ After *saving* the project, mapbox provides the following:
 	+ Embed: iframe code to embed in any other site
 	````<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.p10e979a/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>````<br>
 
-![Add Layer]()T4-14
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12677125/c50449c6-c664-11e5-88d1-9274b0c6d601.png)
 
-Note: This is now saved in your projects on mapbox. Regardless of environment, you can always locate this project and re-edit it. It's Map ID would remain the same. 
+Note: This is now saved in your projects on mapbox. Regardless of environment, you can always locate this project and re-edit it. It's Map ID would remain the same. So if you have a webmap live, it will be automatically updated. 
 
 ##### 04. MAPBOX_Studio: Design Neighborhood Map
 
