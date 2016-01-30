@@ -18,44 +18,40 @@ The HOT Tasking Manager, http://tasks.hotosm.org/, is an intuitive tool that map
 You must have received an email, with a User ID and Password. Please use that for this tutorial and for using the Conflict Urbanism: Aleppo Project, on OSM. Please note, it is possible to map Aleppo through any account on Open Street Maps but our version of the project, which is a controlled mapping project, allows acces to restricted High Resolution Satellite Imagery from 2015. The data is used and processed in the same way, like any other OSM project. The updates you create are in realtime and will be updated on the OSM site soon. Hence, please make sure you are mapping accurately. We understand, that Aleppo is dense and a lot of the parts are unclear through the various sources of satellite imagery. If you would like to create a rough map, for your own use, you can do so in QGIS or Mapbox. Mapping that is not acceptable will not be entered into OSM. 
 ```
 
-
-
 ##### Steps:
-  * 01. OSM: 
-  * 02. OSM Editor: Setting Up Project with Data
-  * 03. OSM JOSM: Analyzing and Styling Data
+  * 01. OSM: Understand OSM
+  * 02. OSM Editor
+  * 03. OSM JOSM
 
 01. OSM: 
-
-what is OSM
-Browse / Export / Etc
 
 ![Add Layer]: OSM Image
 
 ![Add Layer] Our system : OSM: Layer
 
-02. 
+02. OSM Editor
 OSM Tasking Manager: https://tasks.hotosm.org
 Project: #1453 Conflict Urbanism - Aleppo
 
 Custom Tile:
 https://a.tiles.mapbox.com/v4/c4sr.3aak56r2/{zoom}/{x}/{y}.jpg?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A
 
-Tasking Manager Image
+03. [JOSM](http://learnosm.org/en/josm/)
 
-ID: Editor:
+OpenStreetMap Contributors spend the bulk of their time editing. The more you edit, the better you get, and the more you learn. This section of learnOSM contains tutorials that will help you learn about editing with JOSM, which is the preferred editor for many mappers and is far more configurable than iD.
 
-JOSM Editor:
+[Download here](josm.openstreetmap.de)
+Note: You will need Java installed on your system.
 
+3 Key Settings: 
++ JOSM > Preferences > Connection Settings -> Add Username and Password
++ JOSM > Imagery Preferences > Add TMS > Enter the URL and Name it 2015_Aleppo
++ JOSM > Preferences >  Preferences -> Download 'Building Module' Plugin
 
-Contribute
-
-
-
-
-* Installing JOSM / Select: Assign Neighborhood
-* Selecting polygon and mapping features
-* Updating features on Open Street Maps Site
-* Using ID-editor / Select: Assign Neighborhood
-* Selecting polygon and mapping features
-* Updating features on Open Street Maps Site
+Go to Imagery & Switch the layer on
+Save .gpx file and Add to JOSM to see area boundary
+Check Imagery Offset
+Use building module to map
+Default setting: Building
+Save Often
+When Complete: Upload to OSM
