@@ -16,9 +16,10 @@ The HOT Tasking Manager, http://tasks.hotosm.org/, is an intuitive tool that map
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695308/19f32304-c718-11e5-9d5f-c82c538e152d.png)
 
-```
+<br>
 You must have received an email, with a User ID and Password. Please use that for this tutorial and for using the Conflict Urbanism: Aleppo Project, on OSM. Please note, it is possible to map Aleppo through any account on Open Street Maps but our version of the project, which is a controlled mapping project, allows acces to restricted High Resolution Satellite Imagery from 2015. The data is used and processed in the same way, like any other OSM project. The updates you create are in realtime and will be updated on the OSM site soon. Hence, please make sure you are mapping accurately. We understand, that Aleppo is dense and a lot of the parts are unclear through the various sources of satellite imagery. If you would like to create a rough map, for your own use, you can do so in QGIS or Mapbox. Mapping that is not acceptable will not be entered into OSM. 
-```
+<br>
+
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695309/21479de2-c718-11e5-8056-bdc8d58e0925.png)
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695311/24f672d8-c718-11e5-9126-546588b1419d.png)
@@ -30,7 +31,7 @@ You must have received an email, with a User ID and Password. Please use that fo
   * 02. OSM Editor
   * 03. OSM JOSM
 
-01. OSM: 
+##### 01. OSM: 
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695305/0dc448ec-c718-11e5-83b4-e1bb56574a98.png)
 
@@ -38,11 +39,11 @@ You must have received an email, with a User ID and Password. Please use that fo
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695307/11d985dc-c718-11e5-9c88-5b5ad87440af.png)
 
-02. OSM Editor
+##### 02. OSM Editor
 OSM Tasking Manager: https://tasks.hotosm.org
 Project: #1453 Conflict Urbanism - Aleppo
 
-Custom Tile:
+Custom Tile:<br>
 `https://a.tiles.mapbox.com/v4/c4sr.3aak56r2/{zoom}/{x}/{y}.jpg?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A`
 
 * Add Custom Layer
@@ -59,7 +60,7 @@ Custom Tile:
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695321/4c4dc282-c718-11e5-8d35-c5e897e0d329.png)
 
 
-03. [JOSM](http://learnosm.org/en/josm/)
+##### 03. [JOSM](http://learnosm.org/en/josm/)
 
 OpenStreetMap Contributors spend the bulk of their time editing. The more you edit, the better you get, and the more you learn. This section of learnOSM contains tutorials that will help you learn about editing with JOSM, which is the preferred editor for many mappers and is far more configurable than iD.
 
