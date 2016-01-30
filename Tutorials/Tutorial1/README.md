@@ -14,9 +14,16 @@ is a tool for creating and sharing map information. Anyone can contribute to OSM
 **The HOT Tasking Manager**
 The HOT Tasking Manager, http://tasks.hotosm.org/, is an intuitive tool that mappers can use to sort an area into a grid, and work together to map an area in an organized way. This allows mappers throughout the world to assist in mapping a defined region with a minimum risk of overlapping work areas, and also allows people both on the ground and working remotely (also sometimes referred to as “armchair mappers”) to collaborate effectively, rapidly, and avoid accidental rework being required due to conflicts.
 
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695308/19f32304-c718-11e5-9d5f-c82c538e152d.png)
+
 ```
 You must have received an email, with a User ID and Password. Please use that for this tutorial and for using the Conflict Urbanism: Aleppo Project, on OSM. Please note, it is possible to map Aleppo through any account on Open Street Maps but our version of the project, which is a controlled mapping project, allows acces to restricted High Resolution Satellite Imagery from 2015. The data is used and processed in the same way, like any other OSM project. The updates you create are in realtime and will be updated on the OSM site soon. Hence, please make sure you are mapping accurately. We understand, that Aleppo is dense and a lot of the parts are unclear through the various sources of satellite imagery. If you would like to create a rough map, for your own use, you can do so in QGIS or Mapbox. Mapping that is not acceptable will not be entered into OSM. 
 ```
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695309/21479de2-c718-11e5-8056-bdc8d58e0925.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695311/24f672d8-c718-11e5-9126-546588b1419d.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695312/298a57a6-c718-11e5-8347-30e4a7d041b1.png)
 
 ##### Steps:
   * 01. OSM: Understand OSM
@@ -25,9 +32,11 @@ You must have received an email, with a User ID and Password. Please use that fo
 
 01. OSM: 
 
-![Add Layer]: OSM Image
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695305/0dc448ec-c718-11e5-83b4-e1bb56574a98.png)
 
-![Add Layer] Our system : OSM: Layer
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695304/0dc3d812-c718-11e5-90b6-f4c679e6dfae.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695307/11d985dc-c718-11e5-9c88-5b5ad87440af.png)
 
 02. OSM Editor
 OSM Tasking Manager: https://tasks.hotosm.org
@@ -40,6 +49,15 @@ Custom Tile:
 * Map Data : No Fill
 * Add Point, Line or Polygon
 * Upload Data
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695314/2dee6c4c-c718-11e5-92ff-4eaa8abce905.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695315/34481a8e-c718-11e5-9531-540d8231bc85.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695320/473a0fe4-c718-11e5-9489-8be057f7d041.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695321/4c4dc282-c718-11e5-8d35-c5e897e0d329.png)
+
 
 03. [JOSM](http://learnosm.org/en/josm/)
 
@@ -60,3 +78,8 @@ Note: You will need Java installed on your system.
 * Default setting: Building
 * Save Often
 * When Complete: Upload to OSM
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695326/63e8d012-c718-11e5-91da-8079382860e9.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695318/3ea3ddd8-c718-11e5-972e-93a3097bf3d3.png)
+
