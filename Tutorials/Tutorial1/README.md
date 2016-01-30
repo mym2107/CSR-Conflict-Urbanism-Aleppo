@@ -34,7 +34,12 @@ OSM Tasking Manager: https://tasks.hotosm.org
 Project: #1453 Conflict Urbanism - Aleppo
 
 Custom Tile:
-https://a.tiles.mapbox.com/v4/c4sr.3aak56r2/{zoom}/{x}/{y}.jpg?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A
+`https://a.tiles.mapbox.com/v4/c4sr.3aak56r2/{zoom}/{x}/{y}.jpg?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A`
+
+* Add Custom Layer
+* Map Data : No Fill
+* Add Point, Line or Polygon
+* Upload Data
 
 03. [JOSM](http://learnosm.org/en/josm/)
 
@@ -48,10 +53,10 @@ Note: You will need Java installed on your system.
 + JOSM > Imagery Preferences > Add TMS > Enter the URL and Name it 2015_Aleppo
 + JOSM > Preferences >  Preferences -> Download 'Building Module' Plugin
 
-Go to Imagery & Switch the layer on
-Save .gpx file and Add to JOSM to see area boundary
-Check Imagery Offset
-Use building module to map
-Default setting: Building
-Save Often
-When Complete: Upload to OSM
+* Go to Imagery & Switch the layer on
+* Save .gpx file and Add to JOSM to see area boundary
+* Check Imagery Offset
+* Use building module to map
+* Default setting: Building
+* Save Often
+* When Complete: Upload to OSM
