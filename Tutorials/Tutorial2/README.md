@@ -23,9 +23,11 @@ For this tutorial, we will be using the following datasets:
 
 
 ##### 01. WEB: Introduction to HTML/CSS
-The following section is from [here](http://learn.shayhowe.com/html-css/building-your-first-web-page/) and provides a good understanding of Web Basics. The text in this section is form the following site: http://learn.shayhowe.com/html-css/building-your-first-web-page. Please refer to it for more information.
+The following section is from [here](http://learn.shayhowe.com/html-css/building-your-first-web-page/) and provides a good understanding of Web Basics. Please refer to it for more information.
 
-Likewise, if you are interested in diving deeper, you are recommended to work through the following 7 hour [course](https://www.codecademy.com/learn/web), on Code Academy. 
+Likewise, if you are interested in diving deeper, you are recommended to work through the following (7 hour) [course](https://www.codecademy.com/learn/web), on Code Academy. 
+
+A **Website** has 2 main components:
 
 **HTML**, *HyperText Markup Language*, gives content structure and meaning by defining that content as, for example, headings, paragraphs, or images. 
 
@@ -34,16 +36,16 @@ Likewise, if you are interested in diving deeper, you are recommended to work th
 
 ##### Three Common *HTML* terms:
 
-**Elements**
->Elements are designators that define the structure and content of objects within a page. Some of the more frequently used elements include multiple levels of `headings` (identified as `<h1>` through `<h6>` elements) and `paragraphs` (identified as the `<p>` element); the list goes on to include the `<a>`, `<div>`, `<span>`, `<strong>`, and `<em>` elements, and many more.
+*Elements*
+Elements are designators that define the structure and content of objects within a page. Some of the more frequently used elements include multiple levels of `headings` (identified as `<h1>` through `<h6>` elements) and `paragraphs` (identified as the `<p>` element); the list goes on to include the `<a>`, `<div>`, `<span>`, `<strong>`, and `<em>` elements, and many more.
 
-Elements are identified by the use of less-than and greater-than angle brackets, < >, surrounding the element name. Thus, an element will look like the following:
+Elements are identified by the use of less-than and greater-than angle brackets, `< >`, surrounding the element name. Thus, an element will look like the following:
 
 ```html
 <a>
 ```
 
-**Tags**
+*Tags*
 
 The use of less-than and greater-than angle brackets surrounding an element creates what is known as a `tag`. Tags most commonly occur in pairs of opening and closing tags.
 
@@ -59,7 +61,7 @@ So, anchor tags will look a bit like this:
 <a> ... </a>
 ```
 
-**Attributes**
+*Attributes*
 
 Attributes are properties used to provide additional information about an element. The most common attributes include:
 *	`id` attribute: which identifies an element
@@ -101,7 +103,7 @@ All of the visible content within the web page will fall within the `<body>` ele
   </body>
 </html>
 ```
-</br>
+
 ```css
 body,
 p {
@@ -117,15 +119,13 @@ The preceding code shows the document beginning with the document type declarati
 When an element is placed inside of another element, also known as nested, it is a good idea to indent that element to keep the document structure well organized and legible. In the previous code, both the `<head>` and `<body>` elements were nested—and indented—inside the `<html>` element. The pattern of indenting for elements continues as new elements are added inside the `<head>` and `<body>` elements.
 
 
-##### Three Common *CSS* terms::
+##### Three Common *CSS* terms:
 
 In addition to HTML terms, there are a few common CSS terms you will want to familiarize yourself with. These terms include selectors, properties, and values. As with the HTML terminology, the more you work with CSS, the more these terms will become second nature.
 
-**Selectors:**
+*Selectors:*
 
-As elements are added to a web page, they may be styled using CSS. A selector designates exactly which element or elements within our HTML to target and apply styles (such as color, size, and position) to. Selectors may include a combination of different qualifiers to select unique elements, all depending on how specific we wish to be. For example, we may want to select every paragraph on a page, or we may want to select only one specific paragraph on a page.
-
-Selectors generally target an attribute value, such as an id or class value, or target the type of element, such as `<h1>` or `<p>`.
+As elements are added to a web page, they may be styled using CSS. A selector designates exactly which element or elements within our HTML to target and apply styles (such as color, size, and position) to. Selectors may include a combination of different qualifiers to select unique elements, all depending on how specific we wish to be. For example, we may want to select every paragraph on a page, or we may want to select only one specific paragraph on a page. Selectors generally target an attribute value, such as an id or class value, or target the type of element, such as `<h1>` or `<p>`.
 
 Within CSS, selectors are followed with curly brackets, `{}`, which encompass the styles to be applied to the selected element. The selector here is targeting all `<p>` elements.
 
@@ -135,7 +135,7 @@ p {
 }
 ```
 
-**Properties:**
+*Properties:*
 
 Once an element is selected, a property determines the styles that will be applied to that element. Property names fall after a selector, within the curly brackets, `{}`, and immediately preceding a colon, `:`. There are numerous properties we can use, such as background, color, font-size, height, and width, and new properties are often added. In the following code, we are defining the color and font-size properties to be applied to all `<p>` elements.
 
@@ -146,7 +146,7 @@ p {
 }
 ```
 
-**Values**
+*Values*
 
 So far we’ve selected an element with a selector and determined what style we’d like to apply with a property. Now we can determine the behavior of that property with a value. Values can be identified as the text between the colon, `:`, and semicolon, ;. Here we are selecting all `<p>` elements and setting the value of the color property to be orange and the value of the font-size property to be 16 pixels.
 
@@ -162,12 +162,12 @@ To review, in CSS our rule set begins with the selector, which is immediately fo
 It is a common practice to indent property and value pairs within the curly brackets. As with HTML, these indentations help keep our code organized and legible.
 
 
-##### Working with **Selectors**:
+##### Working with *Selectors*:
 
 Selectors, as previously mentioned, indicate which HTML elements are being styled. It is important to fully understand how to use selectors and how they can be leveraged. The first step is to become familiar with the different types of selectors. We’ll start with the most common selectors: `type`, `class`, and `ID ` selectors.
 
 
-**Type Selectors:**
+*Type Selectors:*
 
 Type selectors target elements by their element type. For example, should we wish to target all division elements, `<div>`, we would use a type selector of div. The following code shows a type selector for division elements as well as the corresponding HTML it selects.
 
@@ -180,7 +180,7 @@ div { ... }
 <div>...</div>
 ```
 
-**Class Selectors:**
+*Class Selectors:*
 
 Class selectors allow us to select an element based on the element’s class attribute value. Class selectors are a little more specific than type selectors, as they select a particular group of elements rather than all elements of one type.
 
@@ -197,7 +197,7 @@ Within CSS, classes are denoted by a leading period, `.`, followed by the class 
 <p class="awesome">...</p>
 ```
 
-**ID Selectors:**
+*ID Selectors:*
 
 ID selectors are even more precise than class selectors, as they target only one unique element at a time. Just as class selectors use an element’s class attribute value as the selector, ID selectors use an element’s id attribute value as a selector.
 
@@ -241,7 +241,6 @@ If our CSS file is within a subdirectory or subfolder, the href attribute value 
 
 HTML comments start with `<!-- and end with -->`. 
 CSS comments start with `/*` and end with `*/`.
-
 Note: If you would like to learn more, please follow further tutorials [here](http://learn.shayhowe.com/html-css/getting-to-know-html/).
 
 
@@ -518,18 +517,16 @@ This section, looks at the individual snippets separately and what you will need
 
 * Add Title:
 ```html
-        <!--Add: Case Study Title -->
-        <h5>Case Study | Type Title Here </h5>
+<!--Add: Case Study Title -->
+<h5>Case Study | Type Title Here </h5>
 ```
 
-*  Add Header Image
+*  Add Header Image:
+Save your file as 'Header_image_1800x450.png in the <img> folder. Use Illustrator Template in folder, if you require size setup.
 ```html
-       <!--Add: Image Header: File Size: 1800x450.png. 
-        Save your file as 'Header_image_1800x450.png in the <img> folder
-        Use Illustrator Template in folder, if you require size setup-->
-        <div class="img-padding">
-          <img src="img/Header_image_1800x450.png" class="img-responsive" />
-        </div>
+<div class="img-padding">
+<img src="img/Header_image_1800x450.png" class="img-responsive" />
+</div>
 ```
 * Add Chapter: Titles:
 We suggest dividing your case study ito many different components. Think of this as chapters of your paper. In this example, we have 7 sections. Below we set up a list for adding to the menu on left. You could use chapter 1, chapter 2 or give text titles, as required.
@@ -551,24 +548,21 @@ We suggest dividing your case study ito many different components. Think of this
   </div>
 ```
 
-* Add Chapter: Text:
+* Add Chapter: Text
 Next, you will add text paragraphs for each chapter. This methods allows visitors to go to specific sections of your case study. THe title of your chapter can be different from the one you use for the Table of Contents. It could be a longer version. 
 ```html
-	<!--Add: Text Paragraph -->
      <!-- <h5 id="section_id">Section Title</h5> -->
      <h5 id="Text1">Introduction to the course</h5>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/><br/>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>
 ```
 
 * Add Text with Annotations:
-We have designed annotations, so that they are responsive to where you are on the case study. These appear on the right column next to the footnote. To add a footnote, insert the following line of code. Please change numbers in order. Everytime, you add a footnote, you will be required to go to the footnote section of the code, to add in the text and link.
-
-To add a footnote, insert the following code next to where you want the foot note. Start from #1, and change as you proceed.
+We have designed annotations, so that they are responsive to where you are on the case study. These appear on the right column next to the footnote. To add a footnote, insert the following line of code. Please change numbers in order. Everytime, you add a footnote, you will be required to go to the footnote section of the code, to add in the text and link. To add a footnote, insert the following code next to where you want the foot note. Start from #1, and change as you proceed.
 ```html
 <div class="footnote footnote-1">1</div> 
 ```
 Here's how it would look in the paragraph:
-```html
+```
 <h5 id="Text2">Text with Annotation</h5>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <div class="footnote footnote-1">1</div> Add Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<div class="footnote footnote-2">2</div> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>
 ```
@@ -584,24 +578,24 @@ Then Add details to `Footnotes Section` at end of the code.
 ```
 
 * Add PDFs:
-To add a link to a PDF, save the file in the same folder and update link text. Insert the following code: 
+<br>To add a link to a PDF, save the file in the same folder and update link text. Insert the following code: 
 ```html
 <a href='sample_report.pdf'>Download Report</a><br/><br/>
 ```
 * Add Image:
-To add an Image, save the file in the <img> folder. Insert the following code:
+<br>To add an Image, save the file in the <img> folder. Insert the following code:
 ```html
 <img src="img/Sample_Image.png" class="img-responsive"/><br/>
 ```
 * Add Video:
-To add a Video, either upload to vimeo or use Youtube link. Insert the following code: 
+<br>To add a Video, either upload to vimeo or use Youtube link. Insert the following code: 
 ```html
 <div class="embed-responsive embed-responsive-4by3">
   <<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/152612971"></iframe>
 </div>
 ```
 * Add Interactive:
-As part of the project, you might design an interactive website. If you would like to include that in the case study, the easiest way might be linking that to an image. We suggest this as oppose to integrating them into your case study. Interactives might be heavier files and be difficult to load, instantly. Below, there are 3 examples.
+<br>As part of the project, you might design an interactive website. If you would like to include that in the case study, the easiest way might be linking that to an image. We suggest this as oppose to integrating them into your case study. Interactives might be heavier files and be difficult to load, instantly. Below, there are 3 examples.
 
 1. Linking Image to an Interactive html:
 ```html 
@@ -621,13 +615,12 @@ As part of the project, you might design an interactive website. If you would li
 <p><a href="http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" target="iframe_x">Aleppo Site</a></p>
 ```
 * Add Map:
-You can bring any project from mapbox editor, using the iframe method. In [tutorial 4](), we go over Mapbox basics, to make such an interactive map in mapbox editor.
+<br>You can bring any project from mapbox editor, using the iframe method. In [tutorial 4](), we go over Mapbox basics, to make such an interactive map in mapbox editor.
 
 Following is the code that you copy/paste from mapbox editor
 ```html
 <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.p194inbb/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
 ```
-
 Note: You can bring in any project, with the above code as long as you have your mapbox API key and map id
 
 * Add your Name:
