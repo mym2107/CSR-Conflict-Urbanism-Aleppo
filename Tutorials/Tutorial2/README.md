@@ -23,9 +23,7 @@ For this tutorial, we will be using the following datasets:
 
 
 ##### 01. WEB: Introduction to HTML/CSS
-The following section is from [here](http://learn.shayhowe.com/html-css/building-your-first-web-page/) and provides a good understanding of Web Basics. Please refer to it for more information.
-
-Likewise, if you are interested in diving deeper, you are recommended to work through the following (7 hour) [course](https://www.codecademy.com/learn/web), on Code Academy. 
+The following section is from [here](http://learn.shayhowe.com/html-css/building-your-first-web-page/) and provides a good understanding of Web Basics. Please refer to it for more information. Likewise, if you are interested in diving deeper, you are recommended to work through the following (7 hour) [course](https://www.codecademy.com/learn/web), on Code Academy. 
 
 A **Website** has 2 main components:
 
@@ -33,6 +31,8 @@ A **Website** has 2 main components:
 
 **CSS**, *Cascading Style Sheets*, is a presentation language created to style the appearance of content—using, for example, fonts or colors.
 </br>
+
+*Below are web basics. Feel free to skip to Case Study*
 
 ##### Three Common *HTML* terms:
 
@@ -74,7 +74,7 @@ Attributes are defined within the opening tag, after an element’s name. Genera
 So, anchor tags will look a bit like this:
 
 ```html
-<a href="http://shayhowe.com/">Shay Howe</a>
+<a href="http://www.google.com/">Google</a>
 ```
 
 ##### Setting Up an HTML Document:
@@ -319,7 +319,9 @@ This is the code for the Case Study. Every step is commented. You can also skip 
       </div>
     </div>
 
-<!--Note: We suggest dividing your case study ito many different components. Think of this as chapters of your paper. In this example, we have 7 sections. Below we set up a list for adding to the menu on left. You could use chapter 1, chapter 2 or give text titles. --> 
+<!--Note: We suggest dividing your case study ito many different components. Think of this as chapters of your paper. 
+In this example, we have 7 sections. Below we set up a list for adding to the menu on left. 
+You could use chapter 1, chapter 2 or give text titles. --> 
 
 <div class="row">
   <div class="col-md-3 scrollspy">
@@ -337,7 +339,9 @@ This is the code for the Case Study. Every step is commented. You can also skip 
     </div>
   </div>
 
-<!--Note: You can start with the first few paragraphs and keep adding. Each <item> above has a referenced paragraph below. You can think of the above being a table of contents and below being the chapters, with actual text. If you add a chapter, go back to the Table of Contents and add a tab for it. --> 
+<!--Note: You can start with the first few paragraphs and keep adding. Each <item> above has a referenced paragraph below. 
+You can think of the above being a table of contents and below being the chapters, with actual text. 
+If you add a chapter, go back to the Table of Contents and add a tab for it. --> 
 
   <!-- main -->
   <div class="col-md-6 body-text">
@@ -349,7 +353,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <!--Add: Text Paragraph with Annotation. 
 
-We have designed annotations, so that they are responsive to where you are on the case study. These appear on the right column next to the footnote. To add a footnote, insert the following line of code. Please change numbers in order. Everytime, you add a footnote, you will be required to go to the footnote section of the code, to add in the text and link.
+We have designed annotations, so that they are responsive to where you are on the case study. 
+These appear on the right column next to the footnote. To add a footnote, insert the following line of code. 
+Please change numbers in order. Everytime, you add a footnote, you will be required to go to the footnote section of the code, 
+to add in the text and link.
 
 To add a footnote, insert: <div class="footnote footnote-1">1</div> 
 Starting from #1, change as you proceed-->
@@ -387,19 +394,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </br>
 
 <!--Add: Text with Interactive. 
-As part of the project, you might design an interactive website. If you would like to include that in the case study, the easiest way might be linking that to an image. We suggest this as oppose to integrating them into your case study. Interactives might be heavier files and be difficult to load, instantly. Below, there are 3 examples.
-
-1. Linking Interactive to html
- 
-<a href="filename.html"><img src="img/filename_interactive.png" class="img-responsive"/></a>
-
-2. Embedding Interactive (This is ok if it's a couple of layers)
-<iframe width='100%' height='500px' frameBorder='0' src='interactive.html'></iframe>
-
-3. Embedding an entire website (As case study is responsive, test ! test !)
-
-<iframe width='100%' height='500px' frameBorder='0' src= "http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" name="iframe_x"></iframe> 
-<p><a href="http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" target="iframe_x">Aleppo Site</a></p>
+As part of the project, you might design an interactive website. If you would like to include that in the case study, 
+the easiest way might be linking that to an image. We suggest this as oppose to integrating them into your case study. 
+Interactives might be heavier files and be difficult to load, instantly. Below, there are 3 examples.
 -->
 
 <h5 id="Text6">Text with Interactive</h5><br/>
@@ -419,10 +416,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <br/>
 
 <!--Add: Text with Interactive Map. 
-You can bring any project from mapbox editor, using the iframe method. In tutorial 4, we go over Mapbox basics, to make such an interactive map in mapbox editor.
-
-Following is the code that you copy/paste from mapbox editor: 
-<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.p194inbb/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
+You can bring any project from mapbox editor, using the iframe method. 
+In tutorial 4, we go over Mapbox basics, to make such an interactive map in mapbox editor.
 
 Note: You can bring in any project, with the above code as long as you have your mapbox API key and map id
 -->
