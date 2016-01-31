@@ -13,9 +13,13 @@ Level: Easy
 *Setting Up A Conflict Urbanism: Case Study*</br>
 Level: Easy
 
+Tutorials 1 & 2, Help Session:</br>
+Will be held on Tues, Feb 2nd, 7-9pm, Studio @ Butler
+
 <hr/>
-Tutorials 3 to 10 will be demonstrated during Weekly Workshops.</br> 
-It is required that you do a *minimum of 3*.
+You will need to do a *minimum of 3* tutorials, of the following list. 
+Tutorial 3 & 4 serve as the basics and are hence required to proceed to others. 
+<hr/>
 
 + **[Tutorial 3](/Tutorials/Tutorial3/README.md):** 
 *Creating a Static Map*</br>
@@ -24,6 +28,11 @@ Level: Easy
 + **[Tutorial 4](/Tutorials/Tutorial4/README.md):** 
 *Creating a Basic Interactive Web Map*</br>
 Level: Easy
+
+Tutorials 3 & 4, Help Session:</br>
+Will be held on Tues, Feb 9th, 7-9pm, Studio @ Butler</br>
+Tutorials 5-9 will be available, online
+<hr/>
 
 + **[Tutorial 5](/Tutorials/Tutorial5/README.md):** 
 *Creating an Interactive Historical Map*</br>
@@ -45,10 +54,19 @@ Level: Medium
 *Creating an Interactive Categorized Cluster Map*</br>
 Level: Medium
 
+Tutorials 5 & 7, Help Session:</br>
+Will be held on Tues, Feb 16th, 7-9pm, Studio @ Butler
+
+Tutorials 6 & 9, Help Session:</br>
+Will be held on Tues, Feb 23rd, 7-9pm, Studio @ Butler
+
+Tutorials 8, Help Session:</br>
+Will be held on Tues, March 1st, 7-9pm, Studio @ Butler
+
 <hr/>
-Tutorials 11 and 12 will be demonstrated during Workshop 2. </br> 
+Tutorials 10 - 12 will be demonstrated during Workshop 2. </br> 
 On Saturday March 5th, 9-1pm, Studio @[Butler](https://studio.cul.columbia.edu).</br>
-*This workshop is optional*.
+*This workshop is adavanced, hence optional*.
 
 + **[Tutorial 10](/Tutorials/Tutorial10/README.md):** 
 *Creating an Interactive Grid of Images*</br>
