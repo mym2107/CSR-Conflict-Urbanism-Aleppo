@@ -11,7 +11,7 @@ For this tutorial, we will be using the following tools:
 
 ### Datasets:
 For this tutorial, we will be using the following datasets:
-* Case_Study.zip, Download [here](link to repository)
+* Case_Study.zip, Download [here](https://dl.dropboxusercontent.com/u/37129324/CSR_CUA_Tutorials/CaseStudy%202.zip)
 
 
 ### Setting Up A Conflict Urbanism: Case Study
