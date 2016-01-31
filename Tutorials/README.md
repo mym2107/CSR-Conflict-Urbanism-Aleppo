@@ -18,7 +18,8 @@ Will be held on Tues, Feb 2nd, 7-9pm, Studio @ Butler
 
 <hr/>
 You will need to do a *minimum of 3* tutorials, of the following list. 
-Tutorial 3 & 4 serve as the basics and are hence required to proceed to others. 
+Tutorial 3 & 4 are required to proceed to other tutorials.
+Tutorials 5 - 9 will be completely available, by Feb 9th.
 <hr/>
 
 + **[Tutorial 3](/Tutorials/Tutorial3/README.md):** 
@@ -31,7 +32,7 @@ Level: Easy
 
 Tutorials 3 & 4, Help Session:</br>
 Will be held on Tues, Feb 9th, 7-9pm, Studio @ Butler</br>
-Tutorials 5-9 will be available, online
+
 <hr/>
 
 + **[Tutorial 5](/Tutorials/Tutorial5/README.md):** 
