@@ -250,10 +250,19 @@ Note: If you would like to learn more, please follow further tutorials [here](ht
 
 For this part, we will walk through a case study. The deliverable for this tutorial is to upload a case study about the neighborhood you mapped. If you are using this as a guide to build your final case-study, please use the different modules, based on requirement. 
 
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12704890/00e51b58-c833-11e5-9005-1cabfcdddf33.png)
 
+We've divided the code in several parts to add additional explanations. We start with the complete code and dive into explanations for each part later. You can set up a new folder using the code below, through sublime. Or you can use the downloaded Case_Study.zip folder that has the `.html` and `.css` files. Open the `.html` and `'.css` files in sublime and open the CaseStudy in Chrome.
 
-We've divided the code in several parts to add additional explanations. We start with the complete code and dive into explanations for each part later. You can set up a new folder using the code below, through sublime. Or you can use the downloaded Case_Study.zip folder that has the `.html` and `.css` files.
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12704891/0250f0ac-c833-11e5-9398-a3c6e2577647.png)
 
+We suggest using Chrome, as you have access to developer tools that will help you to debug your code. You probably won't run into any issues using the case study template, but knowing how to decode or atleast see where you have an error is a good practise. In Chrome, go to  `View > Developer > Developer Tools`. This opens the `console` that shows you different parts of your site. If there is an error, you will be able to see it here.
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12704893/061b1fb4-c833-11e5-8710-620e62942ff1.png)
+<br>
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12704892/0610ebca-c833-11e5-8b99-37095dc1af4a.png)
+
+This is the code for the Case Study. Every step is commented. You can also skip to the end of the code, to look at individual components separately. Or you can follow the instructions in the code comments, to make changes and add your content on the go. Everytime you change the code in sublime, hit `save`. `Refresh` the web page and you should be able to see the changes. Note: We request you to not make any changes to the .css files. 
 
 ```html
 <!-- Conflict Urbanism: Aleppo
@@ -288,7 +297,6 @@ We've divided the code in several parts to add additional explanations. We start
   }
   </style>
   </head>
-
 
 <body>
 
@@ -506,6 +514,7 @@ $(document).ready(function() {
 ```
 
 ##### Code Snippets:
+This section, looks at the individual snippets separately and what you will need to change in the code. 
 
 * Add Title:
 ```html
@@ -523,9 +532,8 @@ $(document).ready(function() {
         </div>
 ```
 * Add Chapter: Titles:
+We suggest dividing your case study ito many different components. Think of this as chapters of your paper. In this example, we have 7 sections. Below we set up a list for adding to the menu on left. You could use chapter 1, chapter 2 or give text titles, as required.
 ```html
-<!--Note: We suggest dividing your case study ito many different components. Think of this as chapters of your paper. In this example, we have 7 sections. Below we set up a list for adding to the menu on left. You could use chapter 1, chapter 2 or give text titles. --> 
-
 <div class="row">
   <div class="col-md-3 scrollspy">
     <div id="sticky-menu ">
@@ -544,6 +552,7 @@ $(document).ready(function() {
 ```
 
 * Add Chapter: Text:
+Next, you will add text paragraphs for each chapter. This methods allows visitors to go to specific sections of your case study. THe title of your chapter can be different from the one you use for the Table of Contents. It could be a longer version. 
 ```html
 	<!--Add: Text Paragraph -->
      <!-- <h5 id="section_id">Section Title</h5> -->
@@ -552,24 +561,19 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 ```
 
 * Add Text with Annotations:
-```html
-<!--Add: Text Paragraph with Annotation. 
-
 We have designed annotations, so that they are responsive to where you are on the case study. These appear on the right column next to the footnote. To add a footnote, insert the following line of code. Please change numbers in order. Everytime, you add a footnote, you will be required to go to the footnote section of the code, to add in the text and link.
 
-To add a footnote, insert: <div class="footnote footnote-1">1</div> 
-Starting from #1, change as you proceed-->
-
+To add a footnote, insert the following code next to where you want the foot note. Start from #1, and change as you proceed.
+```html
+<div class="footnote footnote-1">1</div> 
+```
+Here's how it would look in the paragraph:
+```html
 <h5 id="Text2">Text with Annotation</h5>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <div class="footnote footnote-1">1</div> Add Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<div class="footnote footnote-2">2</div> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>
 ```
-Then Add to Footnotes Section at end:
-
-``` html
-<!-- Add: footnotes with definitions
-This is the code:
-<div class="footnote-ref footnote-ref-1"><sup>1</sup>Title <a href= "www.c4sr.columbia.edu"> “Descriptive text”</a> Date </div> 
--->
+Then Add details to `Footnotes Section` at end of the code. 
+```html
 <div class="col-md-3">
   <div class="footnotes">
     <div class="footnote-ref footnote-ref-1"><sup>1</sup>Title <a href= "www.c4sr.columbia.edu"> “Descriptive text”</a> Date </div>
@@ -599,7 +603,7 @@ To add a Video, either upload to vimeo or use Youtube link. Insert the following
 * Add Interactive:
 As part of the project, you might design an interactive website. If you would like to include that in the case study, the easiest way might be linking that to an image. We suggest this as oppose to integrating them into your case study. Interactives might be heavier files and be difficult to load, instantly. Below, there are 3 examples.
 
-1. Linking Interactive to html
+1. Linking Image to an Interactive html:
 ```html 
 <a href="filename.html"><img src="img/filename_interactive.png" class="img-responsive"/></a>
 ```
@@ -617,7 +621,7 @@ As part of the project, you might design an interactive website. If you would li
 <p><a href="http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" target="iframe_x">Aleppo Site</a></p>
 ```
 * Add Map:
-You can bring any project from mapbox editor, using the iframe method. In tutorial 4, we go over Mapbox basics, to make such an interactive map in mapbox editor.
+You can bring any project from mapbox editor, using the iframe method. In [tutorial 4](), we go over Mapbox basics, to make such an interactive map in mapbox editor.
 
 Following is the code that you copy/paste from mapbox editor
 ```html
@@ -634,5 +638,4 @@ Your Name: <br/><br/>Description (Program, Year, Expertise)
 ```
 
 ### Deliverables:
-
 Upload a Case Study titled: Neighborhood
