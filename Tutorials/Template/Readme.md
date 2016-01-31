@@ -55,7 +55,7 @@ This section provides detailed explanation of each data source. You can skip thi
 * To Add a Screen Shot 
 	* Resolution: 1400 x 1190
 	* Add Issue with Tutorial Name and Copy Paste Address
-	![Add Layer](link)
+	> ![Add Layer](link)
 
 * To Add Code Snippets (Specify code language for proper formatting)
 	```html
