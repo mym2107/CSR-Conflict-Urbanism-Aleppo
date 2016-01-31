@@ -610,7 +610,7 @@ Then Add details to `Footnotes Section` at end of the code.
 <p><a href="http://c4sr.columbia.edu/conflict-urbanism-aleppo/index.html" target="iframe_x">Aleppo Site</a></p>
 ```
 * Add Map:
-<br>You can bring any project from mapbox editor, using the iframe method. In [tutorial 4](), we go over Mapbox basics, to make such an interactive map in mapbox editor.
+<br>You can bring any project from mapbox editor, using the iframe method. In [tutorial 4](https://github.com/mym2107/CSR-Conflict-Urbanism-Aleppo/tree/master/Tutorials/Tutorial4), we go over Mapbox basics, to make such an interactive map in mapbox editor.
 
 Following is the code that you copy/paste from mapbox editor
 ```html
