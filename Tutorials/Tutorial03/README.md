@@ -109,13 +109,11 @@ You can set Aleppo to the extent required in the map window. In options select: 
 
 ##### 03. QGIS: Analyzing and Styling Data
 
+**Styling Data**
 You will now have all the `layers` organized in your layers panel. QGIS assigns color automatically, so you will have to inidvidually style each layer. It is recommended that you do not use the `transparency` option in *styling* your map, if you plan to export as `.svg` and further stylize in a software like, *Adobe Illustrator*. In the `layers` panel, start from the bottom layer. In order to see the `style`, you should zoop to layer in the map window. To do this, right-click on the layer, and click on `Zoom to Layer`.
 
 In order to change the appearance of a `layer`, in the `layer panel`, double-click on the icon, next to the `layer name`. This will bring up the `Style` tab in the `Layer Properties` panel. You can then select the *fill*:`color`, *fill opacity*:`1-100`, *stroke weight*: `border thickness`, *stroke color*: `border color`. If your layer has `border thickness`
-There are multiple ways of changing the appearance of a layer. The easiest (and simplest) is to double-click on the icon (point, line or polygon) next to the layer name on the layer panel. This brings up the Style tab in the Layer Properties panel. In there you can change the fill (color), stroke weight and fill (outline) and the size of the icon (if using points or icons).
 
-
-**Styling Data**
 * **Attributes Table** 
   `Right click - Open Attributes Table`to access attributes table, which maintains the data in each file.
 
