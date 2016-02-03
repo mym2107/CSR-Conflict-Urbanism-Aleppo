@@ -10,8 +10,8 @@ For this tutorial, we will be using the following tools:
 
 ### Datasets:
 For this tutorial, we will be using the following datasets:
-* Aleppo.zip, Download [here](/Tutorials/Tutorial3/Data/Aleppo.zip)
-* Neighborhood.zip, Download [here](/Tutorials/Tutorial3/Data/Neighborhood.zip)
+* Aleppo.zip, Download [here](https://www.dropbox.com/s/mu95rct8682jvnv/Aleppo.zip?dl=0)
+* Neighborhood.zip, Download [here](https://www.dropbox.com/s/ih38cxqov27fbdy/Neighborhood.zip?dl=0)
   
 ### Datasets Overview:
 This section provides detailed explanation of each data source. You can skip this section, if you would like to continue with the tutorial. However, it is recommended that you familiarize yourself with these sources, as they will asssist you in your research.
@@ -108,13 +108,16 @@ QGIS allows you to bring geometry data directly from OpenStreetMaps into your QG
 You can set Aleppo to the extent required in the map window. In options select: `From Map Canvas` and add a *filename* for `output`. Depending on the `tags` in the region, you will be getting point, line and polygon data as *separate layers*. Select all for now as you can switch off and remove unwanted layers later.
 
 ##### 03. QGIS: Analyzing and Styling Data
+
+You will now have all the `layers` organized in your layers panel. QGIS assigns color automatically, so you will have to inidvidually style each layer. It is recommended that you do not use the `transparency` option in *styling* your map, if you plan to export as `.svg` and further stylize in a software like, *Adobe Illustrator*. In the `layers` panel, start from the bottom layer. In order to see the `style`, you should zoop to layer in the map window. To do this, right-click on the layer, and click on `Zoom to Layer`.
+
+In order to change the appearance of a `layer`, in the `layer panel`, double-click on the icon, next to the `layer name`. This will bring up the `Style` tab in the `Layer Properties` panel. You can then select the *fill*:`color`, *fill opacity*:`1-100`, *stroke weight*: `border thickness`, *stroke color*: `border color`. If your layer has `border thickness`
+There are multiple ways of changing the appearance of a layer. The easiest (and simplest) is to double-click on the icon (point, line or polygon) next to the layer name on the layer panel. This brings up the Style tab in the Layer Properties panel. In there you can change the fill (color), stroke weight and fill (outline) and the size of the icon (if using points or icons).
+
+
 **Styling Data**
 * **Attributes Table** 
   `Right click - Open Attributes Table`to access attributes table, which maintains the data in each file.
-
-Layer Projection Stuff
-![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12649828/3040c7d0-c5ae-11e5-88ae-a5e4fc4b9c1e.png)
-
 
 * **Properties**
   `Right click - Properties`to access properties tab. 
@@ -127,6 +130,8 @@ Layer Projection Stuff
 ##### 04. QGIS: Setting Up Print Composer
 First, before creating a `Print Composer` check to see you are working in the right projection. Porjections will be discussed further in the coming weeks, but basically map projections are ways of transforming locations on a sphere (the Earth) to locations on a plane (a 2D map). There are many types of projections and each one of them has a specific purpose and a specific area of relevance.
 
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12649828/3040c7d0-c5ae-11e5-88ae-a5e4fc4b9c1e.png)
+
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12649826/303321f2-c5ae-11e5-9151-70c5a92c9aa1.png)
 
 The `Print Composer` is where you will format your map for its final output. Here you will specify the output size, you will add a legend, a scale bar, a north arrow (if needed) and any additional text (titles, sources, explanations and credits). Although the `Print Composer` exists as its own window it will still be linked to the map `Project` we have been working on.
@@ -136,6 +141,7 @@ The `Print Composer` is where you will format your map for its final output. Her
 * To add a new map, click on the button `Add new map` on the left-hand panel and draw a rectangle on the blank page.
 * Once you add the map you can adjust its size and position by dragging it from its corners.
 * You might notice that if you change the size of the map it doesn't necessarily update. To avoid this, on the right-hand panel, where it says `Main properties`, click on `Update preview`. Or, you can also click on the drop-down menu where it says `Cache` and change it to `Render` so that it is constantly updating.
+Note: Section on `Print Composer` taken from the following [tutorial](https://github.com/juanfrans-courses/mapping_arch_hum/blob/master/Spring_2016/Tutorials/01_Creating_a_Basic_Map.md)
 
 ##### 05. AI: Styling and Editing Map SVG 
 The last step is to export the map as a PDF file. Use the `Export as PDF` button on the top toolbar and save your final map.
