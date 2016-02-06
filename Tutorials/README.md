@@ -17,7 +17,7 @@ Tutorials 1 & 2, Help Session:</br>
 Will be held on Tues, Feb 2nd, 7-9pm, Studio @ Butler
 
 <hr/>
-You will need to do a *minimum of 3* tutorials, of the following list. </br>
+You will need to do a *minimum of 2* tutorials, of the following list. </br>
 Tutorial 3 & 4 are required to proceed to other tutorials.</br>
 Tutorials 5 - 9 will be completely available, by Feb 9th.</br>
 
