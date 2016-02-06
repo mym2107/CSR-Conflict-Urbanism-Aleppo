@@ -5,11 +5,11 @@ Tutorials 1 and 2 will be demonstrated during Workshop 1</br>
 On Saturday Jan 30th, 9-1pm, Studio @[Butler](https://studio.cul.columbia.edu).</br>
 *This workshop is compulsary*.
 
-+ **[Tutorial 1](/Tutorials/Tutorial1/README.md):** 
++ **[Tutorial 1](/Tutorials/Tutorial01/README.md):** 
 *Mapping Urban Form and Damage with [HOT](http://hotosm.org)* </br>
 Level: Easy
 
-+ **[Tutorial 2](/Tutorials/Tutorial2/README.md):** 
++ **[Tutorial 2](/Tutorials/Tutorial02/README.md):** 
 *Setting Up A Conflict Urbanism: Case Study*</br>
 Level: Easy
 
@@ -22,11 +22,11 @@ Tutorial 3 & 4 are required to proceed to other tutorials.</br>
 Tutorials 5 - 9 will be completely available, by Feb 9th.</br>
 
 
-+ **[Tutorial 3](/Tutorials/Tutorial3/README.md):** 
++ **[Tutorial 3](/Tutorials/Tutorial03/README.md):** 
 *Creating a Static Map*</br>
 Level: Easy
 
-+ **[Tutorial 4](/Tutorials/Tutorial4/README.md):** 
++ **[Tutorial 4](/Tutorials/Tutorial04/README.md):** 
 *Creating a Basic Interactive Web Map*</br>
 Level: Easy
 
@@ -35,23 +35,23 @@ Will be held on Tues, Feb 9th, 7-9pm, Studio @ Butler</br>
 
 <hr/>
 
-+ **[Tutorial 5](/Tutorials/Tutorial5/README.md):** 
++ **[Tutorial 5](/Tutorials/Tutorial05/README.md):** 
 *Creating an Interactive Historical Map*</br>
 Level: Easy
 
-+ **[Tutorial 6](/Tutorials/Tutorial6/README.md):** 
++ **[Tutorial 6](/Tutorials/Tutorial06/README.md):** 
 *Creating an Interactive Cluster Map*</br>
 Level: Medium
 
-+ **[Tutorial 7](/Tutorials/Tutorial7/README.md):** 
++ **[Tutorial 7](/Tutorials/Tutorial07/README.md):** 
 *Creating a Interactive Satellite Imagery Map*</br>
 Level: Medium
 
-+ **[Tutorial 8](/Tutorials/Tutorial8/README.md):** 
++ **[Tutorial 8](/Tutorials/Tutorial08/README.md):** 
 *Creating a Story Based Interactive Map*</br>
 Level: Medium
 
-+ **[Tutorial 9](/Tutorials/Tutorial9/README.md):** 
++ **[Tutorial 9](/Tutorials/Tutorial09/README.md):** 
 *Creating an Interactive Categorized Cluster Map*</br>
 Level: Medium
 
