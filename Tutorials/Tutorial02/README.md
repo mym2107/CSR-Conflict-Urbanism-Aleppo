@@ -627,3 +627,8 @@ Your Name: <br/><br/>Description (Program, Year, Expertise)
 
 ### Deliverables:
 Upload a Case Study titled: Neighborhood
+
+##### Tutorial Checklist:
+- [x] 01. WEB: Introduction to HTML/CSS
+- [x] 02. SUBLIME: Setting Up a Case Study 
+
