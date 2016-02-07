@@ -154,6 +154,8 @@ Use the below code command at the Command Line, after:
 *	Switch the file names
 *	Use the projection you were provided through GDAL, instead of EPSG:4326
 
+For more details: [GDALWarp](http://www.gdal.org/gdalwarp.html).
+
 `-s_srs means` “source spatial reference system” - this is the projection that the flle you are starting with is stored in.
 
 `-t_srs` means “target spatial reference system” - this is the projection that you want to convert the datasource to. For any raster file you want to use with Mapbox this should be EPSG:3857.
@@ -166,13 +168,10 @@ Use the below code command at the Command Line, after:
 gdalwarp -s_srs EPSG:4326 -t_srs EPSG:3857 -r bilinear -te -20037508.34 -20037508.34 20037508.34 20037508.34 ActualImage.tif NewImage.tif
 ```
 
-For more details: [GDALWarp](http://www.gdal.org/gdalwarp.html)
-
-**To change Bit Depth:**
-
+*To Change Bit Depth**
 If your image is `16 bit`, you will need to downsample it to `8 bit` to use with Mapbox, using GDALTranslate.
 
-# Converting from 16bit to 8bit
+Converting from 16bit to 8bit
 ```
 gdal_translate -ot Byte -scale 0 65535 0 255 inputfilename.tif outputfilename.tif
 ```
