@@ -113,7 +113,7 @@ Here's waht gdalinfo returned. Please make note of the following parts in your g
 *	Coordinate System: Authority: AUTHORITY["EPSG","4326"]]
 *	Band 1 Block=29426x1 Type=Byte, ColorInterp=Palette
 
-///
+```
 i-a@Madeehas-MacBook-Pro:~/desktop/Tutorial7$ gdalinfo Alp.tif
 Driver: GTiff/GeoTIFF
 Files: Alp.tif
@@ -142,13 +142,13 @@ Lower Right (  37.2542354,  36.1502078) ( 37d15'15.25"E, 36d 9' 0.75"N)
 Center      (  37.1698371,  36.1965715) ( 37d10'11.41"E, 36d11'47.66"N)
 Band 1 Block=29426x1 Type=Byte, ColorInterp=Palette
   Color Table (RGB with 256 entries)
+```
 
-///
+`Coordinate System: "EPSG","4326"` confirms the projection of your input data. 
+`Type: "Byte"` confirms that the bit depth is 8 bit
 
-Coordinate System: "EPSG","4326" confirms the projection of your input data. 
-Type: "Byte" confirms that the bit depth is 8 bit
-
-If both of these are TRUE, you can skip the next two steps. However, if they aren't, you can use GDAL to change according to Mapbox reqiorements.
+If both of these are `TRUE`, you can skip the next two steps. 
+However, if they aren't, you can use **GDAL** to change according to Mapbox reqiorements.
 
 **To change Projection:**
 
@@ -156,13 +156,13 @@ Use the below code command at the Command Line, after:
 *	Switch the file names
 *	Use the projection you were provided through GDAL, instead of EPSG:4326
 
--s_srs means “source spatial reference system” - this is the projection that the flle you are starting with is stored in.
+`-s_srs means` “source spatial reference system” - this is the projection that the flle you are starting with is stored in.
 
--t_srs means “target spatial reference system” - this is the projection that you want to convert the datasource to. For any raster file you want to use with Mapbox this should be EPSG:3857.
+`-t_srs` means “target spatial reference system” - this is the projection that you want to convert the datasource to. For any raster file you want to use with Mapbox this should be EPSG:3857.
 
--r bilinear is telling the program what resampling interpolation method to use. If you want the command to run faster and don’t mind a rougher-looking output, choose near instead of bilinear. If you don’t mind waiting longer for very high-quality output, choose lanczos.
+`-r` bilinear is telling the program what resampling interpolation method to use. If you want the command to run faster and don’t mind a rougher-looking output, choose near instead of bilinear. If you don’t mind waiting longer for very high-quality output, choose lanczos.
 
--te -20037508.34 -20037508.34 20037508.34 20037508.34 is telling the program the desired “target extent” of our output file.
+`-te` -20037508.34 -20037508.34 20037508.34 20037508.34 is telling the program the desired “target extent” of our output file.
 
 '''
 gdalwarp -s_srs EPSG:4326 -t_srs EPSG:3857 -r bilinear -te -20037508.34 -20037508.34 20037508.34 20037508.34 ActualImage.tif NewImage.tif
@@ -172,10 +172,12 @@ For more details: [GDALWarp](http://www.gdal.org/gdalwarp.html)
 
 **To change Bit Depth:**
 
-If your image is 16 bit, you will need to downsample it to 8 bit to uses with Mapbox. You can use GDALTranslate, to do so.
+If your image is `16 bit`, you will need to downsample it to `8 bit` to use with Mapbox, using GDALTranslate.
 
 # Converting from 16bit to 8bit
+```
 gdal_translate -ot Byte -scale 0 65535 0 255 inputfilename.tif outputfilename.tif
+```
 
 For more details: [GDALTranslate](http://www.gdal.org/gdal_translate.html)
 
@@ -183,13 +185,13 @@ For more details: [GDALTranslate](http://www.gdal.org/gdal_translate.html)
 
 You can create a [BigTIFF](http://www.awaresystems.be/imaging/tiff/bigtiff.html) using the command line raster utility, `gdal_translate` (using GDAL version >= 1.5.0). For more information, here's Mapbox's [explanation](https://www.mapbox.com/blog/bigtiff-upload-support). 
 
-'''
+```
 gdal_translate -of GTiff -co BIGTIFF=YES -co TILED=YES -co COMPRESS=LZW original.jp2 bigtiff.tif
-'''
+```
 
 The `-of` flag stands for "output format". The above command is setting the output to GeoTIFF.
 
-The `-co` flag stands for "creation option". The above command is passing the BIGTIFF option to the output format driver to create a BigTIFF. The TILED command breaks the image up into square tiles. Pre-cutting high-res imagery into tiles can make accessing and processing that image more efficient. Also, the COMPRESS command helps decrease the overall filesize.
+The `-co` flag stands for "creation option". The above command is passing the `BIGTIFF` option to the output format driver to create a `BigTIFF`. The `TILED` command breaks the image up into square tiles. Pre-cutting high-res imagery into tiles can make accessing and processing that image more efficient. Also, the `COMPRESS` command helps decrease the overall filesize.
 
 Goto *Mapbox.com* and Sign into your account. Once you are on the Main Window, Under `Data > Select New Tileset`. From the window select the file you just exported. A Download status window appears. There are 2 phases of Download. After Uploading, it will provide you with a Map Id. It will then continue to *process*. This takes a few minutes, depending on file size. 
 
@@ -257,8 +259,7 @@ These are the parts that need to be changed:
 *	Zoom Level = `What zoom Level do you want to set your map at`
 * 	Long, Lat = `The center position for your map` 
 
-TX-26
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874495/5632831e-cdd5-11e5-8d1f-c3fa3c1fd726.png)
 
 Here's the html script. Please look at the comments, to understand the steps:
 
@@ -310,7 +311,7 @@ var map = L.mapbox.map('map');
 L.mapbox.tileLayer('c4sr.8a769a77').addTo(map);
 
 // ADD: Layer 2 : Here we add the Soviet Historical Map of Aleppo
-var overlay = L.mapbox.tileLayer('c4sr.6b61i4ek').addTo(map);
+var overlay = L.mapbox.tileLayer('c4sr.8a769a77,c4sr.6b61i4ek').addTo(map);
 var range = document.getElementById('range');
 
 //Do NOT Change
@@ -326,7 +327,7 @@ range['oninput' in range ? 'oninput' : 'onchange'] = clip;
 map.on('move', clip);
 
 // ADD: Long, Lat and Zoom Level. The settings below zoom at Aleppo
-map.setView([36.21, 37.15], 13);
+map.setView([36.21, 37.15], 14);
 
 
 clip();
@@ -336,6 +337,17 @@ clip();
 ```
 
 Once you have made the changes, save the `.html` file and open with `Chrome`. You should be able to see your map with the layers option on the upper right corner. From there you should be able to select the Historical map for display. Note: There are simple tools you can add to enhance your map, such as the transparency bar. Please *comment* below and I will provide an update. Also, incase your site does not show the expected result, use Chrome Developer Tools to debug. 
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874497/5901f516-cdd5-11e5-8f9d-5186c83dceed.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874500/5cdd3182-cdd5-11e5-9773-f3e7f3f34f02.png)
+
+```
+var overlay = L.mapbox.tileLayer('c4sr.8a769a77,c4sr.6b61i4ek').addTo(map);
+```
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874496/57b93fc0-cdd5-11e5-8445-1fa790271631.png)
+
 
 ##### 05. WEB: Embed Map in Case Study
 
