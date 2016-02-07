@@ -27,7 +27,7 @@ This dataset has been provided here by [the Aleppo Project](http://ccnr.ceu.edu/
 
 ##### Data sets: CSR Repository Images
 
-You can use the High Resolution Satellite Imagery or Maps. In this example, we are using a map that was georeferenced and projected. The steps are similar, when you use Satellite Imagery. 
+You can use the High Resolution Satellite Imagery or Maps. In this example, we are using a map that was georeferenced and projected. The steps are similar, when you use High Resolution Satellite Imagery. In most cases, High Resolution Satellite Imagery would require you to have an upgraded Mapbox account. If you run into this issue, please consult with us. We might be able to provide you our imagery or space on our mapbox account. 
 
 
 ### Creating an Interactive Historical Map
@@ -55,18 +55,15 @@ Open the QGIS Application and Open these files using: `Menu > Layer > Add Layer 
 
 When you bring in the layer: GeoWSG84: Haleb_(Aleppo).tif, remember it's projection is already set. You can recheck the CRS by going to the layer in the Layers Panel and Right Click on it. Goto: `Properties > General > Coordinate Reference System : EPSG:4326 - WSG 84`. To be able to bring the raster data as a map, you will need to reset this to Web Mercator (as shown in the next step). 
 
-t5-4
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874606/22c49c04-cdd7-11e5-98a6-5498bbf9df1d.png)
 
 When you bring in *raster* data to QGIS, it is important that you recheck its *georeferecing* and *projection*. If something looks wrong in the map window, it will 100% not work in mapbox. To test it's precision, either add a georeferenced image of a know area. Or you can bring in the underlay of a satellite image. To do this Goto : `Menu > Web > OpenLayersPlugin > Google Maps > Google Satellite`. Zoom into the area of the citadel (center Aleppo) and see how it overlaps with the satellite data. If your image does not appear, it might be due to internet speed. You can select `OSM/Stamen > Stamen Toner / OSM` in that case. 
 
-t5-6
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874607/22c4dc46-cdd7-11e5-89d2-529272ab5bb9.png)
 
 Look at different parts of the image you brought in and the underlying OSM map to see if they overlap well. Sometimes, raster images are not georeferenced properly and might have minor offsets that need to be manually fixed. You can change the `order` of the layers by dragging the `Stamen Toner / OSM` below. Then `Right Click` on Properties of the Haleb (Aleppo) layer and set `Transparency` at 70%. You will now be able to test the overlap better.
 
-t5-7
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874608/22cd04ca-cdd7-11e5-94c4-352e223ed8ee.png)
 
 Now, you will need to export the layer in a format that is acceptable to mapbox. Please remember mapbox only uses the `Projection: Web Mercator`. So you will need to export the image as a *geotiff* and also reproject it to WebMercator. To do this, `Right Click` on the Layer in `Layers Panel`, Right Click: `Save As`. In the `Save raster layer as` window, set the following:
 
@@ -76,8 +73,7 @@ Now, you will need to export the layer in a format that is acceptable to mapbox.
 *	Select *WGS 84 / Psuedo mercator, EPSG: 3857
 * 	Save the file in your selected format (Takes a while!)
 
-t5-7
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874609/22ce5b04-cdd7-11e5-9088-a0ad20f612c3.png)
 
 Note: You can skip the above section and directly use the file: Haleb_(Aleppo).tif from the downloaded folder.
 
@@ -106,6 +102,8 @@ You need to install GDAL, prior to this exercise. Please see my notes at the end
 If you type in gdalinfo filename.ext, you will get all the information about your stored file. You should make sure your file is within the same folder or else you will have to add the correct filepath. gdalinfo provides details on everything: projection, image size, bit depth. When you run the following command, you can verify the details on the image prior to mapbox upload.
 
 > gdalinfo Alp.tif
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874610/26668be2-cdd7-11e5-80ef-2e224d477832.png)
 
 Here's waht gdalinfo returned. Please make note of the following parts in your gdalinfo output
 
@@ -195,13 +193,11 @@ The `-co` flag stands for "creation option". The above command is passing the `B
 
 Goto *Mapbox.com* and Sign into your account. Once you are on the Main Window, Under `Data > Select New Tileset`. From the window select the file you just exported. A Download status window appears. There are 2 phases of Download. After Uploading, it will provide you with a Map Id. It will then continue to *process*. This takes a few minutes, depending on file size. 
 
-TX-13
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12872605/5abc41b4-cda7-11e5-995f-cb3f3e8228e3.png)
 
 Once your raster is uploaded and processed, it will appear under 'Data'. Click on the `layer` and you will see all it's properies and details. The few important things to note here are:
 
-TX-14
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874613/3bc27c30-cdd7-11e5-8241-42e6bdfaf5da.png)
 
 * Map ID:
 On the right corner, you will see a `Map ID`. The Map ID for my upload is: `c4sr.0jsc3bj6`. Please note your mapID as this is what will be used to reference your map.
@@ -220,18 +216,15 @@ In this step, we will reuse a 'pencil sketch' style. However, instead of followi
 
 Go to Mapbox Main window and click on the Classic tab. In your list, select create from Mapbox Studio Classic and Click on the link. Download [Mapbox Classic](https://www.mapbox.com/mapbox-studio-classic/#darwin). Mapbox Classic is a desktop application, spaced between the we versions of Mapbox Editor and Mapbox Studio. The Studio is a great tool because it's easier to stylize in it.  
 
-TX-15
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12872607/5ac6bbd0-cda7-11e5-8cab-701a73ab0c5f.png)
 
 In your Mapbox Classic window, click on `Styles & Sources` on the lower left corner. Then Click on `New Style or Source`.
 
-TX-16
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12872609/5acb6d38-cda7-11e5-9d33-07d7d340df0e.png)
 
 Select the pencil sketch map here in your Style&Source window. For more information on the method, read [here](https://www.mapbox.com/blog/pencil-drawn-style/). We select this as the *style* in order to then *edit* it according to our requirements. 
 
-TX-17
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12872609/5acb6d38-cda7-11e5-9d33-07d7d340df0e.png)
 
 As you are designing a basemap for Aleppo, I recommend going to Aleppo through `Search` or through the `Zoom In and Out` keys on the top Bar. The way the map works is using different styling for elements at different zoom levels. For instance, the road might appear as a thick line at `zoom level:19`, where as a dotted line at `zoom level: 15` and diassappear at anything above `zoom level: 12`. The window on the right of the map is for CSS, which is where all the styling components go. You can look through the different sections and change *colors / types / sizes*, etc to see how your map renders. Remember it is important to test at different zoom levels. 
 
@@ -239,13 +232,12 @@ Once you are happy with your *stylized map*, click on `Save As`, give it a *name
 Note: For this tutorial, I just renamed the style and used it. You are welcome to experiment with textures or colors.
 
 Now click on 'Upload to Mapbox'. Once uploaded the `Map ID`, will appear above 'Upload to Mapbox'. 
-TX-23
-![Add Layer](link)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874612/3ba790be-cdd7-11e5-98b9-870a0b9a5ad8.png)
 
 You can now return to your mapbox window, where you will be able to see this layer under `Tabs > Classic`. You will now use this `MapID`, to make your 2 layer map. 
 
-TX-25
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874614/3bcea942-cdd7-11e5-9c0a-f7287e68e545.png)
 
 
 ##### 04. WEB: Set Up 2 Layer Interactive
