@@ -218,8 +218,7 @@ These are the parts that need to be changed:
 *	Zoom Level = `What zoom Level do you want to set your map at`
 * 	Long, Lat = `The center position for your map` 
 
-TX-26
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874401/9ae4e058-cdd3-11e5-9bda-edac199d4943.png)
 
 Here's the html script. Please look at the comments, to understand the steps:
 
@@ -284,8 +283,11 @@ L.control.layers({
 
 Once you have made the changes, save the `.html` file and open with `Chrome`. You should be able to see your map with the layers option on the upper right corner. From there you should be able to select the Historical map for display. Note: There are simple tools you can add to enhance your map, such as the transparency bar. Please *comment* below and I will provide an update. Also, incase your site does not show the expected result, use Chrome Developer Tools to debug. 
 
-TX-27
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874400/9ae30a94-cdd3-11e5-9bc5-c6d8fd510bb9.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874399/9adca370-cdd3-11e5-8342-8151fcfd9c49.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874398/9ac22a7c-cdd3-11e5-8c1b-93b17435e817.png)
 
 ##### 05. WEB: Embed Map in Case Study
 
@@ -295,9 +297,6 @@ Using the code, provide in [tutorial2](), you can embed any interactive website,
 <iframe width='100%' height='500px' frameBorder='0' src= "filename.html" name="iframe_x"></iframe> 
 <p><a href="filename.html" target="iframe_x">Interactive Site</a></p>
 ```
-
-TX-28
-![Add Layer](link)
 
 ### Deliverables:
 
