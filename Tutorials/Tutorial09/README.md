@@ -2,6 +2,8 @@
 ##Tutorial 9: Creating an Interactive Categorized Cluster Map
 Overview: 
 
+##UPDATE IN PROGRESS:
+
 ### Tools:
 * QGIS
 * Leaflet
