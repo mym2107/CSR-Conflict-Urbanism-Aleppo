@@ -2,6 +2,8 @@
 ##Tutorial 6: Creating an Interactive Cluster Map 
 Overview: In this tutorial
 
+##UPDATE IN PROGRESS:
+
 ### Tools:
 * QGIS
 * Leaflet
