@@ -289,3 +289,13 @@ You can save the file as Tut4_1.html and open it in Chrome. This is how it shoul
 
 ### Deliverable:
 Template with 2 Layer Interactive Map 
+
+##### Tutorial Checklist:
+- [x] 01. QGIS: SetUp Neighborhood and Informal Data 
+- [x] 02. MAPBOX: Sign Up, Installation and Introduction 
+- [x] 03. MAPBOX_Editor: Design Map of Informal Neighborhoods
+- [x] 04. MAPBOX_Studio: Design Map of Neighborhoods
+- [x] 05. WEB: Embed Neighborhood and Informal Maps in Case Study
+- [x] 06. WEB: Set Up 2 layer Interactive Map through HTML/JS/CSS
+- [x] 07. WEB: Embed 2 layer Map in Case Study
+
