@@ -1,26 +1,34 @@
 ######CSR / Conflict Urbanism Aleppo
 ##Tutorial 8: Creating a Story Based Interactive Map
-Overview: 
+
+In this tutorial, you will make a navigational interactive map that allows you to narrate the sequence. In this tutorial, you will make an interactive web map of Aleppo, that allows users to switch between a current stylized *OpenStreetMaps* map and an *old* map of Aleppo, Syria. You will georeference the historical Map of Aleppo, using the *Georeferencer* plugin in *QGIS* and build it as an online map, using *mapbox*. You will then use *mapbox studio* to build a style for OpenStreetMaps. Lastly, you will then use *html, css and javascript* to design an interactive map that allows you to swtich between the 2 map layer, you created. 
 
 ### Tools:
-* QGIS
-* HTML / CSS / JS
+For this tutorial, we will be using the following tools:
+* [Sublime](http://www.sublimetext.com/)
+* [Chrome](https://www.google.com/chrome/)
 	
 ### Datasets: 
-* UNOSAT.zip
+-none-
 
 ### Data Access:
-*HDX: UNOSAT
+-none-
 
-### Steps:
-* Setup Tutorial8 in QGIS
-* Add UNOSAT Data
-* Segregate Military Targets 
-* Add XY Co-ordinates
-* Add More Specific Data
-* Set Up Interactive Map
-* Set Up Story for Interactive Map
-* Embed Interactive Map in Case Study
+### Creating a Story Based Interactive Map
+
+##### Steps:
+  * 01. RESEARCH: Build a Raster Layer 
+  * 02. GOOGLE MAPS: Design New Style
+  * 03. WEB: Set Up Narrative Interactive
+  * 04. WEB: Embed Map in Case Study
+
+
+##### 01. QGIS: Export Old Map
+
+##### 02. QGIS: Export Old Map
+##### 03. QGIS: Export Old Map
+##### 04. QGIS: Export Old Map
+
 
 ##### Set Up Interactive Map:
 ```html
@@ -272,11 +280,22 @@ narrative.onscroll = function(e) {
 </html>
 ```
 
-*Optional:*
-* Export Shp file 
-* Add Shape file to Mapbox Ed
-* Trace Details and add
-* Add Details for Mouse Click
+##### 04. WEB: Embed Map in Case Study
 
-### Deliverable:
-Template with Interactive Story Map 
+Using the code, provide in [tutorial2](), you can embed any interactive website, in your case study. Test `width` and `height` ratios, to see what works best for you. Note: You will need to upload your site in order to embed it. You could test it using a locally saved .html file. If you save it in the same folder as the casestudy, just  use *filename.html*.
+
+```html
+<iframe width='100%' height='500px' frameBorder='0' src= "filename.html" name="iframe_x"></iframe> 
+<p><a href="filename.html" target="iframe_x">Interactive Site</a></p>
+```
+
+### Deliverables:
+
+Embed a 2 layer map of Aleppo, with 1 layer being the historical map and the other being a style you have designed in mapbox classic. 
+
+### Tutorial Checklist
+- [x] 01. QGIS: Export Old Map
+- [x] 02. MAPBOX: Build a raster Map 
+- [x] 03. MAPBOX_STUDIO: Design New Style
+- [x] 04. WEB: Set Up 2 Layer Interactive
+- [x] 05. WEB: Embed Map in Case Study
