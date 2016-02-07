@@ -84,3 +84,10 @@ Note: You will need Java installed on your system.
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12695318/3ea3ddd8-c718-11e5-972e-93a3097bf3d3.png)
 
+
+ ### Tutorial Checklist
+- [x] 01. OSM Understand
+- [x] 02. OSM Editor 
+- [x] 03. OSM JOSM
+- [x] 04. Map a Neighborhood
+
