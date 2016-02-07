@@ -75,7 +75,7 @@ Now, you will need to export the layer in a format that is acceptable to mapbox.
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874609/22ce5b04-cdd7-11e5-9088-a0ad20f612c3.png)
 
-Note: You can skip the above section and directly use the file: Haleb_(Aleppo).tif from the downloaded folder.
+Note: You can skip the above section and directly use the file: `Haleb_(Aleppo).tif` from the downloaded folder.
 
 ##### 02. MAPBOX: Build a raster Map 
 
@@ -146,7 +146,7 @@ Band 1 Block=29426x1 Type=Byte, ColorInterp=Palette
 `Type: "Byte"` confirms that the bit depth is 8 bit
 
 If both of these are `TRUE`, you can skip the next two steps. 
-However, if they aren't, you can use **GDAL** to change according to Mapbox reqiorements.
+However, if they aren't, you can use *GDAL* to change according to Mapbox requirements.
 
 **To change Projection:**
 
@@ -162,9 +162,9 @@ Use the below code command at the Command Line, after:
 
 `-te` -20037508.34 -20037508.34 20037508.34 20037508.34 is telling the program the desired “target extent” of our output file.
 
-'''
+```
 gdalwarp -s_srs EPSG:4326 -t_srs EPSG:3857 -r bilinear -te -20037508.34 -20037508.34 20037508.34 20037508.34 ActualImage.tif NewImage.tif
-'''
+```
 
 For more details: [GDALWarp](http://www.gdal.org/gdalwarp.html)
 
@@ -224,7 +224,7 @@ In your Mapbox Classic window, click on `Styles & Sources` on the lower left cor
 
 Select the pencil sketch map here in your Style&Source window. For more information on the method, read [here](https://www.mapbox.com/blog/pencil-drawn-style/). We select this as the *style* in order to then *edit* it according to our requirements. 
 
-![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12872609/5acb6d38-cda7-11e5-9d33-07d7d340df0e.png)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12872610/5ace4d6e-cda7-11e5-97bb-eb4895dcf4f9.png)
 
 As you are designing a basemap for Aleppo, I recommend going to Aleppo through `Search` or through the `Zoom In and Out` keys on the top Bar. The way the map works is using different styling for elements at different zoom levels. For instance, the road might appear as a thick line at `zoom level:19`, where as a dotted line at `zoom level: 15` and diassappear at anything above `zoom level: 12`. The window on the right of the map is for CSS, which is where all the styling components go. You can look through the different sections and change *colors / types / sizes*, etc to see how your map renders. Remember it is important to test at different zoom levels. 
 
@@ -235,7 +235,8 @@ Now click on 'Upload to Mapbox'. Once uploaded the `Map ID`, will appear above '
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874612/3ba790be-cdd7-11e5-98b9-870a0b9a5ad8.png)
 
-You can now return to your mapbox window, where you will be able to see this layer under `Tabs > Classic`. You will now use this `MapID`, to make your 2 layer map. 
+You can now return to your mapbox window, where you will be able to see this layer under `Tabs > Classic`. 
+You will now use this `MapID`, to make your 2 layer map. 
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874614/3bcea942-cdd7-11e5-9c0a-f7287e68e545.png)
 
