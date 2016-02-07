@@ -1,5 +1,5 @@
 ######CSR / Conflict Urbanism Aleppo 
-##Tutorial 05: Creating an Interactive Historical Map with Switch
+##Tutorial 05: Creating an Interactive Historical Map with *Switch*
 
 In this tutorial, you will make an interactive web map of Aleppo, that allows users to switch between a current stylized *OpenStreetMaps* map and an *old* map of Aleppo, Syria. You will georeference the historical Map of Aleppo, using the *Georeferencer* plugin in *QGIS* and build it as an online map, using *mapbox*. You will then use *mapbox studio* to build a style for OpenStreetMaps. Lastly, you will then use *html, css and javascript* to design an interactive map that allows you to swtich between the 2 map layer, you created. 
 
