@@ -11,8 +11,8 @@ For this tutorial, we will be using the following tools:
 
 ### Datasets:
 For this tutorial, we will be using the following datasets:
-* Neighborhood.zip, Download [here](/Tutorials/Tutorial4/Data/Neighborhood.zip)
-* Informal.zip, Download [here](/Tutorials/Tutorial4/Data/Informal.zip) 
+* Neighborhood.zip, Download [here](https://www.dropbox.com/s/ih38cxqov27fbdy/Neighborhood.zip?dl=0)
+* Informal.zip, Download [here](https://www.dropbox.com/s/ffrfixgoctgf19z/informal.zip?dl=0) 
 
 ### Datasets Overview:
 This section provides detailed explanation of each data source. You can skip this section, if you would like to continue with the tutorial. However, it is recommended that you familiarize yourself with these sources, as they will asssist you in your research.
@@ -265,27 +265,7 @@ You can save the file as Tut4_1.html and open it in Chrome. This is how it shoul
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12675623/95ad91ce-c659-11e5-99b1-d37b9c78199a.png)
 
-##### 07. WEB: Embed 2 layer Map in Case Study
 
-**i-frame**
-* Mapbox Editor generates an embed code for you to add your maps to your website or blog. The embed code uses an `iframe` to display your map. This HTML element allows you to put a webpage into another webpage, insulating all the code that makes your map work from the code on your website.
-
-```html
-<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/c4sr.o59e801k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYzRzciIsImEiOiJjaWdhN2ptaHkwZmxidWxrcnBscjM5N2trIn0.Rcac0rnnmYf2eXZOL0tT5A'></iframe>
-```
-
-##### Adding Feature Layer for Display
-
-```javascript
-        var featureLayer1 = L.mapbox.featureLayer('c4sr.o59e801k')
-            .on('click', function(e) {
-                if (!markerPopup) {
-                    var content = '<b>' + e.layer.toGeoJSON().properties.NAME + '<br \/>' +
-                        '' + e.layer.toGeoJSON().properties.NAME_A + '<\/b>';
-                    L.popup({}).setLatLng(e.layer.getBounds().getCenter()).setContent(content).openOn(map);
-                }
-            })
-```
 
 ### Deliverable:
 Template with 2 Layer Interactive Map 
@@ -297,5 +277,5 @@ Template with 2 Layer Interactive Map
 - [x] 04. MAPBOX_Studio: Design Map of Neighborhoods
 - [x] 05. WEB: Embed Neighborhood and Informal Maps in Case Study
 - [x] 06. WEB: Set Up 2 layer Interactive Map through HTML/JS/CSS
-- [x] 07. WEB: Embed 2 layer Map in Case Study
+
 
