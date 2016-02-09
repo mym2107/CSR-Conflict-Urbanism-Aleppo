@@ -36,9 +36,7 @@ We decided to build a navigational map to introduce visitors to the 9 gates of A
 
 For each feature, you need 'Title', 'Text' and 'Coordinates'. In this part you will research your topic and add relevant text. Please make sure you do not have special characters in your text. While *researching*, note that you can embed image/video/article links and also add content in arabic, as shown in the html example.
 
-T8-1
-![Add Layer](link)
-
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12905601/cc0fb1d4-ced8-11e5-8aaf-5f88867a72f8.png)
 
 ##### Research Text:
 
@@ -46,48 +44,48 @@ T8-1
 **Sub Title**: The old part of Aleppo city is surrounded with 5 kilometers long thick walls, pierced by the nine historical gates of the old town. These are, clockwise from the north-east of the citadel
 
 **Gate 01:**
-Title: Bab al-Hadid
+Title: `Bab al-Hadid`
 Text: Bab al-Hadid: meaning the Iron Gate of Victory, is one of the nine historical gates of the Ancient City of Aleppo, Syria. It is one of the well-preserved gates of old Aleppo. The gate was planned during the reign of Az-Zahir Ghazi and built by his son Mohammed as Bab al-Qanat (the Aqueduct Gate). It was rebuilt by the final Mamluk sultan Al-Ashraf Qansuh al-Ghawri in 1509. The gate and surrounding quarters of the old city are some of the best preserved areas in the old city of Aleppo. It was historically known for its blacksmiths and to this day, there are some operating with the same traditional practices, most of whom have had the trade in their family for many generations.
 coordinates: [37.165065, 36.2034507]
 
 **Gate 02:** 
-Title: Bab al-Ahmar
+Title: `Bab al-Ahmar`
 Text: Bab al-Ahmar: meaning the Red Gate, was one of the nine historical gates of the Ancient City of Aleppo, Syria. The name was derived from the village of al-Hamr as the gate was leading to the village at the eastern suburbs of ancient Aleppo. The gate was built in the eastern part of old Aleppo in the first half of the 13th century, during the reign of the Ayyubid emir of Aleppo al-Aziz Muhammad. It was renovated during the rule of the Mamluk sultan Al-Ashraf Qansuh al-Ghawri at the beginning of the 16th century. The gate was completely ruined in the 1830s by Ibrahim Pasha of Egypt during his campaign in Syria against the Ottomans between 1831-1833. in 1834, the stones of the gate were used to build the Ibrahim Pasha military barracks (the current Aleppo Citadel Museum) in the Citadel of Aleppo.[1] The famous Hammam Bab al-Ahmar is located near the gate within the historic walls of the ancient city. It was completely ruined during the Ottoman rule over Syria.
 coordinates: [37.1655558, 36.1997715]
 
 **Gate 03:** 
-Title: Bab al-Nairab
+Title: `Bab al-Nairab`
 Text: Bab al-Nairab: also spelled Bab al-Nayrab, meaning the "Gate of Al-Nayrab", was one of the nine historical gates of the Ancient City of Aleppo in northern Syria, but has since disappeared. Its name refers to the nearby village of al-Nayrab (currently a suburb of Aleppo) as the gate led towards the village. Today, the city district where the gate used to stand is commonly called Bab al-Nairab, but is officially known as Muhammad Bek. The Bab al-Nairab gate was built sometime during the period of 1216–1237 in the southeastern part of the ancient city by the Ayyubid ruler of Aleppo, al-Aziz Muhammad, son of predecessor az-Zahir Ghazi.[1] The latter had planned its construction but al-Aziz carried it out following az-Zahir's death. The new gate marked the southward expansion of Aleppo during az-Zahir's rule.
 coordinates: [37.1656376, 36.1957546]
 
 **Gate 04:** 
-Title: Bab al-Maqam
+Title: `Bab al-Maqam`
 Text: Bab al-Maqam: is one of the Gates of Aleppo. The 13th century structure was built by al-Aziz Muhammad. Deviations in its design from the majority of medieval Syrian gates suggest that its function was ceremonial rather than military. In Constructions of Power and Piety in Medieval Aleppo (1997), Yasser Tabbaa details some of these differences, noting that they reinforce the possibility that the gate had primarily a religious and political function, serving as homage to Abraham and contrasting with the eastern shrines of Mashhad al-Dikka and Mashhad al-Husayn.
 coordinates: [37.1584877, 36.1919206]
 
 **Gate 05:**
-Title: Bab Qinnasrin
+Title: `Bab Qinnasri`n
 Text: Bab Qinnasrin: is one of the gates of the medieval Old City of Aleppo in northern Syria. In its present form, it dates to 1256. The gate was originally built by the Hamdanid ruler Sayf al-Dawla in 964, and fitted with the doors of the gate of Amorium, taken as spoils by Caliph al-Mu'tasim after his sack of the city in 838. Al-Mu'tasim installed them at the entrance of his palace in Samarra, until they were taken, probably towards the end of the 9th century, and installed at al-Raqqah, whence Sayf al-Dawla in turn took them.
 coordinates: [37.151497, 36.1944861]
 
 **Gate 06:** 
-Title: Bab Antakeya
+Title: `Bab Antakeya`
 Text: Bāb Antakiya: "Gate of Antioch" formed one of the most important defense gates in Aleppo, protecting the city from the west. Baba Antakiya is located in the centre of the western wall of the old city of Aleppo, and its name was derived from Antioch, the capital of ancient Syria, as the gate was the main exit which was leading to the city of Antioch. It is one of the oldest gates built due to its strategic site thus going through several construction periods. Sayf al-Daula rebuilt the gate using its antique foundations and the Fatimids restored it during the 11th century. It went through periodical repairs and restorations until 1422. The Bab is well preserved today with both its towers still intact. The two massive Ayyubid defense towers were built with thick stone walls into which the deep arrow slits were discreetly inserted. The gate contains the shrine of Sheikh Ali al-Rumi in the southern tower.
 coordinates: [37.1511322, 36.1948931]
 
 **Gate 07:**
-Title: Bab Jnen
+Title: `Bab Jnen`
 Text: Bāb Jnēn: was one of the gates of Aleppo that used to lead to gardens on the banks of the Quwēq river. The gate was demolished about 120 years ago in order to widen the road. There used to be numerous exchangers and storage houses for goods near the gate, and a pine dating back to the 16th century. The gate had a tower called the "serpent tower" in which was said[by whom?] to be a talisman capable of protecting from serpent bites. Bāb Jnēn today is the site of a traditional souk.
 coordinates: [37.1498463, 36.2022385]
 
 **Gate 08:** 
-Title: Bab al-Faraj
+Title: `Bab al-Faraj`
 Text: Bab al-Faraj: Bab al-Faradis was one of the 9 main gates of the ancient city walls of Aleppo, Syria. It was located at the northern side of the ancient city. The gate was ruined in 1904. Some remains are still found at the north-eastern part of the gate. Bab al-Faraj was built by Az-Zahir Ghazi and later renovated by An-Nasir Yusuf. In 1904 it was torn down with a portion of the surrounding fabric to become a public square known by the same name. Nowadays, it is a major junction of the traffic flow in and out of the old city to the extramural areas. The Bab al-Faraj reconstruction project is one of the first preservation efforts in Aleppo. 
 coordinates: [37.1505141, 36.2040714]
 
 **Gate 09:**
-Title: Bab al-Nasr
-Text: Bab al-Nasr: meaning the Gate of Victory, is one of the nine historical gates of the Ancient City of Aleppo, Syria. It was partially ruined during the Ottoman rule over Syria. It was originally called Bab al-Yahud because of its location next to the Jewish Quarter. It was rebuilt and renamed by az-Zahir Ghazi in 1212 to become the most important northern gate of the city. Its simple, direct access form became more complex under the reconstruction with the fortifying tactics used by the Ayyubids. The left tower has an opening that leads to a vaulted chamber that changes the direction of procession towards the right. The chamber connects to a vaulted corridor carved out of the thickness of the wall that leads outside to the left.
+Title: `Bab al-Nasr`
+Text: `Bab al-Nasr: meaning the Gate of Victory, is one of the nine historical gates of the Ancient City of Aleppo, Syria. It was partially ruined during the Ottoman rule over Syria. It was originally called Bab al-Yahud because of its location next to the Jewish Quarter. It was rebuilt and renamed by az-Zahir Ghazi in 1212 to become the most important northern gate of the city. Its simple, direct access form became more complex under the reconstruction with the fortifying tactics used by the Ayyubids. The left tower has an opening that leads to a vaulted chamber that changes the direction of procession towards the right. The chamber connects to a vaulted corridor carved out of the thickness of the wall that leads outside to the left.
 coordinates: [37.1604779, 36.2041243]
 
 
@@ -96,17 +94,17 @@ coordinates: [37.1604779, 36.2041243]
 As we assume that you are not using QGIS for this tutorial, we will use Google Maps, to get Long/Lat for each feature. The Title and Text is documented in the below format. Then using Google Maps, browse to the locations and save (long, Lat) that usually appears on the status bar.
 
 T8-2
-![Add Layer](link)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12905600/cbf54d6c-ced8-11e5-98e7-46079ec5734f.png)
 
-Gate01: 37.165065,  36.2034507
-Gate02: 37.1655558, 36.1997715
-Gate03: 37.1656376, 36.1957546
-Gate04: 37.1584877, 36.1919206
-Gate05: 37.151497,  36.1944861
-Gate06: 37.1511322, 36.1948931
-Gate07: 37.1498463, 36.2022385
-Gate08: 37.1505141, 36.2040714
-Gate09: 37.1604779, 36.2041243
+* Gate01: `37.165065,  36.2034507`
+* Gate02: `37.1655558, 36.1997715`
+* Gate03: `37.1656376, 36.1957546`
+* Gate04: `37.1584877, 36.1919206`
+* Gate05: `37.151497,  36.1944861`
+* Gate06: `37.1511322, 36.1948931`
+* Gate07: `37.1498463, 36.2022385`
+* Gate08: `37.1505141, 36.2040714`
+* Gate09: `37.1604779, 36.2041243`
 
 I added these back into the research section. You cain maintain a separate list for them. For this tutorial, we have hard-coded each point of interest. As sotyr maps will atmost have 10-20 points, it is ok to input this manually. If you have lots of points, it might be better to divided your map into different narratives, then having using browse across an extremely long story. 
 
@@ -392,8 +390,7 @@ narrative.onscroll = function(e) {
 
 You can easily change the way, your Story Map looks by chanign a few of the settings at the start of your .html file. Here are some key points that you can test. You can add additional styling features to your html code, once you have your basic navigation functioning. Remember, you can embed links, add pop-ups and also change the style and color of your icons. 
 
-'''
-
+```html
 .quiet {
   /* Settings for Inactive Navigation */
   color:rgba(0,0,0,0.5);
@@ -424,8 +421,7 @@ section.active {
   background:#fff;
   color:#404040;
   }
-
-  '''
+```
 
 ##### 05. WEB: Embed Map in your Case Study   
 
@@ -437,7 +433,6 @@ You can use another option from Tutorial 2, which will place a temporary image, 
 <iframe width='100%' height='500px' frameBorder='0' src= "filename.html" name="iframe_x"></iframe> 
 <p><a href="filename.html" target="iframe_x">Interactive Site</a></p>
 ```
-
 
 ### Deliverables:
 
