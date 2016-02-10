@@ -112,6 +112,8 @@ I added these back into the research section. You cain maintain a separate list 
 
 We assume that you will be switching the titles, text and coordinates based on your requirement You can either copy/paster the .html code below or use the .html file in the downloads section. 
 
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12939116/3108fc74-cfbc-11e5-84bb-22ad40076b5a.png)
+
 There are few key sections to understanding the navigational map. Each `feature point` is an Element that has a correlating *section*. We use the section id, to reference these elements and sections. Note: The last entry is a nested entry so the scrolling feature goes to the last section.
 
 ```html
@@ -384,11 +386,15 @@ narrative.onscroll = function(e) {
 </body>
 </html>
 ```
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12939114/2ffc664a-cfbc-11e5-9fcd-f541273745ea.png)
 
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12939113/2fe1347e-cfbc-11e5-8e1f-7ec0a8090a19.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12939112/2fdf735a-cfbc-11e5-81c4-44e616435f8d.png)
 
 ##### 04. WEB: Changing Story Appearance  
 
-You can easily change the way, your Story Map looks by chanign a few of the settings at the start of your .html file. Here are some key points that you can test. You can add additional styling features to your html code, once you have your basic navigation functioning. Remember, you can embed links, add pop-ups and also change the style and color of your icons. 
+You can easily change the way, your Story Map looks by changing a few of the settings at the start of your .html file. Here are some key points that you can test. You can add additional styling features to your html code, once you have your basic navigation functioning. Remember, you can embed links, add pop-ups and also change the style and color of your icons. 
 
 ```html
 .quiet {
