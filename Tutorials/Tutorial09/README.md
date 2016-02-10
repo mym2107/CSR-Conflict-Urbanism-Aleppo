@@ -1,4 +1,5 @@
-##UPDATE IN PROGRESS:
+##/UPDATE IN PROGRESS/
+##### To be completed By: 12 Feb 2016
 
 ######CSR / Conflict Urbanism Aleppo 
 ##Tutorial 6: Designing a Categorized Cluster Map
