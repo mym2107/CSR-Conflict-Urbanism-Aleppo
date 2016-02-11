@@ -31,8 +31,7 @@ This section provides detailed explanation of each data source. You can skip thi
   * 03. MAPBOX_Editor: Design Map of Informal Neighborhoods
   * 04. MAPBOX_Studio: Design Map of Neighborhoods
   * 05. WEB: Embed Neighborhood and Informal Maps in Case Study
-  * 06. WEB: Set Up 2 layer Interactive Map through HTML/JS/CSS
-  * 07. WEB: Embed 2 layer Map in Case Study
+  * 06. WEB: WEB: Set up Interactive Map
 
 ##### 01. QGIS: SetUp Neighborhood and Informal Data
 **QGIS Project**
@@ -195,7 +194,10 @@ src='https://a.tiles.mapbox.com/v4/c4sr.p10e979a/attribution,zoompan,zoomwheel,g
 </iframe>
 ```
 
-##### 06. WEB: Set Up 2 layer Interactive Map 
+##### 06. WEB: Set up Interactive Map 
+
+There are 2 parts to this. You can skip the *first* part. I have added it just to allow you to get familiar with *web mapping*. It is not a requirement to complete this tutorial. Part 1 focuses on simply showing a layer on your map.
+
 **Basic Map Layout**
 
 Once you have initiated a mapbox account, note down your mapbox access token. You can use the `Tutorial_4_1.html` file or copy/paste the below code in [sublime](http://www.sublimetext.com/) as HTML. 
@@ -229,7 +231,7 @@ var map = L.mapbox.map('map', 'mapbox.streets')
 <meta charset=utf-8 />
 
 <!-- Set your Project Name here -->
-<title>Tutorial4_1</title>
+<title>Tutorial_4_1</title>
 
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
@@ -261,14 +263,97 @@ var map = L.mapbox.map('map', 'mapbox.satellite')
 </html>
 ```
 
-You can save the file as Tut4_1.html and open it in Chrome. This is how it should appear:
+You can save the file as `Tutorial_4_1.html` and open it in Chrome. This is how it should appear:
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12675623/95ad91ce-c659-11e5-99b1-d37b9c78199a.png)
 
+This is how you can bring in any base layer into a web map. In later tutorials, you will use `layer control` to add multiple layers and then allow users to switch between them. 
 
+Now, with a slight addition to the code, you can add your `neighborhood map` or `informal map` that was made in mapbox editor. This way you can customize different aspects of the map including the base layer. The `base-layer` can be a `style` you created or any of the common styles in mapbox. If you are interested in creating your own style, tutorial 5 walks you through the steps of creating the `figure-ground` map used in the Aleppo Platform. You can select zoom levels, the entry zoom point, the style of your tooltips and also add custom tool tip text. 
+
+Using the below code, you add your map from mapbox editor by adding it's Map.Id. You then add a custom tooltip, which is the text bar that appears when you clickon the image. This will allow you to selct which property from your shape file you would like to add. You can add multiple categories and also custom text.
+
+```html
+// Add your neighborhood or any uploaded shape file here
+var myLayer = L.mapbox.featureLayer('c4sr.p10e979a').addTo(map);
+myLayer.on('layeradd', function(e) {
+// Add a pop up to see attributes from your file
+  var popupContent = '<strong>' + e.layer.feature.properties.title;
+  e.layer.bindPopup(popupContent);
+});
+```
+
+![Add Layer](<img width="1353" alt="screen shot 2016-02-11 at 2 00 37 am" src="https://cloud.githubusercontent.com/assets/16892784/12967245/3da23ca8-d065-11e5-95af-626a46eb97c0.png">)
+
+You can use the file Tutorial_4_2.zip or copy/paste the below into sublime. 
+
+```html
+<!--Tutorial: Setting a Base Map
+    Conflict Urbanism: Aleppo
+    Center for Spatial Research
+================================================================= -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+
+<!-- Set your Project Name here -->
+<title>Tutorial_4_2</title>
+
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+<!-- In order to set up the webmap, you need to link to mapbox.js and mapbox.css -->
+<script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+
+<!-- Style your map with changing the options below -->
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+
+<body>
+<!-- Add the map to a div -->
+<div id='map'></div>
+
+<script>
+// Add your access token here: 
+L.mapbox.accessToken = 'pk.eyJ1Ijoic2lkbCIsImEiOiJkOGM1ZDc0ZTc5NGY0ZGM4MmNkNWIyMmIzNDBkMmZkNiJ9.Qn36nbIqgMc4V0KEhb4iEw';
+// Add the layer you would like to use as your base layer. In this case we are using mapbox.satellite
+var map = L.mapbox.map('map', 'mapbox.high-contrast')
+// .setView([Lat, Long], Zoom)
+    .setView([36.198, 37.1518], 13);
+
+// Add your neighborhood or any uploaded shape file here
+var myLayer = L.mapbox.featureLayer('c4sr.p10e979a').addTo(map);
+myLayer.on('layeradd', function(e) {
+// Add a pop up to see attributes from your file
+  var popupContent = '<strong>' + e.layer.feature.properties.title;
+  e.layer.bindPopup(popupContent);
+});
+
+</script>
+
+</body>
+</html>
+```
+For clarity, I switched the base layer from `mapbox.satellie` to `mapbox.high-contrast`. You can add any style you want. 
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12967272/81925b1e-d065-11e5-8f1a-9446758cb0f2.png)
+
+Lastly, you can customize the text that appears on the tool tip. For instance if instead of just showing the neighborhood you wanted to say, `Neighborhood = title` then you can make the following changes to the code. If there are multiple 'attributes' in your shp file, you can tag multiple within the same tool tip.
+
+```
+  var popupContent = '<strong>' + e.layer.feature.properties.title;
+```
+```
+  var popupContent = '<strong>' + 'Neighborhood =' + e.layer.feature.properties.title;
+```
 
 ### Deliverable:
-Template with 2 Layer Interactive Map 
+Template with Interactive Map 
 
 ##### Tutorial Checklist:
 - [x] 01. QGIS: SetUp Neighborhood and Informal Data 
@@ -276,6 +361,6 @@ Template with 2 Layer Interactive Map
 - [x] 03. MAPBOX_Editor: Design Map of Informal Neighborhoods
 - [x] 04. MAPBOX_Studio: Design Map of Neighborhoods
 - [x] 05. WEB: Embed Neighborhood and Informal Maps in Case Study
-- [x] 06. WEB: Set Up 2 layer Interactive Map through HTML/JS/CSS
+- [x] 06. WEB: WEB: Set up Interactive Map
 
 
