@@ -12,7 +12,9 @@ For this tutorial, we will be using the following tools:
 ### Datasets:
 For this tutorial, we will be using the following datasets:
 * Neighborhood.zip, Download [here](https://www.dropbox.com/s/ih38cxqov27fbdy/Neighborhood.zip?dl=0)
-* Informal.zip, Download [here](https://www.dropbox.com/s/ffrfixgoctgf19z/informal.zip?dl=0) 
+* Informal.zip, Download [here](https://www.dropbox.com/s/ffrfixgoctgf19z/informal.zip?dl=0)
+* `Tutorial_4_1.html`, Download [here](https://www.dropbox.com/s/1rhuyoxxgcjsezl/Tutorial_4_1.html?dl=0)
+* `Tutorial_4_2.html`, Download [here](https://www.dropbox.com/s/j9k9efjos67zmad/Tutorial_4_2.html?dl=0)
 
 ### Datasets Overview:
 This section provides detailed explanation of each data source. You can skip this section, if you would like to continue with the tutorial. However, it is recommended that you familiarize yourself with these sources, as they will asssist you in your research.
@@ -285,7 +287,7 @@ myLayer.on('layeradd', function(e) {
 
 ![Add Layer](<img width="1353" alt="screen shot 2016-02-11 at 2 00 37 am" src="https://cloud.githubusercontent.com/assets/16892784/12967245/3da23ca8-d065-11e5-95af-626a46eb97c0.png">)
 
-You can use the file Tutorial_4_2.zip or copy/paste the below into sublime. 
+You can use the file `Tutorial_4_2.html` or copy/paste the below into sublime. 
 
 ```html
 <!--Tutorial: Setting a Base Map
