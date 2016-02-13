@@ -64,7 +64,7 @@ You will add:
 *	CityBorder
 *	Damage_sites_Update3_Aleppo_2015...
 
-Uncheck the `City Border` file and `zoom to layer`, for the Damage Sites data. Open attributes table, by `Right-Click` and examine the fields in the dataset. You will see the following fields: 
+Uncheck the `City Border` file and `Zoom to layer`, for the Damage Sites data. Open attributes table, by `Right-Click` and examine the fields in the dataset. You will see the following fields: 
 *	SiteID
 *	SensorDate
 *	SensorID
@@ -87,50 +87,52 @@ Uncheck the `City Border` file and `zoom to layer`, for the Damage Sites data. O
 *	Neighborhood
 *	EventCode
 
-Now `duplicate` your layer in Layers Panel and Go To attributes table again. This way you make sure you don't end up editing your main dataset. For the Cluster map, we just want to `clusterize` the events. In this easy example, we will not be adding pop-ups and descriptions of each event. The `Clusters` will disaggregate into marked damaged points. 
+Now `duplicate` your layer in Layers Panel and Go To attributes table again. This way you make sure you don't end up editing your main dataset. For the Cluster map, we want to `Clusterize` based on the Damage Typlogy marked by UNOSAT. Each marked site is assigned category 1,2 or 3; where 1 means destroyed (red), 2, severaly damaged (orange) and 3 moderately damaged (yellow). 
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027505/8b1f5350-d252-11e5-9fce-f2dd3723324a.png)
 
 We do not need all these fields in our visualization and to make our files simple and faster, it is recommended that you remove all unwanted data fields. In your attributes table, First, Click on the first button with the `pencil` icon to be able to edit your table. Then go to the Third Last button from right 'Delete Column'. In the pop up window select the unrequired fields and hit OK.  We will keep only the following: 
 
 *	SiteID
-* 	Neighborho
-* 	SensorID_3
+* Neighborho
+* SensorID_3
 *	SensorDa_2
 *	Main_Dam_2
 
-![Add Layer]()
-![Add Layer]()
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13028124/ce87f850-d265-11e5-8315-cf00173521ab.png)
 
-It takes a while to process after which you have a file with a single column. If your system hangs, you caa also delete 5 columns at a time, or so.
+It takes a while to process after which you have a file with a single column. If your system hangs, you can also delete 5 columns at a time, or so.
 
 
 ##### 02. WEB: Export dataset as JSON file
 
-Our attribute table now has each event with certain associated information. To use with ClusterAPI, we need our data in Javascript format. To do this, Right Click on your Layer and Save As. Save your file in geoJSON format and make sure the Projection is set to EPSG:4326. You can check your saved layer in QGIS, to make sure the data appears the same. Now Close QGIS. 
+Our attribute table now has each event with certain associated information. To use with `ClusterAPI`, we need our data in Javascript format. To do this, `Right Click` on your Layer and `Save As`. Save your file in geoJSON format and make sure the Projection is set to `EPSG:4326`. You can check your saved layer in QGIS, to make sure the data appears the same. Now Close QGIS. 
 
-![Add Layer]() m10
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13028123/ce809100-d265-11e5-9921-f8a746024a4c.png) 
 
-Now, you can drag and drop your unosatc.geoJSON file into chrome. You will notice, each entry retains it's geometry that is the X,Y coordinate. This is what each record has:
+Now, you can drag and drop your `unosatc.geoJSON` file into chrome. You will notice, each entry retains it's geometry that is the `X,Y coordinates`. This is what each record has:
 
 ```
 { "type": "Feature", "properties": { "SiteID": "Building (General \/ Default)", "SensorDa_2": "2015\/04\/26", "SensorID_3": "Pleiades", "Main_Dam_2": "2", "Neighborho": "Farafira" }, "geometry": { "type": "Point", "coordinates": [ 37.157763310000064, 36.203296022000075 ] } },
 ```
-
 Now save the file in the same folder as your `.html` file. Note: Unlike tutorial 6, we do not need to change anything in the geoJSON file.
 
-![Add Layer]() m10
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13028121/c7b79080-d265-11e5-89f4-5ebb55968cc0.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13028120/c79e7d8e-d265-11e5-87ef-ffe63c390c6f.png) 
 
 ##### 03. WEB: Design Categorized Cluster Map
 
 For this tutorial we are using an `open source` Javascript library called `leaflet`. You can access more details about it [here](http://leafletjs.com). It is a useful visualization library and provides many great functions that can be called in your code, through their API. 
 
 *Leaflet:*
-Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 33 KB of JS, it has all the mapping features most developers ever need. Leaflet is designed with simplicity, performance and usability in mind. It works efficiently across all major desktop and mobile platforms, can be extended with lots of plugins, has a beautiful, easy to use and well-documented API and a simple, readable source code that is a joy to contribute to. For more information on *clusterig*, you cna look [here](https://github.com/Leaflet/Leaflet.markercluster). 
+Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 33 KB of JS, it has all the mapping features most developers ever need. Leaflet is designed with simplicity, performance and usability in mind. It works efficiently across all major desktop and mobile platforms, can be extended with lots of plugins, has a beautiful, easy to use and well-documented API and a simple, readable source code that is a joy to contribute to. For more information on *clustering*, you can look [here](https://github.com/Leaflet/Leaflet.markercluster). 
 
-![Add Layer]()
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027504/8b1e5536-d252-11e5-946f-6bfa3e0110d9.png)
 
-For this section of the tutorial, we have provided the `.html` file that you will need to use with your data. You can choose to copy/paste from here or the downloads file. Open Cluster.zip and download the following. 
+For this section of the tutorial, we have provided the `.html` file that you will need to use with your data. You can choose to copy/paste from here or the downloads file (which includes all the reference files also). Open `Cluster.zip` and download. Then open index.html in Sublime. 
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13028122/c7c5e16c-d265-11e5-9454-d34944555252.png)
 
 ``` html
 <!-- Conflict Urbanism: Aleppo
@@ -254,22 +256,22 @@ L.mapbox.featureLayer()
 
 In the above code remember to do the following: 
 
-Line 35: Enter your MAP API Key from Mapbox
+Line 35: Enter your *MAP API Key* from Mapbox
 ``` 
 L.mapbox.accessToken = 'pk.eyJ1IjoiY3N0b2FmZXIiLCJhIjoiY2lnNnRwN3hpMDF4YnU3a3BkNjAzcnBvaCJ9.0EZvAi2Bvn1zGdLj6crPsA';
 ``` 
 
-Line 43: Enter the long, lat and zoom levels. By default it is set to Aleppo
+Line 43: Enter the *long, lat and zoom levels*. By default it is set to Aleppo
 ``` 
     .setView([36.2, 37.2], 13)
 ``` 
 
-Line 45: Select your Base Layer. In this case I've selected Mapbox Satellite. You can also select the 2015 Image over Aleppo. If you would like to do so, please send us an email, to provide you with the MapID. If you are a student in the course, you will already have access to all our Map IDs.
+Line 45: Select your *Base Layer*. In this case I've selected Mapbox OSM. You can also select the 2015 Image over Aleppo. If you would like to do so, please send us an email, to provide you with the MapID. If you are a student in the course, you will already have access to all our Map IDs.
 ``` 
     .addLayer(L.mapbox.tileLayer('mapbox.satellite'));
 ``` 
 
-Line 53: You need to read data from your geoJSON file
+Line 53: You need to read data from your *geoJSON file*
 ``` 
     .loadURL('unosatc.geojson')
 ```
@@ -292,16 +294,20 @@ Line 107-108: Here we select the data that we would like to show when you click 
         layer.bindPopup(layer.feature.properties.SiteID + " in " + layer.feature.properties.Neighborho + "<br>" + " " + layer.feature.properties.SensorID_3 + ": " + layer.feature.properties.SensorDa_2);
  ```
  
-Once you have your `html` file, you can test in Chrome. But there is a catch here. For your geoJSON data to work, you will need to be on a webserver to test this file. If you have FTP access, you can use a public browser. However, you can also use a local server to test you html file.
+Once you have your `html` file, you can test in Chrome. But there is a catch here. For your `geoJSON data` to work, you will need to be on a webserver to test this file. If you have `FTP` access, you can use a public browser. However, you can also use a local server to test you html file.
 
-To do so, Go to Terminal, to use Command Line. Please refer to Tutorial 2, if you are unfamiliar with this. You will need python installed if you would like to use the below method. You can type 'install python' in your terminal or you can look at easy to donwload packages like Anaconda. Once you have python installed, please proceed to the next step.
+##### Using Terminal for a Local Server
+
+To do so, Go to `Terminal`, to use Command Line. Please refer to Tutorial 2, if you are unfamiliar with this. You will need `python` installed if you would like to use the below method. You can type `install python` in your terminal or you can look at easy to donwload packages like [Anaconda]. Once you have python installed, please proceed to the next step.
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13028119/c1b9a056-d265-11e5-961f-a335a60ad59b.png)
 
 In the terminal, browse to your folder and type the following command
 ```
 python -m SimpleHttpServer
 ```
 
-Please make sure you label your html file as 'index.html' 
+Please make sure you label your html file as `index.html`
 
 Then in your browser type this address: 
 `http://localhost:8000/`
@@ -341,10 +347,14 @@ Line 75-97: Stylize your icon based on your group. Which means, when your cluste
 ```
 
 Line 99-102: Declares and stylize the cluster icons. We set the color as 'gray' but this can be an RGB value. Or you can change the shape.
+```
     // Here declare these to be rendered as a single group
     var groups = {
         SingleGroup: makeGroup('gray')
+```
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13028118/c08ef2a8-d265-11e5-9226-bc4d02ee9886.png)
 
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13028117/c06e6e16-d265-11e5-8f60-e2e37e0f37d5.png)
 
 ##### 05. WEB: Embed Map in your Case Study 
 
@@ -365,4 +375,4 @@ Using the code, provide in [tutorial2](), you can embed any interactive website,
 - [x] 05. WEB: Embed Map in your Case Study  
 
 
-NOTE: You can do the same tutorial using, the Cultural Heritage Sites, *open data*, from the [Humanitarian Information Unit] website, to design an Interactive *Catergorized* Cluster Map, using Web tools, Mapbox and the Open Source Library Leaflet. For this, you will use the .shp file provided by HIU of identified cultural heritage sites and edit and export it as a JSON file, using QGIS. You will then use *open source* library leaflet an its built in *cluster* function to design the interactive map based on categories. Lastly, you will edit the css, to change the look of the clusters. We chose to show you the UNOSAT dataset, so it is easier to see the difference in approach and visualizations. 
+NOTE: You can do the same tutorial using, the Cultural Heritage Sites, *open data*, from the Humanitarian Information Unit , to design an Interactive *Catergorized* Cluster Map, using Web tools, Mapbox and the Open Source Library Leaflet. For this, you will use the .shp file provided by HIU of identified cultural heritage sites and edit and export it as a JSON file, using QGIS. You will then use *open source* library leaflet an its built in *cluster* function to design the interactive map based on categories. Lastly, you will edit the css, to change the look of the clusters. We chose to show you the UNOSAT dataset, so it is easier to see the difference in approach and visualizations. 
