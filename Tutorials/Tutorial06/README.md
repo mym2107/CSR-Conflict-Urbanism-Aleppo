@@ -23,7 +23,8 @@ This section provides detailed explanation of the data source. You can skip this
 
 **Humanitarian Data Exchange**, [HDX](https://data.hdx.rwlabs.org) is a good place for open data as it presents a *consolidated repository* of data collected through multiple sources. The goal of the Humanitarian Data Exchange (HDX) is to make humanitarian data easy to find and use for analysis. If you are interested in exploring datasets from multiple Humanitarian Agencies, it is recommended that you register yourself on the HDX website. You can select regions and organisations of interest and explore the vast collection of datasets. 
 
-![Add Layer](change)
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027498/786cd4b2-d252-11e5-90bc-74a7e2824e24.png)
+
 You can search for *UNOSAT - UNITAR Aleppo - Damage assesment Aleppo*. Make sure you use the most recent file. (As of now, that is Data for May 2015). 
 
 We will be using the following files from HDX:
@@ -32,16 +33,15 @@ We will be using the following files from HDX:
 *Geodata of Damage Assessment of Aleppo, Aleppo Governorate, Syria*
 This map illustrates satellite-detected damage in a portion of the city of Aleppo, Syrian Arab Republic. Using satellite imagery acquired 01 May 2015, 26 April 2015, 23 May 2014, 23 September 2013, and 21 November 2010, UNITAR - UNOSAT identified a total of 5,170 affected structures within the extent of this map. Approximately 904 of these were destroyed, 2,641 severely damaged, and 1,625 moderately damaged. The city-wide analysis of Aleppo revealed a total of 14,034 affected structures, of which 2,878 were destroyed, 6,879 severely damaged, and 4,277 moderately damaged. While much of the city was damaged by 23 May 2014, 5,567 structures were newly damaged and 90 structures experienced an increase in damage between that date and 01 May 2015. This analysis was done of the REACH initiative for the U.S. Office of Foreign Disaster Assistance. This is a preliminary analysis and has not yet been validated in the field. Please send ground feedback to UNITAR - UNOSAT.
 
-You can also look at the static map for a quick reveiew of the data you have downloaded or to see how UNOSAT visualizes it.
-
-![Add Layer]()
-
 HDX provides additional information on each data source including *layers*, *data source* and *contributor*. It often provides data in *multiple formats*. For our purpose, we will download the shape files. If you prefer to work in [ArcGIS](https://www.arcgis.com), you are welcome to download the geo database (`.gdb file`). 
 
 Likewise, UNITAR/UNOSAT maintains a good repository on their site and frequently updates the data that can be accessed [here](http://www.unitar.org/unosat). The data is all made available on HDX, which is likely where you will download from, but you can always check UNITARs site to see if they have an update. 
 
-![Add Layer]()
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027499/789fa28e-d252-11e5-92a6-55b09bc50e06.png)
 
+You can also look at the static map for a quick reveiew of the data you have downloaded or to see how UNOSAT visualizes it.
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027500/78ae924e-d252-11e5-8687-5685521a701f.png)
 
 ### Tutorial Title: Designing a Simple Cluster Map
 
@@ -55,6 +55,8 @@ Likewise, UNITAR/UNOSAT maintains a good repository on their site and frequently
 ##### 01. QGIS: Explore UNOSAT dataset
 
 First, bring your `.shp` files into QGIS. To do this, Go to `Menu > Layer > Add Layer > Add Vector Layer` and browse to the .zip file you downloaded. Then holding onto the `Shift` key, select the layers you want to Add. If you select all or bring layers that you require, just remove them form the layer panel, by Layer > Right Click > Remove. Just keep the 2 layers below. Note: Make sure you have the correct Dataset and the shape file is `2015`.
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027502/863814a8-d252-11e5-9976-7fda757b07fd.png)
 
 You will add:
 *	CityBorder
@@ -83,15 +85,15 @@ Uncheck the `City Border` file and `zoom to layer`, for the Damage Sites data. O
 *	Neighborhood
 *	EventCode
 
-Now `duplicate` your layer in Layers Panel and Go To attributes table again. This way you make sure you don't end up editing your main dataset. For the Cluster map, we just want to `clusterize` the events. In this easy example, we will not be adding pop-ups and descriptions of each event. The `Clusters` will disaggregate into marked damaged points. 
+Now `duplicate` your layer in Layers Panel and Go To attributes table again. This way you make sure you don't end up editing your main dataset. For the Cluster map, we just want to `Clusterize` the events. In this easy example, we will not be adding pop-ups and descriptions of each event. The `Clusters` will disaggregate into marked damaged points. 
 
-![Add Layer]()
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027505/8b1f5350-d252-11e5-9fce-f2dd3723324a.png)
 
 We do not need all these fields in our visualization and to make our files simple and faster, it is recommended that you remove all unwanted data fields. In your attributes table, Go to the Third Last button from right Delete Column. In the pop up window select the unrequired fields and hit OK.  We will keep only the following: 
 
 *	SiteID
 
-It takes a while to process after which you have a file with a single column. If your system hangs, you cna also delete 5 columns at a time, or so.
+It takes a while to process after which you have a file with a single column. If your system hangs, you can also delete fewer columns at a time.
 
 Our attribute table now has each event as a point with no associated information. In order to save the X-Y coordinate information in our attribute table, Go To `Menu > Vector > Geometry Tools > Export / Add Geometry Tables`. Then select your input data layer and `Save` as a new `shape file`. Check `Add` result to `Canvas` option. NO w you should see the X-Y Coordinate Columns added to your data. If you are seeing more columns in your attributes table, it is ok. As menioned earlier, you should try to delete as many as possible. But as long as you have these 3, you can proceed.
 
@@ -99,7 +101,11 @@ Our attribute table now has each event as a point with no associated information
 *	XCOORD
 *	YCOORD
 
-![Add Layer]() m10
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027507/8fced114-d252-11e5-97ad-8135e0a65d99.png) 
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027506/8fcb2082-d252-11e5-91d2-005bad76d59e.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027508/8fee2474-d252-11e5-8b0d-6293b04d8ca4.png)
 
 ##### 02. WEB: Export dataset .js format
 
@@ -108,7 +114,7 @@ For this tutorial we are using an `open source` Javascript library called `leafl
 *Leaflet:*
 Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 33 KB of JS, it has all the mapping features most developers ever need. Leaflet is designed with simplicity, performance and usability in mind. It works efficiently across all major desktop and mobile platforms, can be extended with lots of plugins, has a beautiful, easy to use and well-documented API and a simple, readable source code that is a joy to contribute to. For more information on *clusterig*, you cna look [here](https://github.com/Leaflet/Leaflet.markercluster). 
 
-![Add Layer]()
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027504/8b1e5536-d252-11e5-946f-6bfa3e0110d9.png)
 
 To use with ClusterAPI, we need our data in Javascript format. To do this, Right Click on your Layer and Save As. Save your file in geoJSON format and make sure the Projection is set to EPSG:4326. You can check your saved layer in QGIS, to make sure the data appears the same. Now Close QGIS. 
 
@@ -143,9 +149,9 @@ This is how the start and end of your file should look like.
 }
 ```
 
-![Add Layer]()
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027513/9be8a0d8-d252-11e5-8ded-cc5d81f398ed.png)
 
-![Add Layer]()
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027514/ab1d2196-d252-11e5-9b92-042da80e1f60.png)
 
 Now save your file as `uno1.js`
 
@@ -238,6 +244,9 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiY3N0b2FmZXIiLCJhIjoiY2lnNnRwN3hpMDF4YnU3a3BkN
 </html>
 
 ```
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027515/b7bb594a-d252-11e5-85cd-883ed8e777c8.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027520/bdf97de6-d252-11e5-80bb-b68abbcac678.png)
 
 In the above code, remember to do the following:
 
@@ -290,11 +299,11 @@ Note the `,` added at the end of the satellite layer. You can add as many layers
 
 Now save both your files in the folder `clusterMap'. You can Right click and test your files in Chrome. Yous should be able to see the below map. Then from the layers window on the right, you can click UNOSAT Data and the clusters should appear. Note that based on amount, you have 3 tiers of clusters, shaded by color range. Also note, the black dots, which are the icons that you set in your file.
 
-![Add Layer]()
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027531/21cf8e5a-d253-11e5-89f8-5b9933fbd6f8.jpg)
 
-![Add Layer]()
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027532/21e080f2-d253-11e5-9b37-067ce0af4d52.jpg)
 
-![Add Layer]()
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027530/21b19968-d253-11e5-8057-1df3ee39aba4.jpg)
 
 Feel free, to add additional options, through the ClusterMaps API. 
 
@@ -328,7 +337,7 @@ You will add:
 Now, you can manually change the code in the .css files and it will reflect in your browser. 
 Open ` cluster.default.css`  and look a the code.
 
-![Add Layer]()
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027534/2a637ef0-d253-11e5-981d-c64420536f75.png)
 
 Here, you can change the colors with (R,G,B,A) values, where A = Opacity Value
 
@@ -362,10 +371,12 @@ Here, you can change the colors with (R,G,B,A) values, where A = Opacity Value
 ```
 Here's what your map will look if you updated as per the numbers above. Please feel free to change as you would like.
 
-![Add Layer]()
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027533/2a5c5bac-d253-11e5-8d81-276ac21be6fd.png)
+
+![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027536/38476324-d253-11e5-86fd-4f929a826515.jpg)
 
 **Icon Appearance**
-The icon files, one for retina diaplay and one for regular display are included in your folder. You can also make your own pngs and save using the illustrator template in the folder. Your icons can be any shape and color. The size can be changed in the code itself, as shown earlier. Save the file as you would like using the same *naming conventions*. For ease, I have added 2 optional icons for use, if you would like to test.
+The icon files, one for retina display and one for regular display are included in your folder. You can also make your own pngs and save using the illustrator template in the folder. Your icons can be any shape and color. The size can be changed in the code itself, as shown earlier. Save the file as you would like using the same *naming conventions*. For ease, I have added 2 optional icons for use, if you would like to test.
 
 
 ##### 05. WEB: Embed Map in your Case Study 
