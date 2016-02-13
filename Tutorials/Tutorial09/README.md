@@ -9,6 +9,7 @@ For this tutorial, we will be using the following tools:
 * [QGIS](http://www.qgis.org/en/site/)
 * [Sublime](http://www.sublimetext.com/)
 * [Chrome](https://www.google.com/chrome/)
+* [Terminal] *Command Line*
 
 
 ### Datasets:
@@ -290,11 +291,29 @@ Line 107-108: Here we select the data that we would like to show when you click 
         layer.setIcon(myIcons[layer.feature.properties.Main_Dam_2]);
         layer.bindPopup(layer.feature.properties.SiteID + " in " + layer.feature.properties.Neighborho + "<br>" + " " + layer.feature.properties.SensorID_3 + ": " + layer.feature.properties.SensorDa_2);
  ```
+ 
+Once you have your `html` file, you can test in Chrome. But there is a catch here. For your geoJSON data to work, you will need to be on a webserver to test this file. If you have FTP access, you can use a public browser. However, you can also use a local server to test you html file.
+
+To do so, Go to Terminal, to use Command Line. Please refer to Tutorial 2, if you are unfamiliar with this. You will need python installed if you would like to use the below method. You can type 'install python' in your terminal or you can look at easy to donwload packages like Anaconda. Once you have python installed, please proceed to the next step.
+
+In the terminal, browse to your folder and type the following command
+```
+python -m SimpleHttpServer
+```
+
+Please make sure you label your html file as 'index.html' 
+
+Then in your browser type this address: 
+`http://localhost:8000/`
+
+You should now be able to see your map and clusters in the web browser. 
 
 ##### 04. WEB: Change Clusters Appearance 
 
-In the html code, 
-Line 75-97: Stylize your icon based on your group. Which means, when your cluster disintegrates. The icons are placed in the folder 'icons'. You can replace then to your requirement. You can vary size for each catergory also. 
+Once you render your map in the web browser, you might want to change the appearance of your map icons and cluster icons. The html file has the following code, that can be changed
+
+Line 75-97: Stylize your icon based on your group. Which means, when your cluster disintegrates. The icons are placed in the folder `icons`. You can replace then to your requirement. You can vary size for each catergory also. 
+
 ```
     var myIcons = {
         '1': L.icon({
@@ -321,7 +340,6 @@ Line 75-97: Stylize your icon based on your group. Which means, when your cluste
     };
 ```
 
-In the html code,
 Line 99-102: Declares and stylize the cluster icons. We set the color as 'gray' but this can be an RGB value. Or you can change the shape.
     // Here declare these to be rendered as a single group
     var groups = {
@@ -336,7 +354,6 @@ Using the code, provide in [tutorial2](), you can embed any interactive website,
 <iframe width='100%' height='500px' frameBorder='0' src= "filename.html" name="iframe_x"></iframe> 
 <p><a href="filename.html" target="iframe_x">Interactive Site</a></p>
 ```
-
 
 ### Deliverables:
 
