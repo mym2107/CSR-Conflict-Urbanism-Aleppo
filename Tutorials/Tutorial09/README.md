@@ -1,7 +1,7 @@
 ######CSR / Conflict Urbanism Aleppo 
-##Tutorial 6: Designing a Categorized Cluster Map
+##Tutorial 9: Designing a Categorized Cluster Map
 
-In this tutorial, you will be using, the UNOSAT's Damage Analysis Sites, from the [Humanitarian Data Exchange](https://data.hdx.rwlabs.org/) website, to design an Interactive *Catergorized* Cluster Map, using Web tools, Mapbox and the Open Source Library Leaflet. You will use the .shp file provided by HIU of identified cultural heritage sites and edit and export it as a JSON file, using QGIS. You will then use *open source* library leaflet an its built in *cluster* function to design the interactive map based on categories. Lastly, you will edit the css, to change the look of the clusters. 
+In this tutorial, you will be using, the UNOSAT's Damage Analysis Sites, from the [Humanitarian Data Exchange](https://data.hdx.rwlabs.org/) website, to design an Interactive *Categorized Catergorized* Cluster Map, using Web tools, Mapbox and the Open Source Library Leaflet. You will use the .shp file provided by HIU of identified cultural heritage sites and edit and export it as a JSON file, using QGIS. You will then use *open source* library leaflet an its built in *cluster* function to design the interactive map based on categories. Lastly, you will edit the css, to change the look of the clusters. 
 
 
 ### Tools:
@@ -15,7 +15,7 @@ For this tutorial, we will be using the following tools:
 ### Datasets:
 For this tutorial, we will be using the following datasets:
 * UNOSAT.zip, Download [here](https://www.dropbox.com/s/3dha98zai4wtcxg/UNOSAT.zip?dl=0)
-* Tutorial6.zip, Download [here](https://www.dropbox.com/s/26yw21u74axmp9u/Tutorial6.zip?dl=0)
+* Tutorial9.zip, Download [here](https://www.dropbox.com/s/dzdidyuuwpu99hs/Tutorial9.zip?dl=0)
 
   
 ### Datasets Overview:
