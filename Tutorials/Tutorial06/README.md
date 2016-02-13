@@ -39,7 +39,7 @@ Likewise, UNITAR/UNOSAT maintains a good repository on their site and frequently
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027499/789fa28e-d252-11e5-92a6-55b09bc50e06.png)
 
-You can also look at the static map for a quick reveiew of the data you have downloaded or to see how UNOSAT visualizes it.
+You can also look at the static map to see how UNOSAT visualizes it.
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027500/78ae924e-d252-11e5-8687-5685521a701f.png)
 
@@ -93,7 +93,7 @@ We do not need all these fields in our visualization and to make our files simpl
 
 *	SiteID
 
-It takes a while to process after which you have a file with a single column. If your system hangs, you can also delete fewer columns at a time.
+It takes a while to process after which you have a file with a single column. If your system hangs, you can also delete columns at a time.
 
 Our attribute table now has each event as a point with no associated information. In order to save the X-Y coordinate information in our attribute table, Go To `Menu > Vector > Geometry Tools > Export / Add Geometry Tables`. Then select your input data layer and `Save` as a new `shape file`. Check `Add` result to `Canvas` option. NO w you should see the X-Y Coordinate Columns added to your data. If you are seeing more columns in your attributes table, it is ok. As menioned earlier, you should try to delete as many as possible. But as long as you have these 3, you can proceed.
 
@@ -120,11 +120,13 @@ To use with ClusterAPI, we need our data in Javascript format. To do this, Right
 
 Drag and Drop your Uno1.geojson file into *sublime editor*. On the right corner in sublime, select Javascript from drop down menu. You will see the color formatting change. Now, carefully follow the next step. In this file, you want to equate this data to a variable called uno1. To do so, you need to add the following on the first and last line of your code. Do not change anything else. 
 
-
+First Line:
 > First line: `var uno1 = `
+
+Last Line:
 > Last line: `;`
 
-This is how the start and end of your file should look like. 
+This is how the start and end of your file look like:
 
 ```javascript
 {
@@ -150,6 +152,29 @@ This is how the start and end of your file should look like.
 ```
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027513/9be8a0d8-d252-11e5-8ded-cc5d81f398ed.png)
+
+```javascript
+var uno1 = {
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "SiteID": "Building (General \/ Default)", "SensorDate": null, "SensorID": null, "Confidence": null, "Main_Damag": null, "SensorDa_1": "2014\/05\/23", "SensorID_2": "Worldview-2", "Confiden_1": "1", "Main_Dam_1": "2", "Damage_Sta": "New - damage", "SensorDa_2": "2015\/04\/26", "SensorID_3": "Pleiades", "Confiden_2": "1", "Main_Dam_2": "2", "Damage_S_1": "0", "Grouped_Da": "Damaged Buildings", "FieldValid": "Not yet field validated", "Notes": null, "Settlement": "Aleppo", "Neighborho": "Farafira", "EventCode": "CE20130604SYR", "XCOORD": 37.157763, "YCOORD": 36.203296 }, "geometry": { "type": "Point", "coordinates": [ 37.157763310000064, 36.203296022000075 ] } },
+{ "type": "Feature", "properties": { "SiteID": "Building (General \/ Default)", "SensorDate": null, "SensorID": null, "Confidence": null, "Main_Damag": null, "SensorDa_1": "2014\/05\/23", "SensorID_2": "Worldview-2", "Confiden_1": "1", "Main_Dam_1": "2", "Damage_Sta": "New - damage", "SensorDa_2": "2015\/04\/26", "SensorID_3": "Pleiades", "Confiden_2": "1", "Main_Dam_2": "2", "Damage_S_1": "0", "Grouped_Da": "Damaged Buildings", "FieldValid": "Not yet field validated", "Notes": null, "Settlement": "Aleppo", "Neighborho": "Farafira", "EventCode": "CE20130604SYR", "XCOORD": 37.157559, "YCOORD": 36.203340 }, "geometry": { "type": "Point", "coordinates": [ 37.157559387000049, 36.203340185000059 ] } },
+{ "type": "Feature", "properties": { "SiteID": "Building (General \/ Default)", "SensorDate": null, "SensorID": null, "Confidence": null, "Main_Damag": null, "SensorDa_1": "2014\/05\/23", "SensorID_2": "Worldview-2", "Confiden_1": "1", "Main_Dam_1": "2", "Damage_Sta": "New - damage", "SensorDa_2": "2015\/04\/26", "SensorID_3": "Pleiades", "Confiden_2": "1", "Main_Dam_2": "2", "Damage_S_1": "0", "Grouped_Da": "Damaged Buildings", "FieldValid": "Not yet field validated", "Notes": null, "Settlement": "Aleppo", "Neighborho": "Farafira", "EventCode": "CE20130604SYR", "XCOORD": 37.157484, "YCOORD": 36.203344 }, "geometry": { "type": "Point", "coordinates": [ 37.157484268000076, 36.203343533000066 ] } },
+{ "type": "Feature", "properties": { "SiteID": "Building (General \/ Default)", "SensorDate": null, "SensorID": null, "Confidence": null, "Main_Damag": null, "SensorDa_1": "2014\/05\/23", "SensorID_2": "Worldview-2", "Confiden_1": "1", "Main_Dam_1": "1", "Damage_Sta": "New - damage", "SensorDa_2": "2015\/04\/26", "SensorID_3": "Pleiades", "Confiden_2": "1", "Main_Dam_2": "1", "Damage_S_1": "0", "Grouped_Da": "Damaged Buildings", "FieldValid": "Not yet field validated", "Notes": null, "Settlement": "Aleppo", "Neighborho": "Farafira", "EventCode": "CE20130604SYR", "XCOORD": 37.157663, "YCOORD": 36.203306 }, "geometry": { "type": "Point", "coordinates": [ 37.157663028000059, 36.203305740000076 ] } },
+{ "type": "Feature", "properties": { "SiteID": "Building (General \/ Default)", "SensorDate": null, "SensorID": null, "Confidence": null, "Main_Damag": null, "SensorDa_1": "2014\/05\/23", "SensorID_2": "Worldview-2", "Confiden_1": "1", "Main_Dam_1": "1", "Damage_Sta": "New - damage", "SensorDa_2": "2015\/04\/26", "SensorID_3": "Pleiades", "Confiden_2": "1", "Main_Dam_2": "1", "Damage_S_1": "0", "Grouped_Da": "Damaged Buildings", "FieldValid": "Not yet field validated", "Notes": null, "Settlement": "Aleppo", "Neighborho": "Farafira", "EventCode": "CE20130604SYR", "XCOORD": 37.157566, "YCOORD": 36.202351 }, "geometry": { "type": "Point", "coordinates": [ 37.157565891000047, 36.202351430000078 ] } },
+{ "type": "Feature", "properties": { "SiteID": "Building (General \/ Default)", "SensorDate": null, "SensorID": null, "Confidence": null, "Main_Damag": null, "SensorDa_1": "2014\/05\/23", "SensorID_2": "Worldview-2", "Confiden_1": "1", "Main_Dam_1": "1", "Damage_Sta": "New - damage", "SensorDa_2": "2015\/04\/26", "SensorID_3": "Pleiades", "Confiden_2": "1", "Main_Dam_2": "1", "Damage_S_1": "0", "Grouped_Da": "Damaged Buildings", "FieldValid": "Not yet field validated", "Notes": null, "Settlement": "Aleppo", "Neighborho": "Farafira", "EventCode": "CE20130604SYR", "XCOORD": 37.157418, "YCOORD": 36.202383 }, "geometry": { "type": "Point", "coordinates": [ 37.157417852000037, 36.202382938000085 ] } },
+.
+.
+.
+.
+{ "type": "Feature", "properties": { "SiteID": "Building (General \/ Default)", "SensorDate": null, "SensorID": null, "Confidence": null, "Main_Damag": null, "SensorDa_1": null, "SensorID_2": null, "Confiden_1": null, "Main_Dam_1": null, "Damage_Sta": null, "SensorDa_2": "2015\/04\/26", "SensorID_3": "Pleiades", "Confiden_2": "2", "Main_Dam_2": "1", "Damage_S_1": "3", "Grouped_Da": "Damaged Buildings", "FieldValid": "Not yet field validated", "Notes": null, "Settlement": "Aleppo", "Neighborho": "Villat Dahiyat al Asad", "EventCode": "CE20130604SYR", "XCOORD": 37.078120, "YCOORD": 36.177461 }, "geometry": { "type": "Point", "coordinates": [ 37.078120323000064, 36.177460598000039 ] } },
+{ "type": "Feature", "properties": { "SiteID": "Building (General \/ Default)", "SensorDate": null, "SensorID": null, "Confidence": null, "Main_Damag": null, "SensorDa_1": null, "SensorID_2": null, "Confiden_1": null, "Main_Dam_1": null, "Damage_Sta": null, "SensorDa_2": "2015\/04\/26", "SensorID_3": "Pleiades", "Confiden_2": "2", "Main_Dam_2": "1", "Damage_S_1": "3", "Grouped_Da": "Damaged Buildings", "FieldValid": "Not yet field validated", "Notes": null, "Settlement": "Aleppo", "Neighborho": "Villat Dahiyat al Asad", "EventCode": "CE20130604SYR", "XCOORD": 37.081233, "YCOORD": 36.173247 }, "geometry": { "type": "Point", "coordinates": [ 37.081232894000038, 36.173247463000052 ] } },
+{ "type": "Feature", "properties": { "SiteID": "Building (General \/ Default)", "SensorDate": null, "SensorID": null, "Confidence": null, "Main_Damag": null, "SensorDa_1": null, "SensorID_2": null, "Confiden_1": null, "Main_Dam_1": null, "Damage_Sta": null, "SensorDa_2": "2015\/04\/26", "SensorID_3": "Pleiades", "Confiden_2": "2", "Main_Dam_2": "1", "Damage_S_1": "3", "Grouped_Da": "Damaged Buildings", "FieldValid": "Not yet field validated", "Notes": null, "Settlement": "Aleppo", "Neighborho": "Villat Dahiyat al Asad", "EventCode": "CE20130604SYR", "XCOORD": 37.076590, "YCOORD": 36.173104 }, "geometry": { "type": "Point", "coordinates": [ 37.076590309000039, 36.17310371800005 ] } }
+]
+};
+```
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027514/ab1d2196-d252-11e5-9b92-042da80e1f60.png)
 
@@ -251,10 +276,14 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiY3N0b2FmZXIiLCJhIjoiY2lnNnRwN3hpMDF4YnU3a3BkN
 In the above code, remember to do the following:
 
 You need to allow your html file to link to read the .js file. 
-> line 31 : <script src="uno1.js"></script>
+``` 
+line 31 : <script src="uno1.js"></script>
+```
 
 You need to set your variable name here.
-> line 56: var geojson = L.geoJson(uno1, {
+```
+line 56: var geojson = L.geoJson(uno1, {
+```
 
 If required you can then change icon settings:
 ``` html                
@@ -269,7 +298,7 @@ var myIcon = L.icon({
 
 ``` 
 
-You can also add multiple layers to your map and slect the names under which it should appear.
+You can also add `multiple layers` to your map and slect the names under which it should appear.
 
 ``` html  
         L.control.layers({
@@ -281,7 +310,7 @@ You can also add multiple layers to your map and slect the names under which it 
         }).addTo(map);
 ``` 
 
-For instance, if you also wanted to add the High-Contrast layer, change the code to the following:
+For instance, if you also wanted to add the `High-Contrast layer`, change the code to the following:
 
 ``` html  
         L.control.layers({
@@ -297,7 +326,7 @@ For instance, if you also wanted to add the High-Contrast layer, change the code
 
 Note the `,` added at the end of the satellite layer. You can add as many layers as you would like, just careful with the `,`. Every entry excep the last will need one.
 
-Now save both your files in the folder `clusterMap'. You can Right click and test your files in Chrome. Yous should be able to see the below map. Then from the layers window on the right, you can click UNOSAT Data and the clusters should appear. Note that based on amount, you have 3 tiers of clusters, shaded by color range. Also note, the black dots, which are the icons that you set in your file.
+Now save both your files in the folder `clusterMap`. You can `Right click` and test your files in Chrome. Yous should be able to see the below map. Then from the layers window on the right, you can click UNOSAT Data and the clusters should appear. Note that based on amount, you have 3 tiers of clusters, shaded by color range. Also note, the black dots, which are the icons that you set in your file.
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027531/21cf8e5a-d253-11e5-89f8-5b9933fbd6f8.jpg)
 
@@ -339,7 +368,7 @@ Open ` cluster.default.css`  and look a the code.
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027534/2a637ef0-d253-11e5-981d-c64420536f75.png)
 
-Here, you can change the colors with (R,G,B,A) values, where A = Opacity Value
+Here, you can change the colors with `(R,G,B,A)` values, where `A = Opacity Value`
 
 ``` CSS
 .marker-cluster-small {
@@ -376,7 +405,7 @@ Here's what your map will look if you updated as per the numbers above. Please f
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/13027536/38476324-d253-11e5-86fd-4f929a826515.jpg)
 
 **Icon Appearance**
-The icon files, one for retina display and one for regular display are included in your folder. You can also make your own pngs and save using the illustrator template in the folder. Your icons can be any shape and color. The size can be changed in the code itself, as shown earlier. Save the file as you would like using the same *naming conventions*. For ease, I have added 2 optional icons for use, if you would like to test.
+The icon files, one for retina display and one for regular display are included in your folder. You can also make your own pngs and save using the `illustrator template` in the folder. Your icons can be any shape and color. The size can be changed in the code itself, as shown earlier. Save the file as you would like using the same *naming conventions*. For ease, I have added 2 optional icons for use, if you would like to test.
 
 
 ##### 05. WEB: Embed Map in your Case Study 
