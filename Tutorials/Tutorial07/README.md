@@ -12,7 +12,7 @@ For this tutorial, we will be using the following tools:
 
 ### Datasets:
 For this tutorial, we will be using the following datasets:
-* HistoricalMapB.zip, Download [here](link to repository)
+* HistoricalMapB.zip, Download [here](https://www.dropbox.com/s/l3kto53jgaf9dg0/GeoWGS84.zip?dl=0)
 * Aleppo.zip, Download [here](https://www.dropbox.com/s/wxmer4gb59lnfoc/Aleppo1.zip?dl=0)
 * Swipe.html, Download [here](https://www.dropbox.com/s/52z4d3gtslmfimr/Swipe.html?dl=0)
 
