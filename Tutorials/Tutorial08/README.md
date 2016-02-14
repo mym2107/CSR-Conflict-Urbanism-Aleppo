@@ -13,7 +13,7 @@ For this tutorial, we will be using the following tools:
 ### Datasets:
 For this tutorial, we will be using the following datasets:
 * Research.zip, Download [here](link to repository)
-* StoryMap.zip, Download [here](link to repository)
+* StoryMap.zip, Download [here](https://www.dropbox.com/s/e12g50d22lon7mw/StoryMap.html?dl=0)
 
   
 ### Datasets Overview:
