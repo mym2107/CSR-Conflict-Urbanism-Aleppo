@@ -12,9 +12,9 @@ For this tutorial, we will be using the following tools:
 
 ### Datasets:
 For this tutorial, we will be using the following datasets:
-* HistoricalMapA.zip, Download [here](link to repository)
-* Aleppo.zip, Download [here](link to repsotitory)
-* Layers.html, Download [here](link to repository)
+* HistoricalMapA.zip, Download [here](https://www.dropbox.com/s/cnl3ol3rk1rlfka/AleppoPNG.zip?dl=0)
+* Aleppo.zip, Download [here](https://www.dropbox.com/s/wxmer4gb59lnfoc/Aleppo1.zip?dl=0)
+* Layers.html, Download [here](https://www.dropbox.com/s/ukj6jku6mshq5j3/Layer1.html?dl=0)
 
   
 ### Datasets Overview:
