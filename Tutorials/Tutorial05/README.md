@@ -235,12 +235,19 @@ Here's the html script. Please look at the comments, to understand the steps:
 <head>
 <meta charset=utf-8 />
 
-<!-- ADD: Name to Appear on Tab --> 
+<!ADD: Name to Appear on Tab--> 
 <title>Interactive_Layers</title>
 
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+<!--
 <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' /> -->
+
+
+<script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script> 
+<link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' /> 
+
 
 <style>
   body { margin:0; padding:0; }
@@ -279,9 +286,10 @@ L.control.layers({
 
 </body>
 </html>
+
 ```
 
-Once you have made the changes, save the `.html` file and open with `Chrome`. You should be able to see your map with the layers option on the upper right corner. From there you should be able to select the Historical map for display. Note: There are simple tools you can add to enhance your map, such as the transparency bar. Please *comment* below and I will provide an update. Also, incase your site does not show the expected result, use Chrome Developer Tools to debug. 
+Note: If your file does not work, check the version of Mapbox you are linking to. Once you have made the changes, save the `.html` file and open with `Chrome`. You should be able to see your map with the layers option on the upper right corner. From there you should be able to select the Historical map for display. Note: There are simple tools you can add to enhance your map, such as the transparency bar. Please *comment* below and I will provide an update. Also, incase your site does not show the expected result, use Chrome Developer Tools to debug. 
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12874400/9ae30a94-cdd3-11e5-9bc5-c6d8fd510bb9.png)
 
