@@ -304,7 +304,7 @@ To do so, Go to `Terminal`, to use Command Line. Please refer to Tutorial 2, if 
 
 In the terminal, browse to your folder and type the following command
 ```
-python -m SimpleHttpServer
+python -m SimpleHTTPServer
 ```
 
 Please make sure you label your html file as `index.html`
