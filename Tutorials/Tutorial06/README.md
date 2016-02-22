@@ -1,7 +1,7 @@
 ######CSR / Conflict Urbanism Aleppo 
 ##Tutorial 6: Designing a Simple Cluster Map
 
-In this tutorial, you will be using, UNOSAT's Damage Analysis, *open data*, from the [Humanitarian Data Exchange] website, to design an Interactive Cluster Map, using Web tools, Mapbox and the Open Source Library Leaflet. You will use the .shp file provided by UNOSAT of damage locations marked and edit and export it as a .js file. You will then use *open source* library leaflet an it's built in *cluster* function to design the interactive map. Lastly, you will edit the css, to change the look of the clusters. 
+In this tutorial, you will be using, UNOSAT's Damage Analysis, *open data*, from the [Humanitarian Data Exchange] website, to design an Interactive Cluster Map, using Web tools, Mapbox and the Open Source Library Leaflet. You will use the .shp file provided by UNOSAT of damage locations marked and edit and export it as a .js file. You will then use *open source* library leaflet and its built in *cluster* function to design the interactive map. Lastly, you will edit the css, to change the look of the clusters. 
 
 ### Tools:
 For this tutorial, we will be using the following tools:
