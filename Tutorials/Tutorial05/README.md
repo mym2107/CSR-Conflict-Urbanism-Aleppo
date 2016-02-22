@@ -61,7 +61,7 @@ Open the QGIS Application and first set the [project projection](https://docs.qg
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/16892784/12872591/4e4f7356-cda7-11e5-8d31-e9ae42821052.png)
 
-Add the Alp1.shp file from *Aleppo.zip*, through `Menu > Layer > Add Layer > Add Raster layer`. Likewise, you can always *drop* the file directly into the `map window`. 
+Add the Alp1.shp file from *Aleppo.zip*, through `Menu > Layer > Add Layer > Add Vector layer`. Likewise, you can always *drop* the file directly into the `map window`. 
 
 When you bring in the layer: `Alp1.shp`, remember it's projection is already set now. You can recheck the CRS by going to the layer in the Layers Panel and Right Click on it. Goto: `Properties > General > Coordinate Reference System : EPSG:3857`. If this is different, you can change it in that panel, or right-click layer and click on `Set Layr CRS`. 
 
