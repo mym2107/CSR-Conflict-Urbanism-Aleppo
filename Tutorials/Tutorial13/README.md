@@ -23,6 +23,8 @@ For this tutorial, we will be using the following datasets:
 ### Datasets Overview:
 This section provides detailed explanation of each data source. You can skip this section, if you would like to continue with the tutorial. However, it is recommended that you familiarize yourself with these sources, as they will asssist you in your research.
 
+**NOTE: For the purpose of this tutorial, you are provided with a UNOSAT dataset of Aleppo in a .CSV format. You are, however, welcome to create your own .CSV from the UNOSAT shapefile by following Steps 1 and 2 of [Tutorial 9](https://github.com/mym2107/CSR-Conflict-Urbanism-Aleppo/blob/master/Tutorials/Tutorial09/README.md).**
+
 ##### Dataset 1:
 **Humanitarian Data Exchange**, [HDX](https://data.hdx.rwlabs.org) is a good place for open data as it presents a *consolidated repository* of data collected through multiple sources. The goal of the Humanitarian Data Exchange (HDX) is to make humanitarian data easy to find and use for analysis. If you are interested in exploring datasets from multiple Humanitarian Agencies, it is recommended that you register yourself on the HDX website. You can select regions and organisations of interest and explore the vast collection of datasets. 
 
@@ -40,7 +42,6 @@ HDX provides additional information on each data source including *layers*, *dat
 
 Likewise, UNITAR/UNOSAT maintains a good repository on their site and frequently updates the data that can be accessed [here](http://www.unitar.org/unosat). The data is all made available on HDX, which is likely where you will download from, but you can always check UNITARs site to see if they have an update. 
 
-**NOTE: For the purpose of this tutorial, you are provided with a UNOSAT dataset of Aleppo in a .CSV format. You are welcome to create your own .CSV from the UNOSAT shapefile by following Steps 1 and 2 of [Tutorial 9](https://github.com/mym2107/CSR-Conflict-Urbanism-Aleppo/blob/master/Tutorials/Tutorial09/README.md).**
 
 ### Tutorial Title: UNOSAT Processing Animation
 
@@ -56,11 +57,11 @@ Likewise, UNITAR/UNOSAT maintains a good repository on their site and frequently
 
 ##### 01. TEXTEDIT: Explore UNOSAT dataset
 
-Let's first open up our UNOSAT dataset to see what we're working with. If you haven't already, downloaded the zipped project folder in the Datasets section above. Open the folder and find the file named "UNOSAT_Processing.csv". Open this file in your favorite text editor. You'll see the following:
+Let's first open up our UNOSAT dataset to see what we're working with. If you haven't already, download the zipped project folder in the Datasets section above. Open the folder and find the file named "UNOSAT_Processing.csv". Open this file in your favorite text editor. You'll see the following:
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/17283990/13902308/4b115d60-ee1a-11e5-9592-9cbdaaa386a5.png)
 
-You may also open the csv in Excel for a cleaner viewing experience. The data presented here is a slightly modified version of the UNOSAT attribute table taken from the shapefile at the address provided above. Just to reiterate the above, this data essentially tells us how severly buildings/data points are damaged over 3 different sensor dates/periods. Buildings that are identified in the first sensor period, 9/23/13, are checked again in subsequent sensor periods. Many data points do not appear until the third sensor period. Thus these buildings do not have damage attributed assocaited with them in the first two sensor periods as they were not damaged or identified until the most recent sensor period. We will have to remember this once we are displaying the data to display the data correctly.
+You may also open the csv in Excel for a cleaner viewing experience. The data presented here is a slightly modified version of the UNOSAT attribute table taken from the shapefile at the address provided above. Just to reiterate the above, this data essentially tells us how severly buildings/data points are damaged over 3 different sensor dates/periods. Buildings that are identified in the first sensor period, 9/23/13, are checked again in subsequent sensor periods. Many data points do not appear until the third sensor period. Thus these buildings do not have damage assocaited with them in the first two sensor periods as they were not damaged or identified until the most recent sensor period. We will have to remember this once we are coding in order to show the correct data.
 
 For a description on how this dataset is modified from the given UNOSAT attribute table, consult the following. The modifications are the additional data columns added after the blank "_" data column. These new fields are "SENSORGROUP", "Long", "Lat", "MainDamageNum", and "MainDam_2Maxd". The "SENSORGROUP" simply tells in which sensor period the data point first appears. So, if a data point is first recorded in the second sensor date period this value would be 2. "Long" and "Lat" are simply the latitutde and longitude of the data point extracted for convenience from the first column "wkt_geom". "MainDamageNum" converts the "Main_Damag" column to numbers where 1=Destroyed, 2=Severely Damaged and 3=Moderately Damaged. This is done to keep the dataset consistent as the other sensor groups damage columns, "Main_Dam_1" for the second sensor group and "Main_Dam_2" for the third sensor group, are in this numeric form. And finally, the "MainDam_2Maxd" column removes a few errors from the "Main_Dam_2" column where a few values are not coded correctly.
 
@@ -73,38 +74,38 @@ After installing, open Processing and you should be greated by the following:
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/17283990/13902322/4b234160-ee1a-11e5-806b-de6ab0b01624.png)
 
-This blank file is where we will write our brilliant code. The play button at the top of the window runs whatever code we write and the stop button stops that code. After we hit play, the code runs until we hit the stop button and explicitly tell Processing to stop. The black space at the bottom of the window is the console. This is where Processing reports errors or prints messages to us. To start and get ourselves familiar with Processing, let's execute an extremely simple program. Let's have Processing say, "Hello World". Before we start coding, we're sure to mess up somewhere along the way, so please save your code frequently.
+This blank file is where we will write our brilliant code. The play button at the top of the window runs whatever code we write and the stop button stops that code. After we hit play, the code runs until we hit the stop button and explicitly tell Processing to stop. The black space at the bottom of the window is the console. This is where Processing reports errors or prints messages to us. To start and get ourselves familiar with Processing, let's execute an extremely simple program. Let's have Processing say, "Hello World". Before we start coding, know that everyone is sure to mess up somewhere along the way, so please save frequently.
 
 In the Processing window, write the following lines of code (the grey code on the lines with "//" is commented code for your convenience, you do not need to copy it but it is STRONGLY ENCOURAGED that you comment your own code so you can figure out what the heck you were doing after a few days break):
 
 ```Processing
 void setup()
 {
-      // Here we write the lines of code that we want to complete
+    // Here we write the lines of code that we want to complete
   	// before the computer draws anything on our 
   	// digital canvas. Code here is only executed once by the
   	// computer.
   	// Here, for example, we will load the data from our CSV
-      println("Hello World");
+    println("Hello World");
 }
     
 void draw()
 {
-      // Here we write the lines of code that we want to execute
+    // Here we write the lines of code that we want to execute
   	// while the computer draws on our digital canvas. Code here
- 	 // is executed continuosly by the computer.
- 	 // Here, for example, we will draw, or display, the UNOSAT
- 	 // lat long data as circles.
+ 	// is executed continuosly by the computer.
+ 	// Here, for example, we will draw, or display, the UNOSAT
+ 	// lat long data as circles.
 }
 ```
 
-Ok, let's digest what we just wrote before we run it. We have two sections of our code, ```void setup()``` and ```void draw()```. Any code that we write between the {} brackets after ```void setup()``` is the code that we want to run when the program or sketch is starting up. This code is only executed once. This, for example, is a good place to load data from an external data file, like our CSV, into Processing. We don't need to load the data more than once. Any code that we write between the {} brackets after ```void draw()``` is the code we want to run continuously while our sketch is playing. This code is executed many times per second.
+Ok, let's digest what we just wrote before we run it. We have two sections of our code, ```void setup()``` and ```void draw()```. Any code that we write between the {} brackets after ```void setup()``` is the code that we want to run when the program or sketch is starting up. This code is only executed once. This, for example, is a good place to load data from an external data file, like our CSV, into Processing. We put it in setup because we don't need to load the data more than once. Any code that we write between the {} brackets after ```void draw()``` is the code we want to run continuously while our sketch is playing. This code is executed many times per second.
 
-So, in the code we just wrote, Processing will print the text string "Hello World" in it's console once. And that's it. ```println()``` prints any string between it's () brackets in Processing's console at the bottom of the window. And since ```println("Hello World")``` is in the setup section of our code, Processing will only print the string once.  Let's press play and make sure it works.
+So, in the code we just wrote, Processing will print the text string "Hello World" in its console once. And that's it. ```println()``` prints any string between it's () brackets in Processing's console at the bottom of the window. And since ```println("Hello World")``` is in the setup section of our code, Processing will only print the string once.  Let's press play and make sure it works.
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/17283990/13902320/4b208d80-ee1a-11e5-8b64-0cb386086b98.png)
 
-Woo! Our first bit of code! The grey window that popped up displays anything Processing draws on screen. Since we did not draw anything, the window is blank. And the console has our text, "Hello World". You can press the stop button now.
+Woo! Our first sketch! The grey window that popped up displays anything Processing draws on screen. Since we did not draw anything, the window is blank. And the console has our text, "Hello World". You can press the stop button now.
 
 If we move the line of code ```println("Hello World")```, to the draw section of our code, we get a slightly different result. Your code, excluding comments, should look like:
 
@@ -152,7 +153,7 @@ Cool! Every time the code in draw runs, it places a circle of radius 10 under th
 ```Processing
 void setup()
 {
-      // tells processing how big to make our window
+    // tells processing how big to make our window
   	size(600,600); 
 }
     
@@ -173,7 +174,7 @@ That's it! Now that you have the Processing fundamentals under your belt, let's 
 
 ##### 03. PROCESSING: Load UNOSAT data
 
-Lucky for us, Processing comes with some built in functionality to read data in a CSV. Let's start with a new file. Name it whatever you' like. In order for Processing to read the file, move the file into the same folder as your new Processing sketch. Let's now write some code to read the csv:
+Lucky for us, Processing comes with some built in functionality to read data in a CSV. Let's start with a new file. Name it whatever you' like. In order for Processing to read our CSV, we must move the CSV into the same folder as your new Processing sketch. Let's now write some code to read the csv:
 
 ```Processing
 //Global variable to hold csv table
@@ -208,7 +209,7 @@ Run the code and you should see that there are 14058 rows in the Processing cons
 
 **NOTE: The above code is zipped as Processing sketch loaddatav01 for your convenience.**
 
-Great - so Processing has the data in this table variable but right now it's not doing a lot with it. It's just telling us how many rows of data the table variable contains. Let's put Processing to some more use by storing the relevant data in lists. If you are not familiar with lists, do some quick googling. Essentially, lists can contain many pieces of information. We could have a list of integers like ```[1,2,3,769,-3]``` or a list of decimal or floating point numbers like ```[0.91, 189.0, 0.5, 7.8, 9.1, 2.0]```. We can have a list of strings or a list of lists. Lists are a very powerful datatype.
+Great - so Processing has the data in this table variable but right now it's not doing a lot with it. It's just telling us how many rows of data the table variable contains. Let's put Processing to some more use by storing the relevant data in lists. If you are not familiar with lists, do some quick googling. Essentially, lists can contain many pieces of information. We could have a list of integers like ```[1,2,3,769,-3]``` or a list of decimal or floating point numbers like ```[0.91, 189.0, 0.5, 7.8, 9.1, 2.0]```. We can have a list of strings or a list of lists. Lists are a very powerful datatype. With lists, it is important to know how to index a list. When we index a list, we reference one value from that list. So, for example with the list called ```myList``` where ```myList = [1,2,3,769,-3]```, an index of 0 would return the first value in the list, ```1```. In Processing, we write this as ```myList[0]```. Similarly, an index of 3 would return the fourth value in the list, ```myList[3] = 769```. We will use indexes in our animation to reference multiple dimensions of one datapoint.
 
 Let's create a list for each column of data in the csv that we would like to reference. In Processing, we need to tell the lists how long we want them to be. Luckily, we have our ```totalRowCount``` variable from above that is telling us how many rows of data we have. We should make each list as long as there are rows of data. We do that in the following:
 ```Processing
@@ -248,7 +249,7 @@ void draw()
 }
 ```
 
-You'll see that we create five lists as global variables before the setup portion of our code. The first two lists, ```float[] latList``` and ```float[] longList``` are two lists that will contain floating point numbers. The first will store the latitude of each point and the second list will sore the longitude. The other three lists, ```int[] damageList1```, ```int[] damageList2```, and ```int[] damageList3``` are lists of integers. They store the numeric value of how damage a specific lcoation was in sensor period 1, 2 and 3 respectively.
+You'll see that we create five lists as global variables before the setup portion of our code. The first two lists, ```float[] latList``` and ```float[] longList``` are two lists that will contain floating point numbers. The first will store the latitude of each point and the second list will store the longitude. The other three lists, ```int[] damageList1```, ```int[] damageList2```, and ```int[] damageList3``` are lists of integers. They store the numeric value of how damaged a specific location was in sensor period 1, 2 and 3 respectively.
 
 We've just created the lists as global variables but we haven't told each list how long we want it to be. We do this in the setup portion of the code after we know how many rows of data there are. Observe the line of code, 
 ```Processing
@@ -318,7 +319,7 @@ void draw()
 }
 ```
 
-The important new additions to the code start with the ```int rowCount = 0;``` line. We use a for loop to step through every row in our ```unosatTable```. We then take each datatype of interest and set it in the appropriate list using the header name of the desired column to fetch the desired value. Since, for example, in our csv, latitude is stored in a column named "Lat" we take this value and store it in the ```latList```.
+The important new additions to the code start with the ```int rowCount = 0;``` line. We use a for loop to step through every row in our ```unosatTable```. We then take each portion of data of interest and set it in the appropriate list using the header name of the desired column to fetch the desired value. Since, for example, in our csv, latitude is stored in a column named "Lat" we take this value and store it in the ```latList```.
 
 The integer variable ```rowCount``` allows us to step through each value in our lists that are length ```tableRowCount```. If ```rowCount = 0``` always, we would only ever be putting data from the ```unosatTable``` variable into the first value of our lists, rewriting data and not appropriately filling the list. We use ```rowCount``` to iterate through the length of the list so that the second value will be put in the rowCount = 1, or second place in our list, the third value will be put in the third value of our lists, etc. (It's important to note that in Processing, index 0 is the first value, index 1 is the second value, etc.)
 
@@ -327,15 +328,15 @@ Lastly, the line,
    //test println 
    println(sensorGroup[rowCount] + ", " + rowCount);
    ```
-Is simply for our convenience to verify that the code is stepping through the lists correctly. This line prins the current sensorGroup and rowCount value to the console.
+Is simply for our convenience to verify that the code is stepping through the lists correctly. This line prints the current sensorGroup and rowCount value to the console.
 
 **NOTE: The above code is zipped as Processing sketch loaddatav03 for your convenience.**
 
-We now have all of the data we'll need to create our animation loaded into lists in Processing. To review, the first row of data from our CSV is now distributed across 6 lists. Each list can be easily queried such that if we want to know the 895th's data points lat long we need only write ```latList[894];``` ```longList[894];```. In the next step of this tutorial we will actually display the UNOSAT data in our canvas window. We will iterate through the length of our lists to display each point sequentually using loops inside of the draw portion of our code.
+We now have all of the data we'll need to create our animation loaded into lists in Processing. To review, the first row of data from our CSV is now distributed across 6 lists. Each list can be easily queried such that if we want to know the 895th's data points lat long we need only write ```latList[894];```. In the next step of this tutorial we will actually display the UNOSAT data in our canvas window. We will iterate through the length of our lists to display each point sequentually using loops inside of the draw portion of our code.
 
 ##### 04. PROCESSING: Display UNOSAT data
 
-Now that our code is starting to become a little bit longer, we will no longer be pasting the entirety of the code here. To follow along, please refer to the zipped sketches you downloaded above. For this following segment, refer to the sketch called **DisplayDatav01**.
+Now that our code is starting to become a little bit longer, we will no longer be pasting the entirety of the code here. To follow along, please refer to the zipped sketches you downloaded above. For this following segment, refer to the sketch called **DisplayDatav01**. Please open this sketch and follow along.
 
 The first thing you'll notice scrolling through the new code are ```line 12 - line 16``` of the sketch:
 ```Processing
@@ -346,7 +347,7 @@ float lat1 = 36.2616902128;
 float lat2 = 36.1192872988;
 ```
 
-These define the upper left hand and lower right hand coordinates of our desired map extents. In the dataset, we were given lat long coordinates of each data point. In order to display these in our canvas window we need to convert them proprotinally the extents of the window. If you think about it, a lat long coordinate of 37.1, 36.2 does not mean much to Processing if there are no reference points. The above lines of code simply provide us with two reference points so that we can locate the data with respect to these reference points. If we consider the upper left hand corner of the map extents the upper left hand corner of our window and the lower right hand corner of hte map extents the lower right hand corner of the window, we can proportionally place our data points between these two points within the rectangle that is our canvas window. This is how we will place the data on our sketch's "map".
+These define the upper left hand and lower right hand coordinates of our desired map extents. In the dataset, we were given lat long coordinates of each data point. In order to display these in our canvas window we need to convert them proportinally to the extents of the window. If you think about it, a lat long coordinate of 37.1, 36.2 does not mean much to Processing if there are no reference points. The above lines of code simply provide us with two reference points so that we can locate the data with respect to these corners. If we consider the upper left hand corner of the map extents the upper left hand corner of our window and the lower right hand corner of the map extents the lower right hand corner of the window, we can proportionally place our data points between these two points within the rectangle that is our canvas window. This is how we will place the data on our sketch's "map".
 
 The next few lines of code you'll see are ```line 21 - line 22``` that simply tell processing that we would like our window to be 740 x 542 pixels and that we would like to run through the draw code 10 times per second.
 
@@ -365,7 +366,7 @@ Now that we're into the setup section of our code, we need to scale or map our d
   	}
 ```
 
-Let's go through the code line by line. The for loop at the beginning iterate through every value in our lists where the current value is the ith value. The first line in the loop prints the given lat long that we read from the CSV. The following two lines map the given latitude and longitude based on the upper left hand corner and lower right hand corner of the map to window height and width. A given value that was in the middle of our map extents will now be displayed in the middle of the window. A given value that was in the bottom right hand corner of the map extents is now in the bottom right hand corner of our window. The last line of code prints the new lat long in the console. After the for loop steps through all of the values in our lists we have mapped the given lat long to pixel dimensions that Processing can display!
+Let's go through the code line by line. The for loop at the beginning iterate through every value in our lists where the current value is the ```ith``` value. The first line in the loop prints the given lat long that we read from the CSV. The following two lines map the given latitude and longitude based on the upper left hand corner and lower right hand corner of the map to window height and width. A given value that was in the middle of our map extents will now be displayed in the middle of the window. A given value that was in the bottom right hand corner of the map extents is now in the bottom right hand corner of our window. The last line of code prints the new lat long in the console. After the for loop steps through all of the values in our lists we have mapped the given lat long to pixel dimensions that Processing can display!
 
 Let's display these data points by drawing circles around each lat long data point. Observe the draw section of the code:
 
@@ -399,7 +400,7 @@ Great! Next, let's give the user control over which sensor group they are seeing
 
 ##### 05. PROCESSING: Animate UNOSAT data
 
-There are innumerable ways to give the user control over which group they see. We could have them press 1, 2, or 3 on the keyboard to display the respective group, we could have them click on a button, etc. For the purpose of this tutorial, let's have the user's mouse X position dictate the current sensor group. We will divide the screen into 3 segments horizontally. If the user's mouse is on the left third side of the screen, Processing will display data from the first sensor group. If the user's mouse is on the middle third of the screen, Processing will display data from the second sensor group. And finally, if the user's mouse is on the left third of the screen, Processing will display data from the third sensor group. We can do this with just a few lines of code.
+There are many ways to give the user control over which group they see. We could have them press 1, 2, or 3 on the keyboard to display the respective group, we could have them click on a button, etc. For the purpose of this tutorial, let's have the user's mouse X position dictate the current sensor group. We will divide the screen into 3 segments horizontally. If the user's mouse is on the left third side of the screen, Processing will display data from the first sensor group. If the user's mouse is on the middle third of the screen, Processing will display data from the second sensor group. And finally, if the user's mouse is on the left third of the screen, Processing will display data from the third sensor group. We can do this with just a few lines of code.
 
 Open the zipped Processing sketch **DisplayDatav02**. We don't need to change any code in the setup section so scroll down to the draw portion and observe the following modifications in ```line 72 - 84```:
 
@@ -472,7 +473,7 @@ Woo! Ok run the code and you should see following:
 
 ![Add Layer](https://cloud.githubusercontent.com/assets/17283990/13902316/4b1c59a4-ee1a-11e5-8db0-1bd05aa323c4.png)
 
-Great. Now let's add one last bit of visual interest to the datapoints before finish up by adding uor map underlay. In the dataset, UNOSAT sometimes changes the damage classification from one sensor group period to another. So, for example, a building that was classified as severely damaged in sensor group 1, might be classified as moderately damaged or destroyed in sensor group 2 based off of the new satelite image that UNOSAT is working off of. Let's have the size of the dots reflect whether or not damage increased or decreased since the prior period. Let's make a dot bigger if damage increased from a prior period and let's outline a dot with a white border if it decreased in damage from a prior period.
+Great. Now let's add one last bit of visual interest to the datapoints before finish up by adding our map underlay. In the dataset, UNOSAT sometimes changes the damage classification from one sensor group period to another. So, for example, a building that was classified as severely damaged in sensor group 1, might be classified as moderately damaged or destroyed in sensor group 2 based off of the new satelite image that UNOSAT is working off of. Let's have the size of the dots reflect whether or not damage increased or decreased since the prior period. Let's make a dot bigger if damage increased from a prior period and let's outline a dot with a white border if it decreased in damage from a prior period.
 
 Open the zipped Processing sketch **DisplayDatav04**.
 
@@ -579,7 +580,7 @@ Scroll all the way down to ```line 163 - 164``` and note the following code:
   saveFrame("frames/frame_#####.png");
 ```
 
-The code saves the current frame as ```frame_####.png``` in a ```frames ``` folder in our sketch folder. Be careful: if you get an error make sure you created a frames folder for the images to be saved to! Run the code, and you will find that each frame is saved as a png in your ```frames``` folder. If you would like to output fewer frames per second, simply adjust the ```frameRate(10);``` to ```frameRate(1);``` to output one frame per second. You did it! You have created a Processing animation. For the very last step, we will move to Adobe AfterEffects to compile all of the frames into one animation.
+The code saves the current frame as ```frame_####.png``` in a ```frames ``` folder in our sketch folder. Be careful: if you get an error make sure you created a folder named exactly ```frames``` for the images to be saved to! Run the code, and you will find that each frame is saved as a png in your ```frames``` folder. If you would like to output fewer frames per second, simply adjust the ```frameRate(10);``` to ```frameRate(1);``` to output one frame per second. You did it! You have created a Processing animation. For the very last step, we will move to Adobe AfterEffects to compile all of the frames into one animation.
 
 
 ##### 08. AFTEREFFECTS: Compile frames into animation
