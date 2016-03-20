@@ -65,23 +65,6 @@ Tutorials 8, Help Session:</br>
 Will be held on Tues, March 1st, 7-9pm, Studio @ Butler
 
 <hr/>
-Tutorials 10 - 12 will be demonstrated during Workshop 2. </br> 
-On Saturday March 5th, 9-1pm, Studio @[Butler](https://studio.cul.columbia.edu).</br>
-*This workshop is adavanced, hence optional*.
-
-+ **[Tutorial 10](/Tutorials/Tutorial10/README.md):** 
-*Creating an Interactive Grid of Images*</br>
-Level: Advance
-
-+ **[Tutorial 11](/Tutorials/Tutorial11/README.md):** 
-*Remote Sensing: Using LANDSAT NDVI Analysis to detect Urban Change Patterns*</br>
-Level: Advance
-
-+ **[Tutorial 12](/Tutorials/Tutorial12/README.md):** 
-*Image Analysis: Using Machine Learning to detect Rubble Patterns*</br>
-Level: Advanced
-
-<hr/>
 
 **Note:**
 *Additional Tutorials maybe added during the semester.*
